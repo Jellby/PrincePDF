@@ -1,0 +1,522 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Prince PDF calibre plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-08-17 10:24+0100\n"
+"PO-Revision-Date: 2014-08-17 10:25+0100\n"
+"Last-Translator: Jellby <jellby@yahoo.com>\n"
+"Language-Team: \n"
+"Language: Español; Castellano\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: config.py:23 config.py:24
+msgid "default"
+msgstr "predeterminada"
+
+#: config.py:95
+msgid "&Prince executable:"
+msgstr "Ejecutable de &Prince:"
+
+#: config.py:100
+msgid "<qt>Executable for the Prince program (command-line interface)</qt>"
+msgstr ""
+"<qt>El ejecutable para el programa Prince (interfaz de línea de órdenes)</qt>"
+
+#: config.py:104
+msgid "&Browse"
+msgstr "&Explorar"
+
+#: config.py:105
+msgid "<qt>Search the Prince executable in your computer</qt>"
+msgstr "<qt>Buscar el ejecutable de Prince en el equipo</qt>"
+
+#: config.py:112
+msgid "Preferred &formats:"
+msgstr "&Formatos preferidos:"
+
+#: config.py:117
+msgid ""
+"<qt>Comma-separated list of preferred formats to use as source, the first "
+"that matches will be used</qt>"
+msgstr ""
+"<qt>Lista separada por comas de los formatos preferidos como fuente, se "
+"usará el primero que coincida</qt>"
+
+#: config.py:121 convert.py:56
+msgid "&Add PDF to the book record"
+msgstr "&Añadir PDF al registro del libro"
+
+#: config.py:122 convert.py:57
+msgid "<qt>Add the converted PDF to the selected book record</qt>"
+msgstr "<qt>Añadir el PDF convertido al registro del libro seleccionado</qt>"
+
+#: config.py:126
+msgid "&Show CSS in the Convert dialog"
+msgstr "&Mostrar CSS en la ventana de conversión"
+
+#: config.py:127
+msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
+msgstr ""
+"<qt>Mostrar de manera predeterminada las hojas de estilo en la ventana de "
+"conversión</qt>"
+
+#: config.py:138
+msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
+msgstr ""
+"<qt>Lista de hojas de estilos personalizadas definidas. Seleccione una para "
+"modificarla</qt>"
+
+#: config.py:141 config.py:142
+msgid "old"
+msgstr "antigua"
+
+#: config.py:149
+msgid "Re&name"
+msgstr "Re&nombrar"
+
+#: config.py:150
+msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
+msgstr ""
+"<qt>Cambiar el nombre de la hoja de estilos actual al nombre de la derecha</"
+"qt>"
+
+#: config.py:156
+msgid "<qt>Name for the new or renamed stylesheet</qt>"
+msgstr "<qt>Nombre para la hoja de estilos nueva o renombrada</qt>"
+
+#: config.py:161
+msgid "A&dd"
+msgstr "Aña&dir"
+
+#: config.py:162
+msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
+msgstr ""
+"<qt>Añadir una nueva hoja de estilos vacía con el nombre de la izquierda</qt>"
+
+#: config.py:167
+msgid "Re&move"
+msgstr "&Borrar"
+
+#: config.py:168
+msgid "<qt>Remove the current stylesheet</qt>"
+msgstr "<qt>Eliminar la hoja de estilos actual</qt>"
+
+#: config.py:175
+msgid ""
+"<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
+"conversions</qt>"
+msgstr ""
+"<qt>Hoja de estilos personal que se usará, si se selecciona, en todas las "
+"conversiones PDF con Prince</qt>"
+
+#: config.py:178
+msgid "&Custom CSS:"
+msgstr "&CSS personal:"
+
+#: config.py:186
+msgid "&Restore defaults"
+msgstr "&Restaurar valores predeterminados"
+
+#: config.py:187
+msgid "<qt>Restore the default settings</qt>"
+msgstr "<qt>Restablecer las configuraciones predeterminadas</qt>"
+
+#: config.py:191
+msgid "<b>Warning</b>: Deletes modified stylesheets"
+msgstr "<b>Aviso</b>: Borra las hojas de estilos modificadas"
+
+#: config.py:202
+msgid "Select Prince executable"
+msgstr "Seleccionar el ejecutable de Prince"
+
+#: config.py:255
+msgid "Cannot add stylesheet"
+msgstr "No se puede añadir"
+
+#: config.py:255 config.py:288
+#, python-format
+msgid ""
+"A stylesheet with the name \"%s\" is already defined, use a different name."
+msgstr ""
+"Ya hay definida una hoja de estilos con el nombre «%s», use un nombre "
+"diferente."
+
+#: config.py:278
+msgid "Cannot delete the last stylesheet"
+msgstr "No se puede borrar la última hoja de estilos"
+
+#: config.py:278
+msgid ""
+"The last stylesheet cannot be removed. You can rename it and/or remove its "
+"contents."
+msgstr ""
+"La última hoja de estilos no se puede borrar. Puede cambiarle el nombre o "
+"borrar su contenido."
+
+#: config.py:288
+msgid "Cannot rename stylesheet"
+msgstr "No se puede cambiar el nombre"
+
+#: __init__.py:12 main.py:30 ui.py:14 ui.py:15
+msgid "Prince PDF"
+msgstr "Prince PDF"
+
+#: __init__.py:13
+msgid "Converts to PDF using the Prince software (third-party)"
+msgstr "Convertir a PDF usando el programa Prince (programa de terceros)"
+
+#: help.py:3
+#, python-format
+msgid ""
+"\n"
+"<h3 style=\"text-align:center\">The Prince PDF Plugin (v. %(version)s)</h3>\n"
+"<p style=\"text-align:center\"><i>Created by %(author)s</i></p>\n"
+"\n"
+"<hr/>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">This plugin will convert a book to PDF using "
+"Prince.</p>\n"
+"<p style=\"margin:0\">Prince is an external program, you can download it "
+"from <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Only a few formats can be converted with this "
+"plugin, mainly EPUB, AZW3 and HTMLZ. If you want to convert a book in "
+"another format, convert it first to one of these formats.</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Before the actual conversion, you will be able "
+"to choose whether or not to add the resulting PDF to the book record. If the "
+"PDF is not added, it will be saved in disk, using the save-to-disk template."
+"</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">The conversion will not use any other of the "
+"calibre conversion settings, but instead it will use a custom CSS file, "
+"where Prince-specific properties can be used. This file can be modified in "
+"the plugin configuration. In addition, the plugin will recognize and use any "
+"extra CSS file specified in the book itself, as a <code>&lt;meta&gt;</code> "
+"tag with <code>name=\"prince-style\"</code> and <code>content=\"<i>idref</i>"
+"\"</code>, where <code><i>idref</i></code> is the <code>id</code> of the "
+"extra CSS file in the manifest.</p>\n"
+"\n"
+"<hr/>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> "
+"Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
+"<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is "
+"released under %(license)s.</p>\n"
+msgstr ""
+"\n"
+"<h3 style=\"text-align:center\">El complemento Prince PDF (v. %(version)s)</"
+"h3>\n"
+"<p style=\"text-align:center\"><i>Creado por %(author)s</i></p>\n"
+"\n"
+"<hr/>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Este complemento convierte un libro a PDF "
+"usando Prince.</p>\n"
+"<p style=\"margin:0\">Prince es un programa externo que puede descargarse "
+"desde <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Sólo algunos formatos pueden convertirse con "
+"este complemento, principalmente EPUB, AZW3 y HTMLZ. Si quiere convertir un "
+"libro en algún otro formato, conviértalo primero a uno de estos formatos.</"
+"p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Antes de realizar la conversión real, se puede "
+"elegir si añadir o no el PDF resultante al registro del libro. Si no se "
+"añade el PDF, se guardará en disco usando la plantilla para guardar en disco."
+"</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">La conversión no usa ninguna otra "
+"configuración de conversión de calibre, en lugar de ello emplea un archivo "
+"CSS personal, donde se pueden usar propiedades específicas de Prince. Este "
+"archivo puede modificarse en la configuración del complemento. Además, el "
+"complemento también reconoce y aplica cualquier archivo CSS adicional que "
+"esté especificado dentro del propio libro mediante una etiqueta <code>&lt;"
+"meta&gt;</code> con <code>name=\"prince-style\"</code> y <code>content="
+"\"<i>idref</i>\"</code>, donde <code><i>idref</i></code> es el <code>id</"
+"code> del archivo CSS adicional en el manifiesto.</p>\n"
+"\n"
+"<hr/>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> "
+"Prince es copyright &copy; YesLogic Pty. Ltd.</i></p>\n"
+"<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Este complemento "
+"está sujeto a la licencia %(license)s.</p>\n"
+
+#: main.py:40
+msgid "Convert to &PDF"
+msgstr "Convertir a &PDF"
+
+#: main.py:43
+msgid "<qt>Start the conversion process</qt>"
+msgstr "<qt>Comenzar el proceso de conversión</qt>"
+
+#: main.py:46
+msgid "&View log"
+msgstr "&Ver registro"
+
+#: main.py:48
+msgid "<qt>Display the log from the last Prince run</qt>"
+msgstr "<qt>Mostrar el registro de la última ejecución de Prince</qt>"
+
+#: main.py:52
+msgid "Con&figure"
+msgstr "Con&figurar"
+
+#: main.py:54
+msgid "<qt>Configure this plugin</qt>"
+msgstr "<qt>Configurar este complemento</qt>"
+
+#: main.py:100
+msgid "<b>No books selected</b>"
+msgstr "<b>Ningún libro seleccionado</b>"
+
+#: main.py:102 main.py:108
+msgid "Select one single book"
+msgstr "Seleccione un solo libro"
+
+#: main.py:106
+msgid "<b>Many books selected</b>"
+msgstr "<b>Varios libros seleccionados</b>"
+
+#: main.py:119
+msgid "<i>none</i>"
+msgstr "<i>ninguno</i>"
+
+#: main.py:126
+#, python-format
+msgid "Available formats: %s"
+msgstr "Formatos disponibles: %s"
+
+#: main.py:130
+msgid "Ready"
+msgstr "Listo"
+
+#: main.py:134
+msgid "No preferred format available"
+msgstr "No hay ningún formato preferido disponible"
+
+#: main.py:155
+msgid "About the Prince PDF Plugin"
+msgstr "Acerca del complemento Prince PDF"
+
+#: main.py:180 main.py:215
+msgid "Cannot convert to PDF"
+msgstr "No se puede convertir a PDF"
+
+#: main.py:180
+#, python-format
+msgid "Format not supported: %s"
+msgstr "Formato no soportado: %s"
+
+#: main.py:193
+msgid " Check the log."
+msgstr " Compruebe el registro."
+
+#: main.py:199 main.py:206
+msgid "Could not convert to PDF"
+msgstr "No se pudo convertir a PDF"
+
+#: main.py:199
+msgid "The conversion failed."
+msgstr "La conversión ha fallado."
+
+#: main.py:206
+#, python-format
+msgid ""
+"Error reading or writing the PDF file:\n"
+"%s"
+msgstr ""
+"Error al leer o escribir el archivo PDF:\n"
+"%s"
+
+#: main.py:215
+msgid "No supported format available"
+msgstr "No hay ningún formato soportado disponible"
+
+#: main.py:263
+msgid "Unpacking book..."
+msgstr "Desempaquetando libro..."
+
+#: main.py:283
+msgid "Setting metadata..."
+msgstr "Estableciendo metadatos..."
+
+#: main.py:300
+msgid "Existing format"
+msgstr "Formato existente"
+
+#: main.py:301
+msgid ""
+"The selected book already contains a PDF format. Are you sure you want to "
+"replace it?"
+msgstr ""
+"El libro seleccionado ya contiene un formato PDF. ¿Está seguro de querer "
+"sustituirlo?"
+
+#: main.py:302
+#, python-format
+msgid ""
+"The temporary file can be found in:\n"
+"%s"
+msgstr ""
+"El archivo temporal se encuentra en:\n"
+"%s"
+
+#: main.py:306
+msgid "Adding PDF..."
+msgstr "Añadiendo PDF..."
+
+#: main.py:325
+msgid "Choose destination directory"
+msgstr "Elegir directorio de destino"
+
+#: main.py:337
+msgid "Could not save PDF"
+msgstr "No se pudo guardar el PDF"
+
+#: main.py:337
+#, python-format
+msgid ""
+"Error writing the PDF file:\n"
+"%s"
+msgstr ""
+"Error al escribir el archivo PDF:\n"
+"%s"
+
+#: main.py:340
+msgid "File saved"
+msgstr "Archivo guardado"
+
+#: main.py:340
+#, python-format
+msgid ""
+"PDF file saved in:\n"
+"%s"
+msgstr ""
+"Archivo PDF guardado en:\n"
+"%s"
+
+#: ui.py:15
+msgid "Run the Prince PDF Plugin"
+msgstr "Ejecutar el complemento Prince PDF"
+
+#: log_box.py:25
+msgid "Prince log"
+msgstr "Registro de Prince"
+
+#: log_box.py:40
+msgid "<qt>Console output from the last Prince run</qt>"
+msgstr "<qt>Salida de consola de la última ejecución de Prince</qt>"
+
+#: convert.py:19
+msgid "&Hide stylesheets"
+msgstr "&Ocultar estilos"
+
+#: convert.py:20
+msgid "&Show stylesheets"
+msgstr "&Mostrar estilos"
+
+#: convert.py:44
+msgid "Convert to PDF with Prince"
+msgstr "Convertir a PDF con Prince"
+
+#: convert.py:50
+#, python-format
+msgid "<b>Title:</b> %s"
+msgstr "<b>Título:</b> %s"
+
+#: convert.py:53
+#, python-format
+msgid "<b>Source format:</b> %s"
+msgstr "<b>Formato de origen:</b> %s"
+
+#: convert.py:66
+msgid "&Custom stylesheet:"
+msgstr "&Hoja de estilos personal:"
+
+#: convert.py:70
+msgid ""
+"<qt>Select one stylesheet to use. Additional stylesheets can be created in "
+"the plugin configuration</qt>"
+msgstr ""
+"<qt>Seleccione una hoja de estilos para usar. Pueden crearse hojas de "
+"estilos adicionales en la configuración del complemento</qt>"
+
+#: convert.py:85
+msgid ""
+"<qt>This stylesheet can be modified<br/>The default can be configured</qt>"
+msgstr ""
+"<qt>Esta hoja de estilos puede modificarse<br/>La hoja predeterminada se "
+"puede configurar</qt>"
+
+#: convert.py:86
+msgid "C&ustom CSS"
+msgstr "&CSS personal"
+
+#: convert.py:87
+msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
+msgstr "<qt>Hoja de estilos personal que se usará en esta conversión</qt>"
+
+#: convert.py:98
+msgid "<qt>This stylesheet cannot be modified</qt>"
+msgstr "<qt>Esta hoja de estilos no puede modificarse</qt>"
+
+#: convert.py:99
+msgid "&Book CSS"
+msgstr "CSS del &libro"
+
+#: convert.py:100
+msgid "<qt>Book-specific CSS stylesheet included in the ebook file</qt>"
+msgstr "<qt>Hoja de estilos específica del libro, incluida en el archivo</qt>"
+
+#: convert.py:109
+msgid "<qt>Show/hide the additional stylesheets used for the conversion</qt>"
+msgstr ""
+"<qt>Mostrar u ocultar las hojas de estilos adicionales usadas para la "
+"conversión</qt>"
+
+#: convert.py:112
+msgid "Con&vert"
+msgstr "Con&vertir"
+
+#: convert.py:113
+msgid "<qt>Run the conversion with Prince</qt>"
+msgstr "<qt>Ejecutar la conversión con Prince</qt>"
+
+#: convert.py:164
+msgid "Parsing book..."
+msgstr "Procesando libro..."
+
+#: convert.py:227
+msgid "Converting book..."
+msgstr "Convirtiendo libro..."
+
+#: convert.py:246
+msgid "Process error"
+msgstr "Error de proceso"
+
+#: convert.py:246
+#, python-format
+msgid ""
+"<p>Error code: %s<p>make sure Prince (<a href=\"http://www.princexml.com"
+"\">www.princexml.com</a>) is installed and the correct command-line-"
+"interface executable is set in the configuration of this plugin, which is "
+"usually:<ul><li>In Windows: <code><i>Prince_folder</i>\\Engine\\bin\\prince."
+"exe</code>    <li>In Linux: <code>prince</code></ul>"
+msgstr ""
+"<p>Código de error: %s<p>Asegúrese de que Prince (<a href=\"http://www."
+"princexml.com\">www.princexml.com</a>) está instalado y de que el ejecutable "
+"de consola correcto está especificado en la configuración de este "
+"complemento, normalmente es:<ul><li>En Windows: <code><i>carpeta_de_Prince</"
+"i>\\Engine\\bin\\prince.exe</code>    <li>En Linux: <code>prince</code></ul>"
+
+#~ msgid ""
+#~ "<p>Error code: %s<p>make sure Prince (<a href=\"http://www.princexml.com"
+#~ "\">www.princexml.com</a>) is correctly installed."
+#~ msgstr ""
+#~ "<p>Código de error: %s<p>Asegúrese de que Prince (<a href=\"http://www."
+#~ "princexml.com\">www.princexml.com</a>) está correctamente instalado."

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="174"
+   height="174"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="/home/ignacio/Documentos/PrincePDF/images/icon.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3762"
+       inkscape:label="Inner Shadow"
+       inkscape:menu="Shadows and Glows"
+       inkscape:menu-tooltip="Adds a colorizable drop shadow inside"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3764"
+         stdDeviation="4"
+         result="result8" />
+      <feOffset
+         id="feOffset3766"
+         dx="4"
+         dy="4"
+         result="result11" />
+      <feComposite
+         id="feComposite3768"
+         in2="result11"
+         result="result6"
+         in="SourceGraphic"
+         operator="in" />
+      <feFlood
+         id="feFlood3770"
+         result="result10"
+         in="result6"
+         flood-opacity="1"
+         flood-color="rgb(0,0,0)" />
+      <feBlend
+         id="feBlend3772"
+         in2="result10"
+         mode="normal"
+         in="result6"
+         result="result12" />
+      <feComposite
+         id="feComposite3774"
+         in2="SourceGraphic"
+         result="result2"
+         operator="in" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="87.494254"
+     inkscape:cy="99.979413"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="786"
+     inkscape:window-height="601"
+     inkscape:window-x="400"
+     inkscape:window-y="75"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-71.928578,-213.93361)">
+    <rect
+       style="fill:#009256;fill-opacity:1;fill-rule:nonzero;stroke:none;filter:url(#filter3762)"
+       id="rect2989"
+       width="145"
+       height="145"
+       x="86.428574"
+       y="228.43361"
+       ry="17.857143"
+       transform="translate(4.6974139e-6,0)" />
+    <g
+       style="font-size:150px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:TeXGyrePagella;-inkscape-font-specification:TeXGyrePagella"
+       id="text2985"
+       transform="matrix(-0.8486144,0.52901191,0.52901191,0.8486144,131.16222,-28.320617)">
+      <path
+         d="m 201.76871,271.76775 c 0,-14.39999 -11.70002,-23.25 -30.75,-23.25 -8.54999,0 -16.95001,0.45 -25.5,0.45 -9.14999,0 -18.15001,-0.15 -27.3,-0.45 l 0,4.5 6.75,0.45 c 6.74999,0.45 7.95,2.40001 7.95,13.5 l 0,67.35 c 0,11.84999 -0.75001,13.05 -7.65,13.5 l -7.2,0.45 0,4.5 c 7.34999,-0.3 14.55,-0.45 21.9,-0.45 7.34999,0 14.7,0.15 22.05,0.45 l 0,-4.5 -7.2,-0.45 c -6.9,-0.45 -7.65,-1.65001 -7.65,-13.5 l 0,-78.3 c 5.24999,-1.2 9.6,-1.8 14.7,-1.8 16.19998,0 24.9,7.50001 24.9,21.75 0,13.49999 -9.15002,22.95 -22.2,22.95 -3.15,0 -5.40001,-0.3 -9.3,-1.5 l 1.5,5.4 c 3.59999,0.75 5.7,0.9 8.7,0.9 20.54998,0 36.3,-13.95002 36.3,-31.95"
+         style="fill:#ffffff;fill-opacity:1"
+         id="path3760"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:30px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#77ffba;fill-opacity:1;stroke:none;font-family:TeXGyreSchola;-inkscape-font-specification:TeXGyreSchola"
+       x="107.85715"
+       y="358.79074"
+       id="text3776"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3778"
+         x="107.85715"
+         y="358.79074">PDF</tspan></text>
+  </g>
+</svg>

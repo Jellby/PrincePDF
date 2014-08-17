@@ -1,0 +1,27 @@
+1.2.0 (2014-08-17)
+                   Compatibility with calibre 2
+                   Support for multiple custom stylesheets
+
+1.1.3 (2014-04-08)
+                   Fix problem with icons in help message
+
+1.1.2 (2014-03-05)
+                   Refresh info when data changes
+                   More informative error message
+                   Fix typo in help text
+                   Add French translation
+
+1.1.1 (2013-12-29)
+                   Fix problem with books without formats
+                   Fix problem when switching libraries
+
+1.1.0 (2013-12-28)
+                   Add info text, and update with selection change
+                   Refresh main GUI after adding PDF
+                   Catch errors reading/writing PDF file
+                   Use -l option of Prince for passing a list of input files
+                   Add copyright in help text
+                   Fix missing icons
+
+1.0.0 (2013-12-26)
+                   Initial release
