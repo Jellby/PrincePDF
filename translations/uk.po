@@ -1,0 +1,431 @@
+# 
+# Translators:
+# Yuri Chornoivan <yurchor@ukr.net>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: calibre-plugins\n"
+"POT-Creation-Date: 2014-08-17 10:24+0100\n"
+"PO-Revision-Date: 2014-08-17 12:10+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian (http://www.transifex.com/projects/p/calibre-plugins/language/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: config.py:23 config.py:24
+msgid "default"
+msgstr "типовий"
+
+#: config.py:95
+msgid "&Prince executable:"
+msgstr "&Виконуваний файл Prince:"
+
+#: config.py:100
+msgid "<qt>Executable for the Prince program (command-line interface)</qt>"
+msgstr "<qt>Виконуваний файл для програми Prince (інтерфейс командного рядка)</qt>"
+
+#: config.py:104
+msgid "&Browse"
+msgstr "В&казати"
+
+#: config.py:105
+msgid "<qt>Search the Prince executable in your computer</qt>"
+msgstr "<qt>Вказати виконуваний файл Prince на вашому комп’ютері</qt>"
+
+#: config.py:112
+msgid "Preferred &formats:"
+msgstr "&Бажані формати:"
+
+#: config.py:117
+msgid ""
+"<qt>Comma-separated list of preferred formats to use as source, the first "
+"that matches will be used</qt>"
+msgstr "<qt>Список бажаних форматів, відокремлених комами, дані у яких слід використовувати як початкові. Програма скористається першим же виявленим форматом зі списку.</qt>"
+
+#: config.py:121 convert.py:56
+msgid "&Add PDF to the book record"
+msgstr "&Додати PDF до запису книги"
+
+#: config.py:122 convert.py:57
+msgid "<qt>Add the converted PDF to the selected book record</qt>"
+msgstr "<qt>Додати перетворений PDF до запису позначеної книги</qt>"
+
+#: config.py:126
+msgid "&Show CSS in the Convert dialog"
+msgstr "&Показати CSS у діалоговому вікні перетворення"
+
+#: config.py:127
+msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
+msgstr "<qt>Типово показувати таблиці стилів у діалоговому вікні перетворення</qt>"
+
+#: config.py:138
+msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
+msgstr "<qt>Визначено список нетипових таблиць стилів. Виберіть одну з них для редагування.</qt>"
+
+#: config.py:141 config.py:142
+msgid "old"
+msgstr "старий"
+
+#: config.py:149
+msgid "Re&name"
+msgstr "Пере&йменувати"
+
+#: config.py:150
+msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
+msgstr "<qt>Перейменувати поточну таблицю стилів, використавши назву, вказану праворуч.</qt>"
+
+#: config.py:156
+msgid "<qt>Name for the new or renamed stylesheet</qt>"
+msgstr "<qt>Назва нової або перейменованої таблиці стилів.</qt>"
+
+#: config.py:161
+msgid "A&dd"
+msgstr "&Додати"
+
+#: config.py:162
+msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
+msgstr "<qt>Додати нову порожню таблицю стилів з назвою, вказаною ліворуч.</qt>"
+
+#: config.py:167
+msgid "Re&move"
+msgstr "Ви&лучити"
+
+#: config.py:168
+msgid "<qt>Remove the current stylesheet</qt>"
+msgstr "<qt>Вилучити поточну таблицю стилів.</qt>"
+
+#: config.py:175
+msgid ""
+"<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
+"conversions</qt>"
+msgstr "<qt>Нетипова таблиця стилів, яку буде застосовано, якщо її буде вибрано, до усіх перетворень на PDF за допомогою Prince.</qt>"
+
+#: config.py:178
+msgid "&Custom CSS:"
+msgstr "&Нетипова таблиця стилів:"
+
+#: config.py:186
+msgid "&Restore defaults"
+msgstr "Від&новити типові параметри"
+
+#: config.py:187
+msgid "<qt>Restore the default settings</qt>"
+msgstr "<qt>Відновити типові параметри</qt>"
+
+#: config.py:191
+msgid "<b>Warning</b>: Deletes modified stylesheets"
+msgstr "<b>Попередження</b>: вилучає змінені таблиці стилів"
+
+#: config.py:202
+msgid "Select Prince executable"
+msgstr "Виберіть виконуваний файл Prince"
+
+#: config.py:255
+msgid "Cannot add stylesheet"
+msgstr "Не вдалося додати таблицю стилів"
+
+#: config.py:255 config.py:288
+#, python-format
+msgid ""
+"A stylesheet with the name \"%s\" is already defined, use a different name."
+msgstr "Таблицю стилів із назвою «%s» вже визначено, скористайтеся іншою назвою."
+
+#: config.py:278
+msgid "Cannot delete the last stylesheet"
+msgstr "Не можна вилучати останню таблицю стилів"
+
+#: config.py:278
+msgid ""
+"The last stylesheet cannot be removed. You can rename it and/or remove its "
+"contents."
+msgstr "Не можна вилучати останню таблицю стилів. Ви можете перейменувати її і/або вилучити її вміст."
+
+#: config.py:288
+msgid "Cannot rename stylesheet"
+msgstr "Не вдалося перейменувати таблицю стилів"
+
+#: __init__.py:12 main.py:30 ui.py:14 ui.py:15
+msgid "Prince PDF"
+msgstr "Prince PDF"
+
+#: __init__.py:13
+msgid "Converts to PDF using the Prince software (third-party)"
+msgstr "Виконує перетворення у формат PDF за допомогою програми Prince (стороннє програмне забезпечення)"
+
+#: help.py:3
+#, python-format
+msgid ""
+"\n"
+"<h3 style=\"text-align:center\">The Prince PDF Plugin (v. %(version)s)</h3>\n"
+"<p style=\"text-align:center\"><i>Created by %(author)s</i></p>\n"
+"\n"
+"<hr/>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">This plugin will convert a book to PDF using Prince.</p>\n"
+"<p style=\"margin:0\">Prince is an external program, you can download it from <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Only a few formats can be converted with this plugin, mainly EPUB, AZW3 and HTMLZ. If you want to convert a book in another format, convert it first to one of these formats.</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">Before the actual conversion, you will be able to choose whether or not to add the resulting PDF to the book record. If the PDF is not added, it will be saved in disk, using the save-to-disk template.</p>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\">The conversion will not use any other of the calibre conversion settings, but instead it will use a custom CSS file, where Prince-specific properties can be used. This file can be modified in the plugin configuration. In addition, the plugin will recognize and use any extra CSS file specified in the book itself, as a <code>&lt;meta&gt;</code> tag with <code>name=\"prince-style\"</code> and <code>content=\"<i>idref</i>\"</code>, where <code><i>idref</i></code> is the <code>id</code> of the extra CSS file in the manifest.</p>\n"
+"\n"
+"<hr/>\n"
+"\n"
+"<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
+"<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
+msgstr "\n<h3 style=\"text-align:center\">Додаток Prince PDF (версія %(version)s)</h3>\n<p style=\"text-align:center\"><i>Створено %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">За допомогою цього додатка можна перетворити дані книги у формат PDF за допомогою Prince.</p>\n<p style=\"margin:0\">Prince — зовнішня програма, яку можна отримати зі сторінки <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">За допомогою цього додатка можна виконати перетворення даних лише у декількох форматах, зокрема EPUB, AZW3 та HTMLZ. Якщо вам потрібно виконати перетворення книги у якомусь іншому форматі, спочатку виконайте перетворення у один з цих форматів.</p>\n\n<p style=\"margin:1em 0 0 0\">До того, як буде виконано перетворення, ви зможете визначити, чи слід додавати отриманий файл PDF до запису книги у бібліотеці. Якщо ви вирішите не додавати PDF до запису, файл буде збережено на диску за допомогою шаблона зберігання на диску.</p>\n\n<p style=\"margin:1em 0 0 0\">Під час перетворення не використовуються жодні параметри перетворення calibre. Замість них додаток використовує нетиповий файл CSS, у якому можна вказати специфічні для Prince параметри перетворення. Внести зміни до цього файла можна за допомогою діалогового вікна налаштовування додатка. Крім того, додаток здатен виявляти і використовувати будь-які додаткові файли CSS, які є частиною самої книги за допомогою теґу <code>&lt;meta&gt;</code> з параметрами <code>name=\"prince-style\"</code> та <code>content=\"<i>idref</i>\"</code>, де <code><i>idref</i></code> є ідентифікатором додаткового файла CSS у маніфесті.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Авторські права на Prince належать YesLogic Pty. Ltd.</i></p>\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Цей додаток випущено за дотримання умов лінзування %(license)s.</p>\n"
+
+#: main.py:40
+msgid "Convert to &PDF"
+msgstr "Перетворити на &PDF"
+
+#: main.py:43
+msgid "<qt>Start the conversion process</qt>"
+msgstr "<qt>Розпочати процес перетворення</qt>"
+
+#: main.py:46
+msgid "&View log"
+msgstr "&Показати журнал"
+
+#: main.py:48
+msgid "<qt>Display the log from the last Prince run</qt>"
+msgstr "<qt>Показати журнал останнього запуску Prince</qt>"
+
+#: main.py:52
+msgid "Con&figure"
+msgstr "Н&алаштувати"
+
+#: main.py:54
+msgid "<qt>Configure this plugin</qt>"
+msgstr "<qt>Налаштувати цей додаток</qt>"
+
+#: main.py:100
+msgid "<b>No books selected</b>"
+msgstr "<b>Не вибрано книги</b>"
+
+#: main.py:102 main.py:108
+msgid "Select one single book"
+msgstr "Виберіть єдину книгу"
+
+#: main.py:106
+msgid "<b>Many books selected</b>"
+msgstr "<b>Вибрано декілька книг</b>"
+
+#: main.py:119
+msgid "<i>none</i>"
+msgstr "<i>немає</i>"
+
+#: main.py:126
+#, python-format
+msgid "Available formats: %s"
+msgstr "Доступні формати: %s"
+
+#: main.py:130
+msgid "Ready"
+msgstr "Готово"
+
+#: main.py:134
+msgid "No preferred format available"
+msgstr "Бажані формати недоступні"
+
+#: main.py:155
+msgid "About the Prince PDF Plugin"
+msgstr "Про додаток Prince PDF"
+
+#: main.py:180 main.py:215
+msgid "Cannot convert to PDF"
+msgstr "Не вдалося перетворити на PDF"
+
+#: main.py:180
+#, python-format
+msgid "Format not supported: %s"
+msgstr "Підтримки формату не передбачено: %s"
+
+#: main.py:193
+msgid " Check the log."
+msgstr " Ознайомтеся із журналом."
+
+#: main.py:199 main.py:206
+msgid "Could not convert to PDF"
+msgstr "Не вдалося перетворити на PDF"
+
+#: main.py:199
+msgid "The conversion failed."
+msgstr "Невдале перетворення."
+
+#: main.py:206
+#, python-format
+msgid ""
+"Error reading or writing the PDF file:\n"
+"%s"
+msgstr "Помилка під час спроби читання або запису файла PDF:\n%s"
+
+#: main.py:215
+msgid "No supported format available"
+msgstr "Підтримувані формати недоступні"
+
+#: main.py:263
+msgid "Unpacking book..."
+msgstr "Розпаковуємо книгу…"
+
+#: main.py:283
+msgid "Setting metadata..."
+msgstr "Встановлюємо метадані…"
+
+#: main.py:300
+msgid "Existing format"
+msgstr "Наявний формат"
+
+#: main.py:301
+msgid ""
+"The selected book already contains a PDF format. Are you sure you want to "
+"replace it?"
+msgstr "Запис позначеної книги вже містить формат PDF. Ви справді хочете його замінити?"
+
+#: main.py:302
+#, python-format
+msgid ""
+"The temporary file can be found in:\n"
+"%s"
+msgstr "Тимчасовий файл можна знайти тут:\n%s"
+
+#: main.py:306
+msgid "Adding PDF..."
+msgstr "Додаємо PDF…"
+
+#: main.py:325
+msgid "Choose destination directory"
+msgstr "Оберіть каталог призначення"
+
+#: main.py:337
+msgid "Could not save PDF"
+msgstr "Не вдалося зберегти PDF"
+
+#: main.py:337
+#, python-format
+msgid ""
+"Error writing the PDF file:\n"
+"%s"
+msgstr "Помилка під час записування файла PDF:\n%s"
+
+#: main.py:340
+msgid "File saved"
+msgstr "Файл збережено"
+
+#: main.py:340
+#, python-format
+msgid ""
+"PDF file saved in:\n"
+"%s"
+msgstr "Файл PDF збережено тут:\n%s"
+
+#: ui.py:15
+msgid "Run the Prince PDF Plugin"
+msgstr "Запустити додаток Prince PDF"
+
+#: log_box.py:25
+msgid "Prince log"
+msgstr "Журнал Prince"
+
+#: log_box.py:40
+msgid "<qt>Console output from the last Prince run</qt>"
+msgstr "<qt>Виведення до консолі під час останнього запису Prince</qt>"
+
+#: convert.py:19
+msgid "&Hide stylesheets"
+msgstr "При&ховати таблиці стилів"
+
+#: convert.py:20
+msgid "&Show stylesheets"
+msgstr "&Показати таблиці стилів"
+
+#: convert.py:44
+msgid "Convert to PDF with Prince"
+msgstr "Перетворити на PDF за допомогою Prince"
+
+#: convert.py:50
+#, python-format
+msgid "<b>Title:</b> %s"
+msgstr "<b>Назва:</b> %s"
+
+#: convert.py:53
+#, python-format
+msgid "<b>Source format:</b> %s"
+msgstr "<b>Початковий формат:</b> %s"
+
+#: convert.py:66
+msgid "&Custom stylesheet:"
+msgstr "Н&етипова таблиця стилів:"
+
+#: convert.py:70
+msgid ""
+"<qt>Select one stylesheet to use. Additional stylesheets can be created in "
+"the plugin configuration</qt>"
+msgstr "<qt>Виберіть одну таблицю стилів, яку слід використати. Додаткові таблиці стилів можна створити за допомогою діалогового вікна налаштовування додатка.</qt>"
+
+#: convert.py:85
+msgid ""
+"<qt>This stylesheet can be modified<br/>The default can be configured</qt>"
+msgstr "<qt>Цю таблицю стилів можна змінити.<br/>Типові значення можна налаштувати.</qt>"
+
+#: convert.py:86
+msgid "C&ustom CSS"
+msgstr "&Нетипова таблиця стилів"
+
+#: convert.py:87
+msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
+msgstr "<qt>Нетипова таблиця стилів CSS, яку буде використано для цього перетворення.</qt>"
+
+#: convert.py:98
+msgid "<qt>This stylesheet cannot be modified</qt>"
+msgstr "<qt>Цю таблицю стилів не можна змінювати.</qt>"
+
+#: convert.py:99
+msgid "&Book CSS"
+msgstr "CSS &книги"
+
+#: convert.py:100
+msgid "<qt>Book-specific CSS stylesheet included in the ebook file</qt>"
+msgstr "<qt>Специфічна для книги таблиця стилів CSS, включена до файла електронної книги.</qt>"
+
+#: convert.py:109
+msgid "<qt>Show/hide the additional stylesheets used for the conversion</qt>"
+msgstr "<qt>Показати або сховати додаткові таблиці стилів, використані для перетворення.</qt>"
+
+#: convert.py:112
+msgid "Con&vert"
+msgstr "Пере&творити"
+
+#: convert.py:113
+msgid "<qt>Run the conversion with Prince</qt>"
+msgstr "<qt>Виконати перетворення за допомогою Prince</qt>"
+
+#: convert.py:164
+msgid "Parsing book..."
+msgstr "Обробляємо книгу…"
+
+#: convert.py:227
+msgid "Converting book..."
+msgstr "Перетворюємо книгу…"
+
+#: convert.py:246
+msgid "Process error"
+msgstr "Помилка обробки"
+
+#: convert.py:246
+#, python-format
+msgid ""
+"<p>Error code: %s<p>make sure Prince (<a "
+"href=\"http://www.princexml.com\">www.princexml.com</a>) is installed and "
+"the correct command-line-interface executable is set in the configuration of"
+" this plugin, which is usually:<ul><li>In Windows: "
+"<code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>In Linux: "
+"<code>prince</code></ul>"
+msgstr "<p>Код помилки: %s<p>Переконайтеся, що встановлено Prince (<a href=\"http://www.princexml.com\">www.princexml.com</a>) і вказано відповідний виконуваний файл командного рядка у налаштуваннях цього додатка. Зазвичай, таким файлом є:<ul><li>у Windows: <code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>у Linux: <code>prince</code></ul>"

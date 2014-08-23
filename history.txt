@@ -1,3 +1,7 @@
+1.2.1 (2014-08-23)
+                   Fix bug when reading previous configurations
+                   Add more translations
+
 1.2.0 (2014-08-17)
                    Compatibility with calibre 2
                    Support for multiple custom stylesheets

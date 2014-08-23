@@ -140,7 +140,9 @@ class ConfigWidget(QWidget):
         self.default_CSS = prefs['default_CSS']
         if 'custom_CSS' in prefs:
             self.CSS_list[_('old')] = prefs['custom_CSS']
-            self.default_CSS = prefs[_('old')]
+            self.default_CSS = _('old')
+        if self.default_CSS not in self.CSS_list:
+            self.default_CSS = sorted(self.CSS_list, key=lambda x: x.lower())[0]
         for key in sorted(self.CSS_list, key=lambda x: x.lower()):
             self.css_list.addItem(key, key)
         self.css_list.setCurrentIndex(self.css_list.findText(self.default_CSS))
