@@ -204,7 +204,10 @@ class ConfigWidget(QWidget):
         dialog.setFileMode(QFileDialog.ExistingFile)
         filename = dialog.getOpenFileName(self, _('Select Prince executable'), '', '')
         if filename:
-            self.exe.setText(filename)
+            try:
+                self.exe.setText(filename)
+            except(TypeError):
+                self.exe.setText(filename[0])
 
     def restore_defaults(self):
         '''

@@ -5,9 +5,9 @@ __copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
-    from PyQt5.Qt import Qt, QDialog, QPushButton, QMessageBox, QLabel, QDialogButtonBox, QMessageBox, QGridLayout
+    from PyQt5.Qt import Qt, QDialog, QPushButton, QLabel, QDialogButtonBox, QGridLayout
 except ImportError:
-    from PyQt4.Qt import Qt, QDialog, QPushButton, QMessageBox, QLabel, QDialogButtonBox, QMessageBox, QGridLayout
+    from PyQt4.Qt import Qt, QDialog, QPushButton, QLabel, QDialogButtonBox, QGridLayout
 from calibre_plugins.prince_pdf.config import prefs
 from calibre_plugins.prince_pdf.convert import ConvertDialog
 from calibre_plugins.prince_pdf.log_box import LogDialog
@@ -141,7 +141,8 @@ class PrincePDFDialog(QDialog):
         '''
         from os.path import join
         from calibre.ptempfile import TemporaryDirectory
-        from calibre_plugins.prince_pdf.help import help_txt
+        from calibre.gui2.dialogs.message_box import MessageBox
+        from calibre_plugins.prince_pdf.help import help_txt, license_txt
         from calibre_plugins.prince_pdf import PrincePDFPlugin
         from calibre_plugins.prince_pdf import __license__
 
@@ -152,7 +153,13 @@ class PrincePDFDialog(QDialog):
           for x in ('prince_icon.png', 'small_icon.png'):
             with open(join(tdir, x),'w') as f:
               f.write(get_resources('images/' + x))
-          QMessageBox.about(self, _('About the Prince PDF Plugin'), help_txt % {'author':author, 'version':version, 'license':license, 'dir':tdir})
+          help_box = MessageBox(type_ = MessageBox.INFO, \
+                                title = _('About the Prince PDF Plugin'), \
+                                msg = help_txt % {'author':author, 'version':version, 'license':license, 'dir':tdir}, \
+                                det_msg = 'Copyright \u00a9 %s\n%s' % (__copyright__, license_txt), \
+                                q_icon = self.icon, \
+                                show_copy_button = False)
+          help_box.exec_()
 
     def convert_to_PDF(self):
         '''
@@ -209,8 +216,8 @@ class PrincePDFDialog(QDialog):
                     self.add_pdf(book_id, pdf_file, ('pdf' in fmts))
                 else:
                     self.save_pdf(pdf_file, pdf_base_file)
-            if DEBUG: print('===========')
-            return
+	    if DEBUG: print('===========')
+	    return
         # No matching format in the book
         return error_dialog(self.gui, _('Cannot convert to PDF'), _('No supported format available'), show=True)
 

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"POT-Creation-Date: 2014-08-17 10:24+0100\n"
-"PO-Revision-Date: 2014-08-17 10:24+0100\n"
+"Project-Id-Version: Prince PDF\n"
+"POT-Creation-Date: 2014-08-30 10:44+0100\n"
+"PO-Revision-Date: 2014-08-30 10:44+0100\n"
 "Last-Translator: Jellby <jellby@yahoo.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -60,89 +60,89 @@ msgstr ""
 msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
 msgstr ""
 
-#: config.py:138
+#: config.py:137
 msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
 msgstr ""
 
-#: config.py:141 config.py:142
+#: config.py:142 config.py:143
 msgid "old"
 msgstr ""
 
-#: config.py:149
+#: config.py:152
 msgid "Re&name"
 msgstr ""
 
-#: config.py:150
+#: config.py:153
 msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
 msgstr ""
 
-#: config.py:156
+#: config.py:159
 msgid "<qt>Name for the new or renamed stylesheet</qt>"
 msgstr ""
 
-#: config.py:161
+#: config.py:164
 msgid "A&dd"
 msgstr ""
 
-#: config.py:162
+#: config.py:165
 msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
 msgstr ""
 
-#: config.py:167
+#: config.py:170
 msgid "Re&move"
 msgstr ""
 
-#: config.py:168
+#: config.py:171
 msgid "<qt>Remove the current stylesheet</qt>"
 msgstr ""
 
-#: config.py:175
+#: config.py:178
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
 msgstr ""
 
-#: config.py:178
+#: config.py:181
 msgid "&Custom CSS:"
 msgstr ""
 
-#: config.py:186
+#: config.py:189
 msgid "&Restore defaults"
 msgstr ""
 
-#: config.py:187
+#: config.py:190
 msgid "<qt>Restore the default settings</qt>"
 msgstr ""
 
-#: config.py:191
+#: config.py:194
 msgid "<b>Warning</b>: Deletes modified stylesheets"
 msgstr ""
 
-#: config.py:202
+#: config.py:205
 msgid "Select Prince executable"
 msgstr ""
 
-#: config.py:255
+#: config.py:262
 msgid "Cannot add stylesheet"
 msgstr ""
 
-#: config.py:255 config.py:288
+#: config.py:262 config.py:295
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
 msgstr ""
 
-#: config.py:278
+#: config.py:285
 msgid "Cannot delete the last stylesheet"
 msgstr ""
 
-#: config.py:278
+#: config.py:285
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
 msgstr ""
 
-#: config.py:288
+#: config.py:295
 msgid "Cannot rename stylesheet"
 msgstr ""
 
@@ -192,6 +192,23 @@ msgid ""
 "Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is "
 "released under %(license)s.</p>\n"
+msgstr ""
+
+#: help.py:24
+msgid ""
+"\n"
+"This program is free software: you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation, either version 3 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
 
 #: main.py:40
@@ -247,91 +264,91 @@ msgstr ""
 msgid "No preferred format available"
 msgstr ""
 
-#: main.py:155
+#: main.py:157
 msgid "About the Prince PDF Plugin"
 msgstr ""
 
-#: main.py:180 main.py:215
+#: main.py:187 main.py:222
 msgid "Cannot convert to PDF"
 msgstr ""
 
-#: main.py:180
+#: main.py:187
 #, python-format
 msgid "Format not supported: %s"
 msgstr ""
 
-#: main.py:193
+#: main.py:200
 msgid " Check the log."
 msgstr ""
 
-#: main.py:199 main.py:206
+#: main.py:206 main.py:213
 msgid "Could not convert to PDF"
 msgstr ""
 
-#: main.py:199
+#: main.py:206
 msgid "The conversion failed."
 msgstr ""
 
-#: main.py:206
+#: main.py:213
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
 msgstr ""
 
-#: main.py:215
+#: main.py:222
 msgid "No supported format available"
 msgstr ""
 
-#: main.py:263
+#: main.py:270
 msgid "Unpacking book..."
 msgstr ""
 
-#: main.py:283
+#: main.py:290
 msgid "Setting metadata..."
 msgstr ""
 
-#: main.py:300
+#: main.py:307
 msgid "Existing format"
 msgstr ""
 
-#: main.py:301
+#: main.py:308
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
 msgstr ""
 
-#: main.py:302
+#: main.py:309
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
 msgstr ""
 
-#: main.py:306
+#: main.py:313
 msgid "Adding PDF..."
 msgstr ""
 
-#: main.py:325
+#: main.py:332
 msgid "Choose destination directory"
 msgstr ""
 
-#: main.py:337
+#: main.py:344
 msgid "Could not save PDF"
 msgstr ""
 
-#: main.py:337
+#: main.py:344
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
 msgstr ""
 
-#: main.py:340
+#: main.py:347
 msgid "File saved"
 msgstr ""
 
-#: main.py:340
+#: main.py:347
 #, python-format
 msgid ""
 "PDF file saved in:\n"
