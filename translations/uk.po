@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2014-08-17 10:24+0100\n"
-"PO-Revision-Date: 2014-08-17 12:10+0000\n"
+"POT-Creation-Date: 2014-08-30 10:44+0100\n"
+"PO-Revision-Date: 2014-08-30 10:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/projects/p/calibre-plugins/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -64,89 +64,89 @@ msgstr "&Показати CSS у діалоговому вікні перетв�
 msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
 msgstr "<qt>Типово показувати таблиці стилів у діалоговому вікні перетворення</qt>"
 
-#: config.py:138
+#: config.py:137
 msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
 msgstr "<qt>Визначено список нетипових таблиць стилів. Виберіть одну з них для редагування.</qt>"
 
-#: config.py:141 config.py:142
+#: config.py:142 config.py:143
 msgid "old"
 msgstr "старий"
 
-#: config.py:149
+#: config.py:152
 msgid "Re&name"
 msgstr "Пере&йменувати"
 
-#: config.py:150
+#: config.py:153
 msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
 msgstr "<qt>Перейменувати поточну таблицю стилів, використавши назву, вказану праворуч.</qt>"
 
-#: config.py:156
+#: config.py:159
 msgid "<qt>Name for the new or renamed stylesheet</qt>"
 msgstr "<qt>Назва нової або перейменованої таблиці стилів.</qt>"
 
-#: config.py:161
+#: config.py:164
 msgid "A&dd"
 msgstr "&Додати"
 
-#: config.py:162
+#: config.py:165
 msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
 msgstr "<qt>Додати нову порожню таблицю стилів з назвою, вказаною ліворуч.</qt>"
 
-#: config.py:167
+#: config.py:170
 msgid "Re&move"
 msgstr "Ви&лучити"
 
-#: config.py:168
+#: config.py:171
 msgid "<qt>Remove the current stylesheet</qt>"
 msgstr "<qt>Вилучити поточну таблицю стилів.</qt>"
 
-#: config.py:175
+#: config.py:178
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
 msgstr "<qt>Нетипова таблиця стилів, яку буде застосовано, якщо її буде вибрано, до усіх перетворень на PDF за допомогою Prince.</qt>"
 
-#: config.py:178
+#: config.py:181
 msgid "&Custom CSS:"
 msgstr "&Нетипова таблиця стилів:"
 
-#: config.py:186
+#: config.py:189
 msgid "&Restore defaults"
 msgstr "Від&новити типові параметри"
 
-#: config.py:187
+#: config.py:190
 msgid "<qt>Restore the default settings</qt>"
 msgstr "<qt>Відновити типові параметри</qt>"
 
-#: config.py:191
+#: config.py:194
 msgid "<b>Warning</b>: Deletes modified stylesheets"
 msgstr "<b>Попередження</b>: вилучає змінені таблиці стилів"
 
-#: config.py:202
+#: config.py:205
 msgid "Select Prince executable"
 msgstr "Виберіть виконуваний файл Prince"
 
-#: config.py:255
+#: config.py:262
 msgid "Cannot add stylesheet"
 msgstr "Не вдалося додати таблицю стилів"
 
-#: config.py:255 config.py:288
+#: config.py:262 config.py:295
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
 msgstr "Таблицю стилів із назвою «%s» вже визначено, скористайтеся іншою назвою."
 
-#: config.py:278
+#: config.py:285
 msgid "Cannot delete the last stylesheet"
 msgstr "Не можна вилучати останню таблицю стилів"
 
-#: config.py:278
+#: config.py:285
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
 msgstr "Не можна вилучати останню таблицю стилів. Ви можете перейменувати її і/або вилучити її вміст."
 
-#: config.py:288
+#: config.py:295
 msgid "Cannot rename stylesheet"
 msgstr "Не вдалося перейменувати таблицю стилів"
 
@@ -181,6 +181,23 @@ msgid ""
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
 msgstr "\n<h3 style=\"text-align:center\">Додаток Prince PDF (версія %(version)s)</h3>\n<p style=\"text-align:center\"><i>Створено %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">За допомогою цього додатка можна перетворити дані книги у формат PDF за допомогою Prince.</p>\n<p style=\"margin:0\">Prince — зовнішня програма, яку можна отримати зі сторінки <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">За допомогою цього додатка можна виконати перетворення даних лише у декількох форматах, зокрема EPUB, AZW3 та HTMLZ. Якщо вам потрібно виконати перетворення книги у якомусь іншому форматі, спочатку виконайте перетворення у один з цих форматів.</p>\n\n<p style=\"margin:1em 0 0 0\">До того, як буде виконано перетворення, ви зможете визначити, чи слід додавати отриманий файл PDF до запису книги у бібліотеці. Якщо ви вирішите не додавати PDF до запису, файл буде збережено на диску за допомогою шаблона зберігання на диску.</p>\n\n<p style=\"margin:1em 0 0 0\">Під час перетворення не використовуються жодні параметри перетворення calibre. Замість них додаток використовує нетиповий файл CSS, у якому можна вказати специфічні для Prince параметри перетворення. Внести зміни до цього файла можна за допомогою діалогового вікна налаштовування додатка. Крім того, додаток здатен виявляти і використовувати будь-які додаткові файли CSS, які є частиною самої книги за допомогою теґу <code>&lt;meta&gt;</code> з параметрами <code>name=\"prince-style\"</code> та <code>content=\"<i>idref</i>\"</code>, де <code><i>idref</i></code> є ідентифікатором додаткового файла CSS у маніфесті.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Авторські права на Prince належать YesLogic Pty. Ltd.</i></p>\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Цей додаток випущено за дотримання умов лінзування %(license)s.</p>\n"
+
+#: help.py:24
+msgid ""
+"\n"
+"This program is free software: you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation, either version 3 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "\nЦя програма є вільним програмним забезпеченням; ви можете поширювати її \nі/або змінювати її за умов дотримання GNU General Public License у тому \nвигляді, у якому її оприлюднено Free Software Foundation; версії 3 цієї \nліцензії, або (за потреби) будь-якої пізнішої версії.\n\nЦя програма поширюється у сподіванні, що вона буде корисною, але БЕЗ БУДЬ-\nЯКИХ ГАРАНТІЙ; навіть без очевидної гарантії КОМЕРЦІЙНОЇ ЦІННОСТІ або \nПРИДАТНОСТІ ДЛЯ ЯКОЇСЬ МЕТИ.  Докладніше про це ви можете дізнатися з \nGNU General Public License.\nРазом з цією програмою ви маєте отримати копію GNU General Public License. \nЯкщо ви її не отримали, зверніться за адресою <http://www.gnu.org/licenses/>, щоб дізнатися про подальші дії.\n"
 
 #: main.py:40
 msgid "Convert to &PDF"
@@ -235,91 +252,91 @@ msgstr "Готово"
 msgid "No preferred format available"
 msgstr "Бажані формати недоступні"
 
-#: main.py:155
+#: main.py:157
 msgid "About the Prince PDF Plugin"
 msgstr "Про додаток Prince PDF"
 
-#: main.py:180 main.py:215
+#: main.py:187 main.py:222
 msgid "Cannot convert to PDF"
 msgstr "Не вдалося перетворити на PDF"
 
-#: main.py:180
+#: main.py:187
 #, python-format
 msgid "Format not supported: %s"
 msgstr "Підтримки формату не передбачено: %s"
 
-#: main.py:193
+#: main.py:200
 msgid " Check the log."
 msgstr " Ознайомтеся із журналом."
 
-#: main.py:199 main.py:206
+#: main.py:206 main.py:213
 msgid "Could not convert to PDF"
 msgstr "Не вдалося перетворити на PDF"
 
-#: main.py:199
+#: main.py:206
 msgid "The conversion failed."
 msgstr "Невдале перетворення."
 
-#: main.py:206
+#: main.py:213
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
 msgstr "Помилка під час спроби читання або запису файла PDF:\n%s"
 
-#: main.py:215
+#: main.py:222
 msgid "No supported format available"
 msgstr "Підтримувані формати недоступні"
 
-#: main.py:263
+#: main.py:270
 msgid "Unpacking book..."
 msgstr "Розпаковуємо книгу…"
 
-#: main.py:283
+#: main.py:290
 msgid "Setting metadata..."
 msgstr "Встановлюємо метадані…"
 
-#: main.py:300
+#: main.py:307
 msgid "Existing format"
 msgstr "Наявний формат"
 
-#: main.py:301
+#: main.py:308
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
 msgstr "Запис позначеної книги вже містить формат PDF. Ви справді хочете його замінити?"
 
-#: main.py:302
+#: main.py:309
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
 msgstr "Тимчасовий файл можна знайти тут:\n%s"
 
-#: main.py:306
+#: main.py:313
 msgid "Adding PDF..."
 msgstr "Додаємо PDF…"
 
-#: main.py:325
+#: main.py:332
 msgid "Choose destination directory"
 msgstr "Оберіть каталог призначення"
 
-#: main.py:337
+#: main.py:344
 msgid "Could not save PDF"
 msgstr "Не вдалося зберегти PDF"
 
-#: main.py:337
+#: main.py:344
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
 msgstr "Помилка під час записування файла PDF:\n%s"
 
-#: main.py:340
+#: main.py:347
 msgid "File saved"
 msgstr "Файл збережено"
 
-#: main.py:340
+#: main.py:347
 #, python-format
 msgid ""
 "PDF file saved in:\n"

@@ -1,6 +1,7 @@
 1.2.2 (2014-08-30)
                    Fix bug when selecting executable
-                   Added GPL license and notice
+                   Add GPL license and notice
+                   Update translations
 
 1.2.1 (2014-08-23)
                    Fix bug when reading previous configurations

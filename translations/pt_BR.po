@@ -1,11 +1,12 @@
 # 
 # Translators:
+# Jellby <jellby@yahoo.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
-"POT-Creation-Date: 2014-08-17 10:24+0100\n"
-"PO-Revision-Date: 2014-08-20 15:11+0000\n"
-"Last-Translator: Paulo_Neto <layoutbr@lexxa.com.br>\n"
+"POT-Creation-Date: 2014-08-30 10:44+0100\n"
+"PO-Revision-Date: 2014-08-30 09:31+0000\n"
+"Last-Translator: Jellby <jellby@yahoo.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/calibre-plugins/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,89 +64,89 @@ msgstr "Mo&strar CSS no diálogo de conversão"
 msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
 msgstr "<qt>Mostrar, por padrão as folhas de estilo no diálogo de conversão</qt>"
 
-#: config.py:138
+#: config.py:137
 msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
 msgstr "<qt>Lista de folhas de estilo definidas. Selecione uma para editar</qt>"
 
-#: config.py:141 config.py:142
+#: config.py:142 config.py:143
 msgid "old"
 msgstr "antigo"
 
-#: config.py:149
+#: config.py:152
 msgid "Re&name"
 msgstr "Re&nomear"
 
-#: config.py:150
+#: config.py:153
 msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
 msgstr "<qt>Renomear a folha de estilo atual para o nome à direita</qt>"
 
-#: config.py:156
+#: config.py:159
 msgid "<qt>Name for the new or renamed stylesheet</qt>"
 msgstr "<qt>Nome para a folha de estilo nova ou renomeada</qt>"
 
-#: config.py:161
+#: config.py:164
 msgid "A&dd"
 msgstr "A&dicionar"
 
-#: config.py:162
+#: config.py:165
 msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
 msgstr "<qt>Adicionar uma nova folha de estilo em branco com o nome à esquerda</qt>"
 
-#: config.py:167
+#: config.py:170
 msgid "Re&move"
 msgstr "Re&mover"
 
-#: config.py:168
+#: config.py:171
 msgid "<qt>Remove the current stylesheet</qt>"
 msgstr "<qt>Remover a folha de estilo atual</qt>"
 
-#: config.py:175
+#: config.py:178
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
 msgstr "<qt>Folha de estilo personalizada que será aplicada, se selecionada, para todas as conversões do Prince PDF</qt>"
 
-#: config.py:178
+#: config.py:181
 msgid "&Custom CSS:"
 msgstr "&CSS Personalizada:"
 
-#: config.py:186
+#: config.py:189
 msgid "&Restore defaults"
 msgstr "&Restaurar padrões"
 
-#: config.py:187
+#: config.py:190
 msgid "<qt>Restore the default settings</qt>"
 msgstr "<qt>Restaurar os ajustes padrão</qt>"
 
-#: config.py:191
+#: config.py:194
 msgid "<b>Warning</b>: Deletes modified stylesheets"
 msgstr "<b>Aviso</b>: Apaga folhas de estilo parsonalizadas"
 
-#: config.py:202
+#: config.py:205
 msgid "Select Prince executable"
 msgstr "Selecionar executável Prince"
 
-#: config.py:255
+#: config.py:262
 msgid "Cannot add stylesheet"
 msgstr "Não foi possível adicionar a folha de estilo"
 
-#: config.py:255 config.py:288
+#: config.py:262 config.py:295
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
 msgstr "Uma folha de estilo chamada \"%s\" já está definida, use um nome diferente."
 
-#: config.py:278
+#: config.py:285
 msgid "Cannot delete the last stylesheet"
 msgstr "Não foi possível apagar a última folha de estilo"
 
-#: config.py:278
+#: config.py:285
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
 msgstr "A última folha de estilo não pode ser removida. Você pode renomeá-la e/ou remover o seu conteúdo."
 
-#: config.py:288
+#: config.py:295
 msgid "Cannot rename stylesheet"
 msgstr "Não foi possível renomear a folha de estilo"
 
@@ -180,6 +181,23 @@ msgid ""
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
 msgstr "\n<h3 style=\"text-align:center\">O plugin Prince PDF (v. %(version)s)</h3>\n<p style=\"text-align:center\"><i>Criado por %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">Este plugin vai converter um livro para PDF usando o Prince.</p>\n<p style=\"margin:0\">Prince é um programa externo, você pode fazer sua transferência de <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">Apenas alguns formatos podem ser convertidos com este plugin, principalmente EPUB, AZW3 e HTMLZ. Se você deseja converter um livro em outro formato, converta-o primeiro em um desses formatos.</p>\n\n<p style=\"margin:1em 0 0 0\">Antes da conversão atual, você poderá escolher se deseja ou não adicionar o PDF resultante para o registro do livro. Se o PDF não é adicionado, ele será salvo no disco, usando o modelo de salvar para o disco.</p>\n\n<p style=\"margin:1em 0 0 0\">A conversão não vai usar qualquer outra das definições de conversão do calibre, mas em vez disso ela vai usar um arquivo CSS personalizado, onde as propriedades específicas do Prince podem ser usadas. Este arquivo pode ser modificado nas configurações do plugin. Além disso, o plugin vai reconhecer e usar qualquer arquivo CSS adicional especificado no próprio livro, como uma etiqueta <code>&lt;meta&gt;</code> com <code>name=\"prince-style\"</code> e <code>content=\"<i>idref</i>\"</code>, onde <code><i>idref</i></code> é o <code>id</code> do arquivo CSS extra no manifesto.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> O Prince é protegido por direitos autorais &copy; YesLogic Pty. Ltd.</i></p>\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Este plugin é lançado sob %(license)s.</p>\n"
+
+#: help.py:24
+msgid ""
+"\n"
+"This program is free software: you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation, either version 3 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+msgstr "\nEste programa é um software livre; você pode redistribuí-lo e/ou \nmodificá-lo dentro dos termos da Licença Pública Geral GNU como \npublicada pela Fundação do Software Livre (FSF); na versão 3 da \nLicença, ou (na sua opinião) qualquer versão ulterior.\n\nEste programa é distribuído na esperança de que possa ser útil, \nmas SEM NENHUMA GARANTIA; sem uma garantia implícita de\nADEQUAÇÃO a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR.\nVeja a Licença Pública Geral GNU para maiores detalhes.\n\nVocê deve ter recebido uma cópia da Licença Pública Geral GNU\njunto com este programa, se não, veja <http://www.gnu.org/licenses/>.\n"
 
 #: main.py:40
 msgid "Convert to &PDF"
@@ -234,91 +252,91 @@ msgstr "Pronto"
 msgid "No preferred format available"
 msgstr "Nenhum formato preferido disponível"
 
-#: main.py:155
+#: main.py:157
 msgid "About the Prince PDF Plugin"
 msgstr "Sobre o Plugin Prince PDF"
 
-#: main.py:180 main.py:215
+#: main.py:187 main.py:222
 msgid "Cannot convert to PDF"
 msgstr "Não foi possível converter o PDF"
 
-#: main.py:180
+#: main.py:187
 #, python-format
 msgid "Format not supported: %s"
 msgstr "Formato não suportado: %s"
 
-#: main.py:193
+#: main.py:200
 msgid " Check the log."
 msgstr " Verificar o registro."
 
-#: main.py:199 main.py:206
+#: main.py:206 main.py:213
 msgid "Could not convert to PDF"
 msgstr "Não foi possível converter o PDF"
 
-#: main.py:199
+#: main.py:206
 msgid "The conversion failed."
 msgstr "A conversão falhou."
 
-#: main.py:206
+#: main.py:213
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
 msgstr "Erro ao ler ou gravar o arquivo PDF:\n%s"
 
-#: main.py:215
+#: main.py:222
 msgid "No supported format available"
 msgstr "Nenhum formato suportado disponível"
 
-#: main.py:263
+#: main.py:270
 msgid "Unpacking book..."
 msgstr "Descomprimindo livro...."
 
-#: main.py:283
+#: main.py:290
 msgid "Setting metadata..."
 msgstr "Definindo metadados..."
 
-#: main.py:300
+#: main.py:307
 msgid "Existing format"
 msgstr "Formato existente"
 
-#: main.py:301
+#: main.py:308
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
 msgstr "O livro selecionado já contém um formato PDF. Você tem certeza de que deseja substituí-lo?"
 
-#: main.py:302
+#: main.py:309
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
 msgstr "TO arquivo temporário não pode ser encontrado em:\n%s"
 
-#: main.py:306
+#: main.py:313
 msgid "Adding PDF..."
 msgstr "Adicionando PDF..."
 
-#: main.py:325
+#: main.py:332
 msgid "Choose destination directory"
 msgstr "Escolher um diretório de destino"
 
-#: main.py:337
+#: main.py:344
 msgid "Could not save PDF"
 msgstr "Não foi possível salvar o PDF"
 
-#: main.py:337
+#: main.py:344
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
 msgstr "Erro ao gravar o arquivo PDF:\n%s"
 
-#: main.py:340
+#: main.py:347
 msgid "File saved"
 msgstr "Arquivo salvo"
 
-#: main.py:340
+#: main.py:347
 #, python-format
 msgid ""
 "PDF file saved in:\n"

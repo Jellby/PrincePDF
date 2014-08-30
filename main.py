@@ -5,9 +5,9 @@ __copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
-    from PyQt5.Qt import Qt, QDialog, QPushButton, QLabel, QDialogButtonBox, QGridLayout
+    from PyQt5.Qt import Qt, QDialog, QPushButton, QLabel, QDialogButtonBox, QGridLayout, QSizePolicy
 except ImportError:
-    from PyQt4.Qt import Qt, QDialog, QPushButton, QLabel, QDialogButtonBox, QGridLayout
+    from PyQt4.Qt import Qt, QDialog, QPushButton, QLabel, QDialogButtonBox, QGridLayout, QSizePolicy
 from calibre_plugins.prince_pdf.config import prefs
 from calibre_plugins.prince_pdf.convert import ConvertDialog
 from calibre_plugins.prince_pdf.log_box import LogDialog
@@ -159,6 +159,8 @@ class PrincePDFDialog(QDialog):
                                 det_msg = 'Copyright \u00a9 %s\n%s' % (__copyright__, license_txt), \
                                 q_icon = self.icon, \
                                 show_copy_button = False)
+          #help_box.gridLayout.addWidget(help_box.icon_label,0,0,Qt.AlignTop)
+          help_box.gridLayout.setAlignment(help_box.icon_label,Qt.AlignTop)
           help_box.exec_()
 
     def convert_to_PDF(self):
