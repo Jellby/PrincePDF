@@ -33,6 +33,7 @@ class ConvertDialog(QDialog):
         '''
         self.opf = opf
         self.oeb = oeb
+        self.mi = mi
         # The unpacked book needs to be parsed before, to read the contents
         # of the prince-style file, if it exists
         self.parse()
@@ -47,7 +48,7 @@ class ConvertDialog(QDialog):
         self.l = QVBoxLayout()
         self.setLayout(self.l)
 
-        self.title_label = QLabel(_('<b>Title:</b> %s') % mi.title)
+        self.title_label = QLabel(_('<b>Title:</b> %s') % self.mi.title)
         self.l.addWidget(self.title_label)
 
         self.format_label = QLabel(_('<b>Source format:</b> %s') % fmt)
@@ -81,7 +82,7 @@ class ConvertDialog(QDialog):
 
         self.css1 = TextEditWithTooltip()
         self.css1.setLineWrapMode(TextEditWithTooltip.NoWrap)
-        self.css1.load_text(prefs['custom_CSS_list'][prefs['default_CSS']],'css')
+        self.css1.load_text(self.replace_templates(prefs['custom_CSS_list'][prefs['default_CSS']]),'css')
         self.css1.setToolTip(_('<qt>This stylesheet can be modified<br/>The default can be configured</qt>'))
         i = self.css.addTab(self.css1, _('C&ustom CSS'))
         self.css.setTabToolTip(i, _('<qt>Custom CSS stylesheet to be used for this conversion</qt>'))
@@ -149,7 +150,7 @@ class ConvertDialog(QDialog):
         Fill the custom CSS text box with the selected stylesheet
         '''
         stylesheet = unicode(self.css_list.currentText())
-        self.css1.load_text(prefs['custom_CSS_list'][stylesheet],'css')
+        self.css1.load_text(self.replace_templates(prefs['custom_CSS_list'][stylesheet]),'css')
         prefs['default_CSS'] = stylesheet
 
     def parse(self):
@@ -175,6 +176,31 @@ class ConvertDialog(QDialog):
             fl = codecs.open(join(opf_dir, self.prince_file), 'rb', 'utf-8')
             self.prince_css = fl.read()
             fl.close()
+
+    def replace_templates(self, text):
+        '''
+        Replace templates (enclosed by '@{@', '@}@') in the input text
+        '''
+        import re
+        import json
+        from calibre.ebooks.metadata.book.formatter import SafeFormat
+        from calibre.constants import DEBUG
+
+        matches = list(re.finditer('@{@(.+?)@}@',text,re.DOTALL))
+        results = {}
+        for match in reversed(matches):
+            result = SafeFormat().safe_format(match.group(1), self.mi, ('EXCEPTION: '), self.mi)
+            # Escape quotes, backslashes and newlines
+            result = re.sub(r'''['"\\]''', r'\\\g<0>', result)
+            result = re.sub('\n', r'\A ', result)
+            results[match.group(1)] = result
+            text = text[:match.start(0)] + result + text[match.end(0):]
+        if DEBUG:
+            print(_('Replacing templates'))
+            for match in matches:
+                print(_('Found: %s (%d-%d)') % (match.group(1), match.start(0), match.end(0)))
+                print(_('Replace with: %s') % results[match.group(1)])
+        return text
 
     def prince_convert(self):
         '''

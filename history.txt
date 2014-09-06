@@ -1,3 +1,5 @@
+1.3.0 (xxxx-xx-xx)
+
 1.2.2 (2014-08-30)
                    Fix bug when selecting executable
                    Add GPL license and notice

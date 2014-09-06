@@ -78,6 +78,8 @@ body {
   text-align: justify;
   prince-image-resolution: 166dpi;
   hyphens: auto;
+  string-set: booktitle "@{@{title}@}@"
+  string-set: author "@{@{author}@}@"
 }'''}
 
 # Configuration widget (included in the configuration dialog)
@@ -177,6 +179,10 @@ class ConfigWidget(QWidget):
         self.css.load_text(self.CSS_list[unicode(self.css_list.currentText())],'css')
         self.css.setToolTip(_('<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF conversions</qt>'))
         self.css_layout.addWidget(self.css)
+
+        self.css_templates = QLabel(_('Book metadata can be used in the stylesheet. Anything between <span %(code)s>@{@</span> and <span %(code)s>@}@</span> will be processed as a calibre template. For instance, <span %(code)s>@{@<i>{title}</i>@}@</span> in the stylesheet will be replaced with the book title in the conversion.') % {'code':'style="font-family:monospace ; font-weight:bold"'})
+        self.css_templates.setWordWrap(True)
+        self.css_layout.addWidget(self.css_templates)
 
         self.css_box = QGroupBox(_('&Custom CSS:'))
         self.css_box.setLayout(self.css_layout)

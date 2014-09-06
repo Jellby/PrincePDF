@@ -155,7 +155,7 @@ class PrincePDFDialog(QDialog):
               f.write(get_resources('images/' + x))
           help_box = MessageBox(type_ = MessageBox.INFO, \
                                 title = _('About the Prince PDF Plugin'), \
-                                msg = help_txt % {'author':author, 'version':version, 'license':license, 'dir':tdir}, \
+                                msg = help_txt % {'author':author, 'version':version, 'license':license, 'dir':tdir, 'code':'style="font-family:monospace ; font-weight:bold"'}, \
                                 det_msg = 'Copyright \u00a9 %s\n%s' % (__copyright__, license_txt), \
                                 q_icon = self.icon, \
                                 show_copy_button = False)
