@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Prince PDF\n"
-"POT-Creation-Date: 2014-09-06 20:24+0100\n"
-"PO-Revision-Date: 2014-09-06 20:25+0100\n"
+"Project-Id-Version: PricePDF\n"
+"POT-Creation-Date: 2014-09-11 19:02+0100\n"
+"PO-Revision-Date: 2014-09-11 19:02+0100\n"
 "Last-Translator: Jellby <jellby@yahoo.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -105,53 +105,52 @@ msgstr ""
 #: config.py:183
 #, python-format
 msgid ""
-"Book metadata can be used in the stylesheet. Anything between <span "
-"%(code)s>@{@</span> and <span %(code)s>@}@</span> will be processed as a "
-"calibre template. For instance, <span %(code)s>@{@<i>{title}</i>@}@</span> "
-"in the stylesheet will be replaced with the book title in the conversion."
+"Book metadata can be used in the stylesheet. Anything between %(s1)s and "
+"%(s2)s will be processed as a calibre template. For instance, %(s3)s in the "
+"stylesheet will be replaced with the book title in the conversion."
 msgstr ""
 
-#: config.py:187
+#: config.py:190
 msgid "&Custom CSS:"
 msgstr ""
 
-#: config.py:195
+#: config.py:198
 msgid "&Restore defaults"
 msgstr ""
 
-#: config.py:196
+#: config.py:199
 msgid "<qt>Restore the default settings</qt>"
 msgstr ""
 
-#: config.py:200
+#: config.py:203
 msgid "<b>Warning</b>: Deletes modified stylesheets"
 msgstr ""
 
-#: config.py:211
+#: config.py:214
 msgid "Select Prince executable"
 msgstr ""
 
-#: config.py:268
+#: config.py:271
 msgid "Cannot add stylesheet"
 msgstr ""
 
-#: config.py:268 config.py:301
+#: config.py:271 config.py:304
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
 msgstr ""
 
-#: config.py:291
+#: config.py:294
 msgid "Cannot delete the last stylesheet"
 msgstr ""
 
-#: config.py:291
+#: config.py:294
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
 msgstr ""
 
-#: config.py:301
+#: config.py:304
 msgid "Cannot rename stylesheet"
 msgstr ""
 

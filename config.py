@@ -180,7 +180,10 @@ class ConfigWidget(QWidget):
         self.css.setToolTip(_('<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF conversions</qt>'))
         self.css_layout.addWidget(self.css)
 
-        self.css_templates = QLabel(_('Book metadata can be used in the stylesheet. Anything between <span %(code)s>@{@</span> and <span %(code)s>@}@</span> will be processed as a calibre template. For instance, <span %(code)s>@{@<i>{title}</i>@}@</span> in the stylesheet will be replaced with the book title in the conversion.') % {'code':'style="font-family:monospace ; font-weight:bold"'})
+        self.css_templates = QLabel(_('Book metadata can be used in the stylesheet. Anything between %(s1)s and %(s2)s will be processed as a calibre template. For instance, %(s3)s in the stylesheet will be replaced with the book title in the conversion.') % \
+          {'s1':'<span style="font-family:monospace ; font-weight:bold">@{@</span>', \
+           's2':'<span style="font-family:monospace ; font-weight:bold">@}@</span>', \
+           's3':'<span style="font-family:monospace ; font-weight:bold">@{@{title}@}@</span>'})
         self.css_templates.setWordWrap(True)
         self.css_layout.addWidget(self.css_templates)
 
