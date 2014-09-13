@@ -1,19 +1,18 @@
 # 
 # Translators:
-# Jellby <jellby@yahoo.com>, 2014
-# Ptitprince <leporello1791@gmail.com>, 2014
+# abuyop <abuyop@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-09-11 19:02+0100\n"
-"PO-Revision-Date: 2014-09-12 14:00+0000\n"
-"Last-Translator: Jellby <jellby@yahoo.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/calibre-plugins/language/fr/)\n"
+"PO-Revision-Date: 2014-09-12 10:10+0000\n"
+"Last-Translator: Kovid Goyal <kovid@kovidgoyal.net>\n"
+"Language-Team: Malay (http://www.transifex.com/projects/p/calibre-plugins/language/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: ms\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
@@ -21,91 +20,91 @@ msgstr ""
 
 #: config.py:23 config.py:24
 msgid "default"
-msgstr "Par défaut"
+msgstr "lalai"
 
 #: config.py:97
 msgid "&Prince executable:"
-msgstr "&Exécutable Prince :"
+msgstr "Bolehlaku &Prince:"
 
 #: config.py:102
 msgid "<qt>Executable for the Prince program (command-line interface)</qt>"
-msgstr "<qt>Exécutable pour le programme Prince (interface en ligne de commande)</qt>"
+msgstr "<qt>Bolehlaku untuk program Prince (antaramuka baris-perintah)</qt>"
 
 #: config.py:106
 msgid "&Browse"
-msgstr "&Parcourir"
+msgstr "&Layar"
 
 #: config.py:107
 msgid "<qt>Search the Prince executable in your computer</qt>"
-msgstr "<qt>Recherche l'exécutable Prince sur votre ordinateur</qt>"
+msgstr "<qt>Gelintar bolehlaku Prince dalam komputer anda</qt>"
 
 #: config.py:114
 msgid "Preferred &formats:"
-msgstr "&Formats préférés :"
+msgstr "&Format digemari:"
 
 #: config.py:119
 msgid ""
 "<qt>Comma-separated list of preferred formats to use as source, the first "
 "that matches will be used</qt>"
-msgstr "<qt>Liste séparée par une virgule des formats préférés à employer comme source, la première de ces correspondances sera employée</qt>"
+msgstr ""
 
 #: config.py:123 convert.py:57
 msgid "&Add PDF to the book record"
-msgstr "&Ajouter le PDF à l'enregistrement du livre"
+msgstr "T&ambah PDF ke rekod buku"
 
 #: config.py:124 convert.py:58
 msgid "<qt>Add the converted PDF to the selected book record</qt>"
-msgstr "<qt>Ajoute le PDF converti à l'enregistrement du livre sélectionné</qt>"
+msgstr ""
 
 #: config.py:128
 msgid "&Show CSS in the Convert dialog"
-msgstr "&Afficher le CSS dans la boîte de dialogue de conversion"
+msgstr ""
 
 #: config.py:129
 msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
-msgstr "<qt>Affiche par défaut les feuilles de style dans la boîte de dialogue Conversion</qt>"
+msgstr ""
 
 #: config.py:139
 msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
-msgstr "<qt>Liste des feuilles de style définies. Sélectionnez-en une pour l'éditer</qt>"
+msgstr ""
 
 #: config.py:144 config.py:145
 msgid "old"
-msgstr "ancien"
+msgstr "lama"
 
 #: config.py:154
 msgid "Re&name"
-msgstr "Re&nommer"
+msgstr ""
 
 #: config.py:155
 msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
-msgstr "<qt>Renommer la feuille de style courante au nom qui se trouve sur la droite</qt>"
+msgstr ""
 
 #: config.py:161
 msgid "<qt>Name for the new or renamed stylesheet</qt>"
-msgstr "<qt>Nom pour la nouvelle feuille de style ou celle renommée</qt>"
+msgstr ""
 
 #: config.py:166
 msgid "A&dd"
-msgstr "A&jouter"
+msgstr "Ta&mbah"
 
 #: config.py:167
 msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
-msgstr "<qt>Ajouter une nouvelle feuille de style vide avec le nom qui se trouve sur la gauche</qt>"
+msgstr ""
 
 #: config.py:172
 msgid "Re&move"
-msgstr "Su&pprimer"
+msgstr "B&uang"
 
 #: config.py:173
 msgid "<qt>Remove the current stylesheet</qt>"
-msgstr "<qt>Supprimer la feuille de style courante</qt>"
+msgstr "<qt>Buang lembaran gaya semasa</qt>"
 
 #: config.py:180
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
-msgstr "<qt>Feuille de style personnalisée qui sera appliquée, si sélectionnée, à toutes les conversions Prince PDF</qt>"
+msgstr ""
 
 #: config.py:183
 #, python-format
@@ -113,59 +112,59 @@ msgid ""
 "Book metadata can be used in the stylesheet. Anything between %(s1)s and "
 "%(s2)s will be processed as a calibre template. For instance, %(s3)s in the "
 "stylesheet will be replaced with the book title in the conversion."
-msgstr "Les métadonnées du livre peuvent être utilisées dans la feuille de style. Toute chose entre %(s1)s et %(s2)s sera traité comme un modèle calibre. Par exemple,  %(s3)s dans la feuille de style sera remplacé par le titre du livre dans la conversion."
+msgstr ""
 
 #: config.py:190
 msgid "&Custom CSS:"
-msgstr "&CSS personnalisé :"
+msgstr "&CSS Suai:"
 
 #: config.py:198
 msgid "&Restore defaults"
-msgstr "&Restaurer les options par défaut"
+msgstr "&Pulih lalai"
 
 #: config.py:199
 msgid "<qt>Restore the default settings</qt>"
-msgstr "<qt>Restaurer les paramètres par défaut</qt>"
+msgstr "<qt>Pulihkan tetapan lalai</qt>"
 
 #: config.py:203
 msgid "<b>Warning</b>: Deletes modified stylesheets"
-msgstr "<b>Attention</b> : Supprime les feuilles de style modifiées"
+msgstr ""
 
 #: config.py:214
 msgid "Select Prince executable"
-msgstr "Sélectionner l'éxécutable Prince"
+msgstr ""
 
 #: config.py:271
 msgid "Cannot add stylesheet"
-msgstr "Ne peut ajouter une feuille de style"
+msgstr ""
 
 #: config.py:271 config.py:304
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
-msgstr "Une feuille de style nommée \"%s\" existe déjà, utiliser un nom différent."
+msgstr ""
 
 #: config.py:294
 msgid "Cannot delete the last stylesheet"
-msgstr "Ne peut supprimer la dernière feuille de style"
+msgstr ""
 
 #: config.py:294
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
-msgstr "La dernière feuille de style ne peut être supprimée. Vous pouvez la renommer et/ou supprimer son contenu."
+msgstr ""
 
 #: config.py:304
 msgid "Cannot rename stylesheet"
-msgstr "Ne peut renommer la feuille de style"
+msgstr ""
 
 #: __init__.py:12 main.py:30 ui.py:14 ui.py:15
 msgid "Prince PDF"
-msgstr "Prince PDF"
+msgstr ""
 
 #: __init__.py:13
 msgid "Converts to PDF using the Prince software (third-party)"
-msgstr "Convertit en PDF en utilisant l'application Prince (partie tierce)"
+msgstr ""
 
 #: help.py:3
 #, python-format
@@ -189,7 +188,7 @@ msgid ""
 "\n"
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
-msgstr "\n<h3 style=\"text-align:center\">Le greffon Prince PDF (v. %(version)s)</h3>\n<p style=\"text-align:center\"><i>Créé par %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">Ce greffon convertira un livre vers le format PDF en utilisant Prince.</p>\n<p style=\"margin:0\">Prince est un programme extérieur, vous pouvez le télécharger depuis <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">Seuls quelques formats peuvent être convertis avec ce greffon, principalement EPUB, AZW3 et HTMLZ. Si vous voulez convertir un livre d'un autre format, convertissez le tout d'abord dans l'un de ces formats.</p>\n\n<p style=\"margin:1em 0 0 0\">Avant la conversion, vous aurez la possibilité de choisir s'il faut ou non ajouter le PDF résultant à l'enregistrement du livre. Si le PDF n'est pas ajouté, il sera sauvé sur le disque, en utilisant le modèle enregistrer sur disque.</p>\n\n<p style=\"margin:1em 0 0 0\">La conversion n'utilisera aucun autre des paramètres de conversion de calibre, mais à la place il utilisera un fichier CSS personnalisé, où des proprètés spécifiques à Prince peuvent être utilisées. De plus, le greffon reconnaîtra et utilisera tout fichier CSS complémentaire spécifié dans le livre lui-même, comme une étiquette <span %(code)s>&lt;meta&gt;</span> avec <span %(code)s>name=\"prince-style\"</span> et <span %(code)s>content=\"<i>idref</i>\"</span>, où <span %(code)s><i>idref</i></span> est le <span %(code)s>id</span> du fichier CSS supplémentaire dans le manifeste.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince est sous copiright &copy; YesLogic Pty. Ltd.</i></p> <p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Ce greffon est libre %(license)s.</p>\n"
+msgstr ""
 
 #: help.py:24
 msgid ""
@@ -206,258 +205,258 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "\nCe programme est un logiciel libre ; vous pouvez le redistribuer\nou le modifier suivant les termes de la GNU General Public License\ntelle que publiée par la Free Software Foundation ; soit la version 3\nde la licence, soit (à votre gré) toute version ultérieure.\n\nCe programme est distribué dans l'espoir qu'il sera utile, mais\nSANS AUCUNE GARANTIE ; sans même la garantie tacite de\nQUALITÉ MARCHANDE ou d'ADÉQUATION à UN BUT PARTICULIER.\nConsultez la GNU General Public License pour plus de détails.\n\nVous devez avoir reçu une copie de la GNU General Public License\nen même temps que ce programme ; si ce n'est pas le cas,\nconsultez <http://www.gnu.org/licenses/>.\n"
+msgstr ""
 
 #: main.py:40
 msgid "Convert to &PDF"
-msgstr "Convertir au format &PDF"
+msgstr ""
 
 #: main.py:43
 msgid "<qt>Start the conversion process</qt>"
-msgstr "<qt>Démarre le processus de conversion</qt>"
+msgstr ""
 
 #: main.py:46
 msgid "&View log"
-msgstr "&Voir le journal"
+msgstr ""
 
 #: main.py:48
 msgid "<qt>Display the log from the last Prince run</qt>"
-msgstr "<qt>Affiche le journal de la dernière éxécution de Prince</qt>"
+msgstr ""
 
 #: main.py:52
 msgid "Con&figure"
-msgstr "&Configurer"
+msgstr ""
 
 #: main.py:54
 msgid "<qt>Configure this plugin</qt>"
-msgstr "<qt>Configurer le greffon</qt>"
+msgstr ""
 
 #: main.py:100
 msgid "<b>No books selected</b>"
-msgstr "<b>Pas de livres sélectionnés</b>"
+msgstr ""
 
 #: main.py:102 main.py:108
 msgid "Select one single book"
-msgstr "Sélectionner un seul livre"
+msgstr ""
 
 #: main.py:106
 msgid "<b>Many books selected</b>"
-msgstr "<b>Beaucoup de livres sélectionnés</b>"
+msgstr ""
 
 #: main.py:119
 msgid "<i>none</i>"
-msgstr "<i>aucun</i>"
+msgstr ""
 
 #: main.py:126
 #, python-format
 msgid "Available formats: %s"
-msgstr "Formats disponibles : %s"
+msgstr ""
 
 #: main.py:130
 msgid "Ready"
-msgstr "Prêt"
+msgstr ""
 
 #: main.py:134
 msgid "No preferred format available"
-msgstr "Pas de format préféré disponible"
+msgstr ""
 
 #: main.py:157
 msgid "About the Prince PDF Plugin"
-msgstr "À propos du greffon Prince PDF"
+msgstr ""
 
 #: main.py:189 main.py:224
 msgid "Cannot convert to PDF"
-msgstr "Ne peut pas convertir en PDF"
+msgstr ""
 
 #: main.py:189
 #, python-format
 msgid "Format not supported: %s"
-msgstr "Format non supporté : %s"
+msgstr ""
 
 #: main.py:202
 msgid " Check the log."
-msgstr "Vérifiez le journal."
+msgstr ""
 
 #: main.py:208 main.py:215
 msgid "Could not convert to PDF"
-msgstr "N'a pas pu convertir en PDF"
+msgstr ""
 
 #: main.py:208
 msgid "The conversion failed."
-msgstr "La conversion a échoué."
+msgstr ""
 
 #: main.py:215
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
-msgstr "Erreur en lisant ou en écrivant le fichier PDF :\n%s"
+msgstr ""
 
 #: main.py:224
 msgid "No supported format available"
-msgstr "Pas de format supporté disponible"
+msgstr ""
 
 #: main.py:272
 msgid "Unpacking book..."
-msgstr "Décompresse le livre..."
+msgstr ""
 
 #: main.py:292
 msgid "Setting metadata..."
-msgstr "Arrangement des métadonnées..."
+msgstr ""
 
 #: main.py:309
 msgid "Existing format"
-msgstr "Format existant"
+msgstr ""
 
 #: main.py:310
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
-msgstr "Le livre sélectionné contient déjà un format PDF. Êtes-vous sûr que vous voulez le remplacer ?"
+msgstr ""
 
 #: main.py:311
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
-msgstr "Le fichier temporaire peut être trouvé dans :\n%s"
+msgstr ""
 
 #: main.py:315
 msgid "Adding PDF..."
-msgstr "Ajout du PDF..."
+msgstr ""
 
 #: main.py:334
 msgid "Choose destination directory"
-msgstr "Choisir le répertoire de destination"
+msgstr ""
 
 #: main.py:346
 msgid "Could not save PDF"
-msgstr "Ne peut sauver le PDF"
+msgstr ""
 
 #: main.py:346
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
-msgstr "Erreur lors de l'écriture du fichier PDF :\n%s"
+msgstr ""
 
 #: main.py:349
 msgid "File saved"
-msgstr "Fichier sauvegardé"
+msgstr ""
 
 #: main.py:349
 #, python-format
 msgid ""
 "PDF file saved in:\n"
 "%s"
-msgstr "Fichier PDF sauvegardé dans :\n%s"
+msgstr ""
 
 #: ui.py:15
 msgid "Run the Prince PDF Plugin"
-msgstr "Exécuter le greffon Prince PDF"
+msgstr ""
 
 #: log_box.py:25
 msgid "Prince log"
-msgstr "Journal de Prince"
+msgstr ""
 
 #: log_box.py:40
 msgid "<qt>Console output from the last Prince run</qt>"
-msgstr "<qt>Sortie de console de la dernière exécution de Prince</qt>"
+msgstr ""
 
 #: convert.py:19
 msgid "&Hide stylesheets"
-msgstr "&Masquer les feuilles de style"
+msgstr ""
 
 #: convert.py:20
 msgid "&Show stylesheets"
-msgstr "&Afficher les feuilles de syle"
+msgstr ""
 
 #: convert.py:45
 msgid "Convert to PDF with Prince"
-msgstr "Convertir en PDF avec Prince"
+msgstr ""
 
 #: convert.py:51
 #, python-format
 msgid "<b>Title:</b> %s"
-msgstr "<b>Titre :</b> %s"
+msgstr ""
 
 #: convert.py:54
 #, python-format
 msgid "<b>Source format:</b> %s"
-msgstr "<b>Format d'entrée :</b> %s"
+msgstr ""
 
 #: convert.py:67
 msgid "&Custom stylesheet:"
-msgstr "Feuille de style &personnalisée"
+msgstr ""
 
 #: convert.py:71
 msgid ""
 "<qt>Select one stylesheet to use. Additional stylesheets can be created in "
 "the plugin configuration</qt>"
-msgstr "<qt>Sélectionner une feuille de style à utiliser. Des feuilles de style additionnelles peuvent être crées dans la configuration de l'extension</qt>"
+msgstr ""
 
 #: convert.py:86
 msgid ""
 "<qt>This stylesheet can be modified<br/>The default can be configured</qt>"
-msgstr "<qt>Cette feuille de style peut être modifiée<br/>Les options par défaut peuvent être configurées</qt>"
+msgstr ""
 
 #: convert.py:87
 msgid "C&ustom CSS"
-msgstr "&CSS personnalisé"
+msgstr ""
 
 #: convert.py:88
 msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
-msgstr "<qt>Feuille de style CSS personnalisée utilisée pour cette conversion</qt>"
+msgstr ""
 
 #: convert.py:99
 msgid "<qt>This stylesheet cannot be modified</qt>"
-msgstr "<qt>Cette feuille de style ne peut être modifiée</qt>"
+msgstr ""
 
 #: convert.py:100
 msgid "&Book CSS"
-msgstr "&CSS du livre"
+msgstr ""
 
 #: convert.py:101
 msgid "<qt>Book-specific CSS stylesheet included in the ebook file</qt>"
-msgstr "<qt>Feuille de style CSS spécifique au livre incluse dans le fichier ebook</qt>"
+msgstr ""
 
 #: convert.py:110
 msgid "<qt>Show/hide the additional stylesheets used for the conversion</qt>"
-msgstr "<qt>Afficher/masquer les feuilles de style additionnelles utilisées pour cette conversion</qt>"
+msgstr ""
 
 #: convert.py:113
 msgid "Con&vert"
-msgstr "&Convertir"
+msgstr ""
 
 #: convert.py:114
 msgid "<qt>Run the conversion with Prince</qt>"
-msgstr "<qt>Exécuter la conversion avec Prince</qt>"
+msgstr ""
 
 #: convert.py:165
 msgid "Parsing book..."
-msgstr "Analyse du livre..."
+msgstr ""
 
 #: convert.py:199
 msgid "Replacing templates"
-msgstr "Remplacement des modèles"
+msgstr ""
 
 #: convert.py:201
 #, python-format
 msgid "Found: %s (%d-%d)"
-msgstr "Trouvé : %s(%d-%d)"
+msgstr ""
 
 #: convert.py:202
 #, python-format
 msgid "Replace with: %s"
-msgstr "Remplacer avec : %s"
+msgstr ""
 
 #: convert.py:253
 msgid "Converting book..."
-msgstr "Conversion du livre..."
+msgstr ""
 
 #: convert.py:272
 msgid "Process error"
-msgstr "Erreur de processus"
+msgstr ""
 
 #: convert.py:272
 #, python-format
@@ -468,4 +467,4 @@ msgid ""
 " this plugin, which is usually:<ul><li>In Windows: "
 "<code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>In Linux: "
 "<code>prince</code></ul>"
-msgstr "<p>Code d'erreur : %s<p>Assurez-vous que Prince (<a href=\"http://www.princexml.com\">www.princexml.com</a>) est installé et que l'éxécutable correct de l'interface de ligne de commande est paramétré dans la configuration de ce greffon, qui est habituellement :<ul><li>Dans Windows : <code><i>dossier_de_Prince</i>\\Engine\\bin\\prince.exe</code>    <li>Dans Linux : <code>prince</code></ul>"
+msgstr ""

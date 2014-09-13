@@ -1,4 +1,6 @@
-1.3.0 (xxxx-xx-xx)
+1.3.0 (2014-09-13)
+                   Add possibility to use metadata in stylesheets
+                   Update translations
 
 1.2.2 (2014-08-30)
                    Fix bug when selecting executable
