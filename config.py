@@ -1,7 +1,7 @@
 from __future__ import (unicode_literals, division, absolute_import, print_function)
 
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
@@ -81,6 +81,7 @@ body {
   string-set: booktitle "@{@{title}@}@"
   string-set: author "@{@{author}@}@"
 }'''}
+prefs.defaults['custom_args_list'] = {_('default'):''}
 
 # Configuration widget (included in the configuration dialog)
 class ConfigWidget(QWidget):
@@ -126,7 +127,7 @@ class ConfigWidget(QWidget):
         self.l.addWidget(self.add_book)
 
         self.show_css = QCheckBox(_('&Show CSS in the Convert dialog'))
-        self.show_css.setToolTip(_('<qt>Show by default the stylesheets in the Convert dialog</qt>'))
+        self.show_css.setToolTip(_('<qt>Show by default the styles in the Convert dialog</qt>'))
         self.show_css.setChecked(prefs['show_CSS'])
         self.l.addWidget(self.show_css)
 
@@ -136,7 +137,7 @@ class ConfigWidget(QWidget):
         self.css_layout.addLayout(self.llll)
 
         self.css_list = QComboBox()
-        self.css_list.setToolTip(_('<qt>List of custom stylesheets defined. Select one to edit</qt>'))
+        self.css_list.setToolTip(_('<qt>List of custom styles defined. Select one to edit</qt>'))
         self.css_list.setSizeAdjustPolicy(QComboBox.AdjustToContents)
         self.CSS_list = prefs['custom_CSS_list'].copy()
         self.default_CSS = prefs['default_CSS']
@@ -152,27 +153,50 @@ class ConfigWidget(QWidget):
         self.llll.addWidget(self.css_list)
 
         self.css_rename = QPushButton(_('Re&name'))
-        self.css_rename.setToolTip(_('<qt>Rename the current stylesheet to the name on the right</qt>'))
+        self.css_rename.setToolTip(_('<qt>Rename the current style to the name on the right</qt>'))
         self.css_rename.clicked.connect(self.rename_css)
         self.css_rename.setEnabled(False)
         self.llll.addWidget(self.css_rename)
 
         self.css_name = QLineEdit(self)
-        self.css_name.setToolTip(_('<qt>Name for the new or renamed stylesheet</qt>'))
+        self.css_name.setToolTip(_('<qt>Name for the new or renamed style</qt>'))
         self.css_name.setText(self.css_list.currentText())
         self.css_name.textChanged.connect(self.check_names)
         self.llll.addWidget(self.css_name)
 
         self.css_add = QPushButton(_('A&dd'))
-        self.css_add.setToolTip(_('<qt>Add a new empty stylesheet with the name on the left</qt>'))
+        self.css_add.setToolTip(_('<qt>Add a new empty style with the name on the left</qt>'))
         self.css_add.clicked.connect(self.add_css)
         self.css_add.setEnabled(False)
         self.llll.addWidget(self.css_add)
 
         self.css_remove = QPushButton(_('Re&move'))
-        self.css_remove.setToolTip(_('<qt>Remove the current stylesheet</qt>'))
+        self.css_remove.setToolTip(_('<qt>Remove the current style</qt>'))
         self.css_remove.clicked.connect(self.remove_css)
         self.llll.addWidget(self.css_remove)
+
+        self.llll_ = QHBoxLayout()
+        self.css_layout.addLayout(self.llll_)
+
+        self.label_args = QLabel(_('Addi&tional command-line arguments:'))
+        self.llll_.addWidget(self.label_args)
+
+        self.args = QLineEdit(self)
+        # Make sure custom_CSS_list and custom_args_list have the same keys
+        if 'custom_args_list' in prefs:
+          self.args_list = prefs['custom_args_list'].copy()
+        else:
+          self.args_list = {}
+        for key in self.CSS_list:
+          if not key in self.args_list:
+            self.args_list[key] = ''
+        for key in self.args_list:
+          if not key in self.CSS_list:
+            del self.args_list[key]
+        self.args.setText(self.args_list[unicode(self.css_list.currentText())])
+        self.args.setToolTip(_('<qt>Additional command-line arguments used in conversions with this style</qt>'))
+        self.llll_.addWidget(self.args)
+        self.label_args.setBuddy(self.args)
 
         self.css = TextEditWithTooltip()
         self.css.setLineWrapMode(TextEditWithTooltip.NoWrap)
@@ -200,7 +224,7 @@ class ConfigWidget(QWidget):
         self.defaults.clicked.connect(self.restore_defaults)
         self.lllll.addWidget(self.defaults, alignment=Qt.AlignLeft)
 
-        self.warning = QLabel(_('<b>Warning</b>: Deletes modified stylesheets'))
+        self.warning = QLabel(_('<b>Warning</b>: Deletes modified styles'))
         self.lllll.addWidget(self.warning)
 
         self.adjustSize()
@@ -229,12 +253,14 @@ class ConfigWidget(QWidget):
         self.css_list.currentIndexChanged.disconnect()
         self.css_list.clear()
         self.CSS_list = prefs.defaults['custom_CSS_list'].copy()
+        self.args_list = prefs.defaults['custom_args_list'].copy()
         self.default_CSS = prefs.defaults['default_CSS']
         for key in sorted(self.CSS_list, key=lambda x: x.lower()):
             self.css_list.addItem(key, key)
         self.css_list.setCurrentIndex(self.css_list.findText(self.default_CSS))
         self.css_name.setText(self.default_CSS)
         self.css.load_text(self.CSS_list[unicode(self.css_list.currentText())],'css')
+        self.args.setText(self.args_list[unicode(self.css_list.currentText())])
         self.css_list.currentIndexChanged.connect(self.set_css)
 
     def save_settings(self):
@@ -248,29 +274,33 @@ class ConfigWidget(QWidget):
         self.set_css()
         prefs['default_CSS'] = self.default_CSS
         prefs['custom_CSS_list'] = self.CSS_list.copy()
+        prefs['custom_args_list'] = self.args_list.copy()
         if 'custom_CSS' in prefs:
             del prefs['custom_CSS']
 
     def set_css(self):
         '''
-        Fill the CSS text box with the selected stylesheet
+        Fill the CSS text box with the selected stylesheet, and similarly for command-line arguments
         '''
         self.CSS_list[self.default_CSS] = unicode(self.css.toPlainText())
+        self.args_list[self.default_CSS] = unicode(self.args.text())
         self.default_CSS = unicode(self.css_list.currentText())
         self.css.load_text(self.CSS_list[self.default_CSS],'css')
+        self.args.setText(self.args_list[self.default_CSS])
         self.css_name.setText(self.css_list.currentText())
 
     def add_css(self):
         '''
-        Add a new stylesheet
+        Add a new style
         '''
         from calibre.gui2 import error_dialog
 
         name = unicode(self.css_name.text())
         if name in self.CSS_list:
-            error_dialog(self, _('Cannot add stylesheet'), _('A stylesheet with the name "%s" is already defined, use a different name.') % name, show=True)
+            error_dialog(self, _('Cannot add style'), _('A style with the name "%s" is already defined, use a different name.') % name, show=True)
         else:
             self.CSS_list[name] = ''
+            self.args_list[name] = ''
             self.css_list.addItem(name, name)
             self.css_list.setCurrentIndex(self.css_list.findText(name))
             self.css_add.setEnabled(False)
@@ -278,7 +308,7 @@ class ConfigWidget(QWidget):
 
     def remove_css(self):
         '''
-        Remove an existing stylesheet
+        Remove an existing style
         '''
         from calibre.gui2 import error_dialog
 
@@ -286,24 +316,27 @@ class ConfigWidget(QWidget):
             self.css_list.currentIndexChanged.disconnect()
             self.css_list.removeItem(self.css_list.currentIndex())
             del self.CSS_list[self.default_CSS]
+            del self.args_list[self.default_CSS]
             self.default_CSS = unicode(self.css_list.currentText())
             self.css.load_text(self.CSS_list[self.default_CSS],'css')
+            self.args.setText(self.args_list[self.default_CSS])
             self.css_list.currentIndexChanged.connect(self.set_css)
             self.css_name.setText(self.css_list.currentText())
         else:
-            error_dialog(self, _('Cannot delete the last stylesheet'), _('The last stylesheet cannot be removed. You can rename it and/or remove its contents.'), show=True)
+            error_dialog(self, _('Cannot delete the last style'), _('The last style cannot be removed. You can rename it and/or remove its contents.'), show=True)
 
     def rename_css(self):
         '''
-        Rename a stylesheet
+        Rename a style
         '''
         from calibre.gui2 import error_dialog
 
         name = unicode(self.css_name.text())
         if name in self.CSS_list:
-            error_dialog(self, _('Cannot rename stylesheet'), _('A stylesheet with the name "%s" is already defined, use a different name.') % name, show=True)
+            error_dialog(self, _('Cannot rename style'), _('A style with the name "%s" is already defined, use a different name.') % name, show=True)
         else:
             self.CSS_list[name] = self.CSS_list.pop(self.default_CSS)
+            self.args_list[name] = self.args_list.pop(self.default_CSS)
             self.css_list.setItemText(self.css_list.currentIndex(),name)
             self.default_CSS = name
 

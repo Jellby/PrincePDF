@@ -1,13 +1,13 @@
 from __future__ import (unicode_literals, division, absolute_import, print_function)
 
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
-    from PyQt5.Qt import Qt, QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QCheckBox, QTabWidget, QDialogButtonBox, QPlainTextEdit, QFont, QProcess, QProgressBar, QComboBox
+    from PyQt5.Qt import Qt, QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QCheckBox, QTabWidget, QDialogButtonBox, QPlainTextEdit, QFont, QProcess, QProgressBar, QComboBox, QLineEdit
 except ImportError:
-    from PyQt4.Qt import Qt, QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QCheckBox, QTabWidget, QDialogButtonBox, QPlainTextEdit, QFont, QProcess, QProgressBar, QComboBox
+    from PyQt4.Qt import Qt, QDialog, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QCheckBox, QTabWidget, QDialogButtonBox, QPlainTextEdit, QFont, QProcess, QProgressBar, QComboBox, QLineEdit
 from calibre_plugins.prince_pdf.config import prefs
 from calibre_plugins.prince_pdf.texteditwithtooltip import TextEditWithTooltip
 
@@ -16,8 +16,8 @@ load_translations()
 # This dialog is created after the input book has been unpacked
 class ConvertDialog(QDialog):
 
-    hide_text = _('&Hide stylesheets')
-    show_text = _('&Show stylesheets')
+    hide_text = _('&Hide styles')
+    show_text = _('&Show styles')
     prince_log = ''
     prince_file = ''
     prince_css = ''
@@ -64,17 +64,29 @@ class ConvertDialog(QDialog):
         self.ll.setAlignment(Qt.AlignLeft)
         self.l.addLayout(self.ll)
 
-        self.label_css = QLabel(_('&Custom stylesheet:'))
+        self.label_css = QLabel(_('&Custom style:'))
         self.ll.addWidget(self.label_css)
 
         self.css_list = QComboBox()
-        self.css_list.setToolTip(_('<qt>Select one stylesheet to use. Additional stylesheets can be created in the plugin configuration</qt>'))
+        self.css_list.setToolTip(_('<qt>Select one style to use. Additional styles can be created in the plugin configuration</qt>'))
         for key in sorted(prefs['custom_CSS_list'], key=lambda x: x.lower()):
             self.css_list.addItem(key, key)
         self.css_list.setCurrentIndex(self.css_list.findText(prefs['default_CSS']))
         self.css_list.currentIndexChanged.connect(self.set_css)
         self.ll.addWidget(self.css_list)
         self.label_css.setBuddy(self.css_list)
+
+        self.ll_ = QHBoxLayout()
+        self.l.addLayout(self.ll_)
+
+        self.label_args = QLabel(_('A&dditional command-line arguments:'))
+        self.ll_.addWidget(self.label_args)
+
+        self.args = QLineEdit(self)
+        self.args.setText(prefs['custom_args_list'][prefs['default_CSS']])
+        self.args.setToolTip(_('<qt>Specify additional command-line arguments for the conversion</qt>'))
+        self.ll_.addWidget(self.args)
+        self.label_args.setBuddy(self.args)
 
         self.css = QTabWidget()
         self.css.setMinimumWidth(500)
@@ -107,7 +119,7 @@ class ConvertDialog(QDialog):
             self.toggle = QPushButton(self.hide_text, self)
         else:
             self.toggle = QPushButton(self.show_text, self)
-        self.toggle.setToolTip(_('<qt>Show/hide the additional stylesheets used for the conversion</qt>'))
+        self.toggle.setToolTip(_('<qt>Show/hide the additional styles used for the conversion</qt>'))
         self.toggle.clicked.connect(self.toggle_tabs)
 
         self.convert = QPushButton(_('Con&vert'), self)
@@ -131,10 +143,14 @@ class ConvertDialog(QDialog):
         '''
         if (self.css.isVisible()):
             self.css.hide()
+            self.label_args.hide()
+            self.args.hide()
             self.toggle.setText(self.show_text)
             self.adjustSize()
         else:
             self.css.show()
+            self.label_args.show()
+            self.args.show()
             self.toggle.setText(self.hide_text)
             self.adjustSize()
         prefs['show_CSS'] = self.css.isVisible()
@@ -147,11 +163,12 @@ class ConvertDialog(QDialog):
 
     def set_css(self):
         '''
-        Fill the custom CSS text box with the selected stylesheet
+        Fill the custom CSS text box with the selected stylesheet (and command-line arguments)
         '''
-        stylesheet = unicode(self.css_list.currentText())
-        self.css1.load_text(self.replace_templates(prefs['custom_CSS_list'][stylesheet]),'css')
-        prefs['default_CSS'] = stylesheet
+        style = unicode(self.css_list.currentText())
+        self.css1.load_text(self.replace_templates(prefs['custom_CSS_list'][style]),'css')
+        self.args.setText(prefs['custom_args_list'][style])
+        prefs['default_CSS'] = style
 
     def parse(self):
         '''
@@ -210,6 +227,7 @@ class ConvertDialog(QDialog):
         from os.path import dirname, join, exists
         from calibre.ptempfile import PersistentTemporaryFile
         from calibre.constants import DEBUG
+        from shlex import split as shsplit
 
         # All files are relative to the OPF location
         opf_dir = dirname(self.opf)
@@ -241,6 +259,8 @@ class ConvertDialog(QDialog):
         args.append(file_list.name)
         args.append('-o')
         args.append(self.pdf_file)
+        # Additional command-line arguments
+        args.extend(shsplit(self.args.text()))
 
         # Hide the convert button and show a busy indicator
         self.convert.setEnabled(False)
@@ -257,6 +277,10 @@ class ConvertDialog(QDialog):
         process.error.connect(self.error)
         process.finished.connect(self.end)
         self.process = process
+        if DEBUG:
+          from subprocess import list2cmdline
+          line = list2cmdline([command] + args)
+          print(_('Command line: %s') % line)
         process.start(command, args)
 
     def error(self, rc):

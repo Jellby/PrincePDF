@@ -1,3 +1,8 @@
+1.4.0 (2017-02-19)
+                   Add option for additional command-line arguments to Prince
+                   Fix "About" dialog (bumped up minimum calibre version)
+                   Make sure a single instance of the plugin is running
+
 1.3.0 (2014-09-13)
                    Add possibility to use metadata in stylesheets
                    Update translations
