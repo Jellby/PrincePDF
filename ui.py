@@ -1,7 +1,7 @@
 from __future__ import (unicode_literals, division, absolute_import, print_function)
 
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 from calibre.gui2.actions import InterfaceAction
@@ -22,8 +22,11 @@ class InterfacePlugin(InterfaceAction):
     def show_dialog(self):
         base_plugin_object = self.interface_action_base_plugin
         do_user_config = base_plugin_object.do_user_config
-        d = PrincePDFDialog(self.gui, self.qaction.icon(), do_user_config)
-        d.show()
+        try:
+          self.d.show()
+        except:
+          self.d = PrincePDFDialog(self.gui, self.qaction.icon(), do_user_config)
+          self.d.show()
 
     def apply_settings(self):
         from calibre_plugins.prince_pdf.config import prefs
