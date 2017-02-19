@@ -1,7 +1,7 @@
 from __future__ import (unicode_literals, division, absolute_import, print_function)
 
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 from calibre.customize import InterfaceActionBase
@@ -14,7 +14,7 @@ class PrincePDFPlugin(InterfaceActionBase):
     supported_platforms     = ['linux', 'windows']
     author                  = 'Jellby'
     version                 = (1, 3, 0)
-    minimum_calibre_version = (1, 16, 0)
+    minimum_calibre_version = (2, 72, 0)
     actual_plugin           = 'calibre_plugins.prince_pdf.ui:InterfacePlugin'
 
     def is_customizable(self):

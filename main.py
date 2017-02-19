@@ -1,7 +1,7 @@
 from __future__ import (unicode_literals, division, absolute_import, print_function)
 
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
@@ -159,8 +159,8 @@ class PrincePDFDialog(QDialog):
                                 det_msg = 'Copyright \u00a9 %s\n%s' % (__copyright__, license_txt), \
                                 q_icon = self.icon, \
                                 show_copy_button = False)
-          #help_box.gridLayout.addWidget(help_box.icon_label,0,0,Qt.AlignTop)
-          help_box.gridLayout.setAlignment(help_box.icon_label,Qt.AlignTop)
+          #help_box.gridLayout.addWidget(help_box.icon_widget,0,0,Qt.AlignTop)
+          help_box.gridLayout.setAlignment(help_box.icon_widget,Qt.AlignTop)
           help_box.exec_()
 
     def convert_to_PDF(self):
@@ -195,7 +195,7 @@ class PrincePDFDialog(QDialog):
             self.prince_log = convert_dialog.prince_log
             # After the dialog returns, pdf_file has the output file path,
             # and prince_log has the Prince console output
-            if DEBUG: print(pdf_file)
+            if DEBUG: print(_('PDF file: %s') % pdf_file)
             # If there is any log, enable the View log button
             if (self.prince_log):
                 self.view_log.show()
