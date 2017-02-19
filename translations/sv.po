@@ -1,13 +1,15 @@
 # 
 # Translators:
+# Jonatan Nyberg <jonatan@autistici.org>, 2016
+# Mars Northman <marsnorthman@gmail.com>, 2017
 # Merarom <merarom@yahoo.es>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-09-11 19:02+0100\n"
-"PO-Revision-Date: 2014-09-13 12:12+0000\n"
-"Last-Translator: Merarom <merarom@yahoo.es>\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/calibre-plugins/language/sv/)\n"
+"PO-Revision-Date: 2017-02-06 19:29+0000\n"
+"Last-Translator: Mars Northman <marsnorthman@gmail.com>\n"
+"Language-Team: Swedish (http://www.transifex.com/calibre/calibre-plugins/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +26,7 @@ msgstr "grundinställning"
 
 #: config.py:97
 msgid "&Prince executable:"
-msgstr "&Prince programfil:"
+msgstr "&Prince (exekverbar) programfil:"
 
 #: config.py:102
 msgid "<qt>Executable for the Prince program (command-line interface)</qt>"
@@ -36,7 +38,7 @@ msgstr "&Bläddra"
 
 #: config.py:107
 msgid "<qt>Search the Prince executable in your computer</qt>"
-msgstr "<qt>Sök Prince programfil i din dator</qt>"
+msgstr "<qt>Manuell bläddring efter din exekverbara fil för Prince</qt>"
 
 #: config.py:114
 msgid "Preferred &formats:"
@@ -54,19 +56,19 @@ msgstr "&Lägg PDF bokhandlingen"
 
 #: config.py:124 convert.py:58
 msgid "<qt>Add the converted PDF to the selected book record</qt>"
-msgstr ""
+msgstr "<qt>Lägg till konverterad PDF till vald bokpost</qt>"
 
 #: config.py:128
 msgid "&Show CSS in the Convert dialog"
-msgstr ""
+msgstr "&Visa CSS i konverteringsdialogen"
 
 #: config.py:129
 msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
-msgstr ""
+msgstr "<qt>Visa som standard stilmall i konverteringsdialogen</qt>"
 
 #: config.py:139
 msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
-msgstr ""
+msgstr "<qt>Lista anpassade definierade stilmallar. Välj en att redigera</qt>"
 
 #: config.py:144 config.py:145
 msgid "old"
@@ -78,33 +80,33 @@ msgstr "Döp &om"
 
 #: config.py:155
 msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
-msgstr ""
+msgstr "<qt>Byt namn på den aktuella stilmallen till namnet till höger</qt>"
 
 #: config.py:161
 msgid "<qt>Name for the new or renamed stylesheet</qt>"
-msgstr ""
+msgstr "<qt>Namn för den nya eller namnbytt stilmall</qt>"
 
 #: config.py:166
 msgid "A&dd"
-msgstr ""
+msgstr "&Lägg till"
 
 #: config.py:167
 msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
-msgstr ""
+msgstr "<qt>Lägg till en ny tom stilmall med namnet på vänster</qt>"
 
 #: config.py:172
 msgid "Re&move"
-msgstr ""
+msgstr "&Ta bort"
 
 #: config.py:173
 msgid "<qt>Remove the current stylesheet</qt>"
-msgstr ""
+msgstr "<qt>Ta bort den aktuella stilmallen</qt>"
 
 #: config.py:180
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
-msgstr ""
+msgstr "<qt>Anpassad stilmall som ska tillämpas, om de väljs, till alla Prince PDF-konverteringar</qt>"
 
 #: config.py:183
 #, python-format
@@ -112,59 +114,59 @@ msgid ""
 "Book metadata can be used in the stylesheet. Anything between %(s1)s and "
 "%(s2)s will be processed as a calibre template. For instance, %(s3)s in the "
 "stylesheet will be replaced with the book title in the conversion."
-msgstr ""
+msgstr "Bokens metadata kan användas i formatmallen. Allt mellan %(s1)s och %(s2)s kommer att behandlas som en calibre-mall. Till exempel, kommer %(s3)s i stilmallen ersätts med bokens titel under konverteringen."
 
 #: config.py:190
 msgid "&Custom CSS:"
-msgstr ""
+msgstr "&Anpassad CSS:"
 
 #: config.py:198
 msgid "&Restore defaults"
-msgstr ""
+msgstr "&Återställer grundinställning"
 
 #: config.py:199
 msgid "<qt>Restore the default settings</qt>"
-msgstr ""
+msgstr "<qt>Återställer standardinställningar</qt>"
 
 #: config.py:203
 msgid "<b>Warning</b>: Deletes modified stylesheets"
-msgstr ""
+msgstr "<b>Varning</b>: Tar bort modifierade stilmallar"
 
 #: config.py:214
 msgid "Select Prince executable"
-msgstr ""
+msgstr "Välj Prince program"
 
 #: config.py:271
 msgid "Cannot add stylesheet"
-msgstr ""
+msgstr "Kan inte lägga till stilmall"
 
 #: config.py:271 config.py:304
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
-msgstr ""
+msgstr "En stilmall med namnet \"%s\" är redan definierat, använd ett annat namn."
 
 #: config.py:294
 msgid "Cannot delete the last stylesheet"
-msgstr ""
+msgstr "Kan inte ta bort senaste stilmallen"
 
 #: config.py:294
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
-msgstr ""
+msgstr "￼Den sista stilmallen kan inte avlägsnas. Du kan byta namn på den och / eller ta bort dess innehåll."
 
 #: config.py:304
 msgid "Cannot rename stylesheet"
-msgstr ""
+msgstr "Kan inte namnbyta stilmall"
 
 #: __init__.py:12 main.py:30 ui.py:14 ui.py:15
 msgid "Prince PDF"
-msgstr ""
+msgstr "Prince PDF"
 
 #: __init__.py:13
 msgid "Converts to PDF using the Prince software (third-party)"
-msgstr ""
+msgstr "Konverterar till PDF med Prince-programvara (tredje part)"
 
 #: help.py:3
 #, python-format
@@ -188,7 +190,7 @@ msgid ""
 "\n"
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
-msgstr ""
+msgstr "\n<h3 style=\"text-align:center\">Tillägget Prince PDF (v. %(version)s)</h3>\n<p style=\"text-align:center\"><i>Skapad %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">Detta tillägg kommer att konvertera en bok till PDF med Prince.</p>\n<p style=\"margin:0\">Prince är ett externt program, kan du hämta det från <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">Only a few formats can be converted with this plugin, mainly EPUB, AZW3 and HTMLZ. If you want to convert a book in another format, convert it first to one of these formats.</p>\n\n<p style=\"margin:1em 0 0 0\">Innan själva konverteringen, kommer du att kunna välja om de vill lägga till den resulterande PDFn till bokposten. Om PDF inte läggs till kommer det sparas på disk med hjälp av spara-till-disk-mall.</p>\n\n<p style=\"margin:1em 0 0 0\">Konverteringen kommer inte att använda någon annan av calibres konverteringsinställningar , men i stället kommer att använda en egen CSS-fil, där Princes specifika egenskaper kan användas. Denna fil kan ändras i tilläggskonfigurationen. Dessutom kommer tillägget känna igen och använda någon extra CSS-fil som anges i själva boken, som en<span %(code)s>&lt;meta&gt;</span> etikett med <span %(code)s>name=\"prince-style\"</span> och <span %(code)s>content=\"<i>idref</i>\"</span>, där <span %(code)s><i>idref</i></span> är <span %(code)s>id</span> av den extra CSS-filen i manifestet.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince är upphovsrättsskyddat &kopia; YesLogic Pty. Ltd</i></p>\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Detta tillägg är släppt under %(license)s.</p>\n"
 
 #: help.py:24
 msgid ""
@@ -205,258 +207,258 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
+msgstr "\nDetta program är fri mjukvara: du kan återdistribuera det och/eller modifiera det under vilkoren i GNU General Public Licens som publicerats av Free Software Foundation, antingen version 3 av Licensen, eller\n(som du väljer) någon senare version.\n\nDetta program är distributerat i hopp om att det ska vara användbart,\nmen UTAN NÅGON GARANTI; även utan underförstådd garanti\nSÄLJBARHET eller LÄMPLIGHET FÖR ETT VISST SYFTE. Se\nGNU General Public Licens för mer detaljer.\n\nDu bör ha fått en kopia av GNU General Public Licens\ntillsammans med det här programmet. Om inte, se <http://www.gnu.org/licenses/>.\n"
 
 #: main.py:40
 msgid "Convert to &PDF"
-msgstr ""
+msgstr "Konvertera till &PDF"
 
 #: main.py:43
 msgid "<qt>Start the conversion process</qt>"
-msgstr ""
+msgstr "<qt>Påböra konverteringsprocessen</qt>"
 
 #: main.py:46
 msgid "&View log"
-msgstr ""
+msgstr "&Visa logg"
 
 #: main.py:48
 msgid "<qt>Display the log from the last Prince run</qt>"
-msgstr ""
+msgstr "<qt>Visa loggen från senaste Prince-körningen</qt>"
 
 #: main.py:52
 msgid "Con&figure"
-msgstr ""
+msgstr "Kon&figurera"
 
 #: main.py:54
 msgid "<qt>Configure this plugin</qt>"
-msgstr ""
+msgstr "<qt>Konfigurera detta tillägg</qt>"
 
 #: main.py:100
 msgid "<b>No books selected</b>"
-msgstr ""
+msgstr "<b>Inga böcker valda</b>"
 
 #: main.py:102 main.py:108
 msgid "Select one single book"
-msgstr ""
+msgstr "Välj en enda bok"
 
 #: main.py:106
 msgid "<b>Many books selected</b>"
-msgstr ""
+msgstr "<b>Många böcker valda</b>"
 
 #: main.py:119
 msgid "<i>none</i>"
-msgstr ""
+msgstr "<i>inga</i>"
 
 #: main.py:126
 #, python-format
 msgid "Available formats: %s"
-msgstr ""
+msgstr "Tillgängliga format: %s"
 
 #: main.py:130
 msgid "Ready"
-msgstr ""
+msgstr "Klar"
 
 #: main.py:134
 msgid "No preferred format available"
-msgstr ""
+msgstr "Inga föredragna format valda"
 
 #: main.py:157
 msgid "About the Prince PDF Plugin"
-msgstr ""
+msgstr "Om Prince PDF-tillägget"
 
 #: main.py:189 main.py:224
 msgid "Cannot convert to PDF"
-msgstr ""
+msgstr "Kan inte konvertera till PDF"
 
 #: main.py:189
 #, python-format
 msgid "Format not supported: %s"
-msgstr ""
+msgstr "Format stöds inte: %s"
 
 #: main.py:202
 msgid " Check the log."
-msgstr ""
+msgstr "Undersök loggen"
 
 #: main.py:208 main.py:215
 msgid "Could not convert to PDF"
-msgstr ""
+msgstr "Kunde inte konvertera till PDF"
 
 #: main.py:208
 msgid "The conversion failed."
-msgstr ""
+msgstr "Konvertering misslyckades."
 
 #: main.py:215
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
-msgstr ""
+msgstr "Fel vid läsning eller skrivning av PDF-filen:\n%s"
 
 #: main.py:224
 msgid "No supported format available"
-msgstr ""
+msgstr "Inga stödda format tillgängliga"
 
 #: main.py:272
 msgid "Unpacking book..."
-msgstr ""
+msgstr "Packar upp bok..."
 
 #: main.py:292
 msgid "Setting metadata..."
-msgstr ""
+msgstr "Ställer in metadata..."
 
 #: main.py:309
 msgid "Existing format"
-msgstr ""
+msgstr "Existerande format"
 
 #: main.py:310
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
-msgstr ""
+msgstr "Den valda boken innehåller redan ett PDF-format. Är du säker på att du vill ersätta det?"
 
 #: main.py:311
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
-msgstr ""
+msgstr "Temporärfil hittas i:\n%s"
 
 #: main.py:315
 msgid "Adding PDF..."
-msgstr ""
+msgstr "Lägger till PDF..."
 
 #: main.py:334
 msgid "Choose destination directory"
-msgstr ""
+msgstr "Välj destinationskatalog"
 
 #: main.py:346
 msgid "Could not save PDF"
-msgstr ""
+msgstr "Kunde inte spara PDF"
 
 #: main.py:346
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
-msgstr ""
+msgstr "Fel vid skrivning av PDF-filen:\n%s"
 
 #: main.py:349
 msgid "File saved"
-msgstr ""
+msgstr "Fil sparad"
 
 #: main.py:349
 #, python-format
 msgid ""
 "PDF file saved in:\n"
 "%s"
-msgstr ""
+msgstr "PDF-fil sparad i:\n%s"
 
 #: ui.py:15
 msgid "Run the Prince PDF Plugin"
-msgstr ""
+msgstr "Kör Prince PDF-tillägg"
 
 #: log_box.py:25
 msgid "Prince log"
-msgstr ""
+msgstr "Prince logg"
 
 #: log_box.py:40
 msgid "<qt>Console output from the last Prince run</qt>"
-msgstr ""
+msgstr "<qt>Konsolutdata från Princes senaste körning</qt>"
 
 #: convert.py:19
 msgid "&Hide stylesheets"
-msgstr ""
+msgstr "&Dölj stilmallar"
 
 #: convert.py:20
 msgid "&Show stylesheets"
-msgstr ""
+msgstr "&Visa stilmallar"
 
 #: convert.py:45
 msgid "Convert to PDF with Prince"
-msgstr ""
+msgstr "Konvertera till  PDF med Prince"
 
 #: convert.py:51
 #, python-format
 msgid "<b>Title:</b> %s"
-msgstr ""
+msgstr "<b>Titel:</b> %s"
 
 #: convert.py:54
 #, python-format
 msgid "<b>Source format:</b> %s"
-msgstr ""
+msgstr "<b>Källformat:</b> %s"
 
 #: convert.py:67
 msgid "&Custom stylesheet:"
-msgstr ""
+msgstr "&Anpassad stilmall:"
 
 #: convert.py:71
 msgid ""
 "<qt>Select one stylesheet to use. Additional stylesheets can be created in "
 "the plugin configuration</qt>"
-msgstr ""
+msgstr "<qt>Välj en stilmall att använda. Ytterligare stilmallar kan skapas i tilläggets konfiguration</qt>"
 
 #: convert.py:86
 msgid ""
 "<qt>This stylesheet can be modified<br/>The default can be configured</qt>"
-msgstr ""
+msgstr "<qt>Denna stilmall kan modifieras<br/>Grundinställningen kan konfigureras</qt>"
 
 #: convert.py:87
 msgid "C&ustom CSS"
-msgstr ""
+msgstr "&Anpassa CSS"
 
 #: convert.py:88
 msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
-msgstr ""
+msgstr "<qt>Anpassat CSS-format som skall användas för denna konvertering</qt>"
 
 #: convert.py:99
 msgid "<qt>This stylesheet cannot be modified</qt>"
-msgstr ""
+msgstr "<qt>Denna stilmall kan inte modifieras</qt>"
 
 #: convert.py:100
 msgid "&Book CSS"
-msgstr ""
+msgstr "&Bok CSS"
 
 #: convert.py:101
 msgid "<qt>Book-specific CSS stylesheet included in the ebook file</qt>"
-msgstr ""
+msgstr "<qt>Bokspecifik CSS-stilmal inkluderad i e-bokfilen</qt>"
 
 #: convert.py:110
 msgid "<qt>Show/hide the additional stylesheets used for the conversion</qt>"
-msgstr ""
+msgstr "<qt>Visa/dölja ytterligare mallar som används för konvertering</qt>"
 
 #: convert.py:113
 msgid "Con&vert"
-msgstr ""
+msgstr "Kon&vertera"
 
 #: convert.py:114
 msgid "<qt>Run the conversion with Prince</qt>"
-msgstr ""
+msgstr "<qt>Utför konvertering med Prince</qt>"
 
 #: convert.py:165
 msgid "Parsing book..."
-msgstr ""
+msgstr "Tolkar bok..."
 
 #: convert.py:199
 msgid "Replacing templates"
-msgstr ""
+msgstr "Ersätter mallar"
 
 #: convert.py:201
 #, python-format
 msgid "Found: %s (%d-%d)"
-msgstr ""
+msgstr "Hittade: %s (%d-%d)"
 
 #: convert.py:202
 #, python-format
 msgid "Replace with: %s"
-msgstr ""
+msgstr "Ersätt med: %s"
 
 #: convert.py:253
 msgid "Converting book..."
-msgstr ""
+msgstr "Konverterar bok..."
 
 #: convert.py:272
 msgid "Process error"
-msgstr ""
+msgstr "Processfel"
 
 #: convert.py:272
 #, python-format
@@ -467,4 +469,4 @@ msgid ""
 " this plugin, which is usually:<ul><li>In Windows: "
 "<code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>In Linux: "
 "<code>prince</code></ul>"
-msgstr ""
+msgstr "<p>Felkod: %s<p>försökra dig att Prince (<a href=\"http://www.princexml.com\">www.princexml.com</a>) är installerad och att rätt kommandoradsgränssnitt program är inställt i konfigurationen av detta tillägg, vilket är vanligtvis är:<ul><li>I Windows: <code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code> <li>I Linux: <code>prince</code></ul>"

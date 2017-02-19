@@ -3,13 +3,14 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2014
 # ILB, 2014
 # Simon_Schuette <simonschuette@arcor.de>, 2014
+# valsu <valsu@hylia.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-09-11 19:02+0100\n"
-"PO-Revision-Date: 2014-09-12 13:56+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
-"Language-Team: German (http://www.transifex.com/projects/p/calibre-plugins/language/de/)\n"
+"PO-Revision-Date: 2015-10-07 08:37+0000\n"
+"Last-Translator: valsu <valsu@hylia.de>\n"
+"Language-Team: German (http://www.transifex.com/calibre/calibre-plugins/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -48,7 +49,7 @@ msgstr "Bevorzugte &Formate:"
 msgid ""
 "<qt>Comma-separated list of preferred formats to use as source, the first "
 "that matches will be used</qt>"
-msgstr ""
+msgstr "<qt>Durch Kommata getrennte Auflistung von bevorzugten Formaten, die als Quelle genutzt werden. Es wird der erste Treffer verwendet</qt>"
 
 #: config.py:123 convert.py:57
 msgid "&Add PDF to the book record"
@@ -56,7 +57,7 @@ msgstr "PDF zum Bucheintr&ag hinzufügen"
 
 #: config.py:124 convert.py:58
 msgid "<qt>Add the converted PDF to the selected book record</qt>"
-msgstr ""
+msgstr "<qt>Konvertierte PDF zur ausgewählten Bücherliste hinzufügen</qt>"
 
 #: config.py:128
 msgid "&Show CSS in the Convert dialog"
@@ -106,7 +107,7 @@ msgstr "<qt>Die aktuelle Formatvorlage entfernen</qt>"
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
-msgstr ""
+msgstr "<qt>Anzuwendende benutzerdefinierte Formatvorlage für alle Konvertierungen mit Prince PDF, wenn ausgewählt"
 
 #: config.py:183
 #, python-format
@@ -114,7 +115,7 @@ msgid ""
 "Book metadata can be used in the stylesheet. Anything between %(s1)s and "
 "%(s2)s will be processed as a calibre template. For instance, %(s3)s in the "
 "stylesheet will be replaced with the book title in the conversion."
-msgstr ""
+msgstr "Metadaten des Buches können in der Formatvorlage verwendet werden. Alles zwischen %(s1)s und %(s2)s werden als Calibre-Vorlagen verarbeitet. Beispielsweise wird %(s3)s in der Formatvorlage bei der Konvertierung durch den Buchtitel ersetzt."
 
 #: config.py:190
 msgid "&Custom CSS:"
@@ -166,7 +167,7 @@ msgstr "Prince PDF"
 
 #: __init__.py:13
 msgid "Converts to PDF using the Prince software (third-party)"
-msgstr ""
+msgstr "Mit Prince nach PDF konvertieren (Dritt-Software)"
 
 #: help.py:3
 #, python-format
@@ -190,7 +191,7 @@ msgid ""
 "\n"
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
-msgstr ""
+msgstr "\n<h3 style=\"text-align:center\">Die Prince PDF Erweiterung(v. %(version)s)</h3>\n\n<p style=\"text-align:center\"><i>Erstellt von %(author)s</i></p>\n\n\n<hr/>\n\n\n<p style=\"margin:1em 0 0 0\">Diese Erweiterung wird ein Buch mit Prince in eine PDF-Datei konvertieren.</p>\n\n<p style=\"margin:0\">Prince ist ein externes Programm, das von <a href=\"http://www.princexml.com/\">www.princexml.com</a> heruntergeladen werden kann.</p>\n\n\n\n<p style=\"margin:1em 0 0 0\">Nur wenige Formate können mit dieser Erweiterung konvertiert werden, hauptsächlich EPUB, AZW3 und HTMLZ. Wenn Sie ein Buch in ein anderes Format konvertieren möchten, dann konvertieren Sie es zuerst in eines der genannten Formate.</p>\n\n\n<p style=\"margin:1em 0 0 0\">Vor der eigentlichen Konvertierung haben Sie die Möglichkeit einzustellen, ob die erstellte PDF zur Bückerliste hinzugefügt werden soll. Wird die PDF nicht hinzugefügt, wird sie unter Verwendung der Auf-Datenträger-speichern-Formatvorlage auf dem Datenträger gespeichert.</p>\n\n\n<p style=\"margin:1em 0 0 0\">Die Konvertierung wird keine Caliblres Konvertierungseinstellungen verwenden, sondern eine benutzerdefinierte CSS-Datei, in der Prince-spezifische Eigenschaften verwendet werden können. Zudem wird die Erweiterung jegliche zusätzliche CSS-Dateien erkennen und verwenden, die im Buch selbst angegeben werden. Die Angabe erfolgt als ein <span %(code)s>&lt;meta&gt;</span>-Tag mit <span %(code)s>name=\"prince-style\"</span> und <span %(code)s>content=\"<i>idref</i>\"</span>, wobei im Manifest <span %(code)s><i>idref</i></span> die <span %(code)s>id</span> der zusätzlichen CSS-Datei ist.</p>\n\n\n<hr/>\n\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince ist durch &copy; YesLogic Pty. Ltd. urheberrechtlich geschützt</i></p>\n\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Diese Erweiterung ist unter den Bedingungen der %(license)s freigegeben.</p>\n\n"
 
 #: help.py:24
 msgid ""
@@ -207,7 +208,7 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr ""
+msgstr "\nDieses Programm ist freie Software. Sie können es unter den Bedingungen der GNU General Public License, wie von der Free Software Foundation veröffentlicht, weitergeben und/oder modifizieren, entweder gemäß Version 3 der Lizenz oder (nach Ihrer Option) jeder späteren Version.\n\nDie Veröffentlichung dieses Programms erfolgt in der Hoffnung, daß es Ihnen von Nutzen sein wird, aber OHNE IRGENDEINE GARANTIE, sogar ohne die implizite Garantie der MARKTREIFE oder der VERWENDBARKEIT FÜR EINEN BESTIMMTEN ZWECK. Details finden Sie in der GNU General Public License.\n\nSie sollten ein Exemplar der GNU General Public License zusammen mit diesem Programm erhalten haben. Falls nicht, siehe <http://www.gnu.org/licenses/>.\n"
 
 #: main.py:40
 msgid "Convert to &PDF"
@@ -395,7 +396,7 @@ msgstr "&Benutzerdefinierte Formatvorlage:"
 msgid ""
 "<qt>Select one stylesheet to use. Additional stylesheets can be created in "
 "the plugin configuration</qt>"
-msgstr ""
+msgstr "<qt>Zu verwendende Formatvorlagen auswählen. Zusätzliche Formatvorlagen können in der Erweiterungskonfiguration erstellt werden</qt>"
 
 #: convert.py:86
 msgid ""
@@ -408,7 +409,7 @@ msgstr "Ben&utzerdefiniertes CSS"
 
 #: convert.py:88
 msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
-msgstr ""
+msgstr "<qt>Die für diese Konvertierung zu verwendende benutzerdefinierte CSS-Formatvorlage</qt>"
 
 #: convert.py:99
 msgid "<qt>This stylesheet cannot be modified</qt>"
@@ -469,4 +470,4 @@ msgid ""
 " this plugin, which is usually:<ul><li>In Windows: "
 "<code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>In Linux: "
 "<code>prince</code></ul>"
-msgstr ""
+msgstr "<p>Fehler-Code: %s<p>Stellen Sie sicher, dass Prince  (<a href=\"http://www.princexml.com\">www.princexml.com</a>) installiert und die richtige Kommandozeilen-Datei in der Erweiterungskonfiguration eingestellt ist, normalerweise:<ul><li>Unter Windows: <code><i>Prince_Verzeichnis</i>\\Engine\\bin\\prince.exe</code><li>Unter Linux: <code>prince</code></ul>"

@@ -1,19 +1,19 @@
 # 
 # Translators:
-# dario hereñu <magallania@gmail.com>, 2015
-# Jellby <jellby@yahoo.com>, 2014
+# tarakbumba <tarakbumba@gmail.com>, 2015
+# Emre Deniz, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2014-09-11 19:02+0100\n"
-"PO-Revision-Date: 2015-02-20 16:01+0000\n"
-"Last-Translator: dario hereñu <magallania@gmail.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/calibre/calibre-plugins/language/es/)\n"
+"PO-Revision-Date: 2015-12-31 14:06+0000\n"
+"Last-Translator: tarakbumba <tarakbumba@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/calibre/calibre-plugins/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
@@ -21,91 +21,91 @@ msgstr ""
 
 #: config.py:23 config.py:24
 msgid "default"
-msgstr "predeterminada"
+msgstr "varsayılan"
 
 #: config.py:97
 msgid "&Prince executable:"
-msgstr "Ejecutable de &Prince:"
+msgstr "&Prince çalıştırılabilir dosyası:"
 
 #: config.py:102
 msgid "<qt>Executable for the Prince program (command-line interface)</qt>"
-msgstr "<qt>El ejecutable para el programa Prince (interfaz de línea de órdenes)</qt>"
+msgstr "<qt>Prince uygulaması için çalıştırılabilir dosya (komut satırı ara birimi)</qt>"
 
 #: config.py:106
 msgid "&Browse"
-msgstr "&Explorar"
+msgstr "Gözat"
 
 #: config.py:107
 msgid "<qt>Search the Prince executable in your computer</qt>"
-msgstr "<qt>Buscar el ejecutable de Prince en el equipo</qt>"
+msgstr "<qt>Bilgisayarınızda Prince çalıştırılabilir dosyasını arayın</qt>"
 
 #: config.py:114
 msgid "Preferred &formats:"
-msgstr "&Formatos preferidos:"
+msgstr "Tercih edilen &biçimler:"
 
 #: config.py:119
 msgid ""
 "<qt>Comma-separated list of preferred formats to use as source, the first "
 "that matches will be used</qt>"
-msgstr "<qt>Lista separada por comas de los formatos preferidos como fuente, se usará el primero que coincida</qt>"
+msgstr "<qt>Kaynak olarak kullanılacak tercih edilen biçimlerin virgülle ayrılmış listesi. İlk eşleşen kullanılacaktır</qt>"
 
 #: config.py:123 convert.py:57
 msgid "&Add PDF to the book record"
-msgstr "&Añadir PDF al registro del libro"
+msgstr "PDF' yi kitap kaydına &Ekle"
 
 #: config.py:124 convert.py:58
 msgid "<qt>Add the converted PDF to the selected book record</qt>"
-msgstr "<qt>Añadir el PDF convertido al registro del libro seleccionado</qt>"
+msgstr "<qt>Dönüştürülen PDF' yi seçilen kitap kaydına ekle</qt>"
 
 #: config.py:128
 msgid "&Show CSS in the Convert dialog"
-msgstr "&Mostrar CSS en la ventana de conversión"
+msgstr "&Dönüştür iletisinde CSS görüntüle"
 
 #: config.py:129
 msgid "<qt>Show by default the stylesheets in the Convert dialog</qt>"
-msgstr "<qt>Mostrar de manera predeterminada las hojas de estilo en la ventana de conversión</qt>"
+msgstr "<qt>Dönüştür iletisinde öntanımlı olarak stil sayfalarınıi görüntüle</qt>"
 
 #: config.py:139
 msgid "<qt>List of custom stylesheets defined. Select one to edit</qt>"
-msgstr "<qt>Lista de hojas de estilos personalizadas definidas. Seleccione una para modificarla</qt>"
+msgstr "<qt>Tanımlanan kişisel stil sayfalarının listesi. Düzenlemek için birini seçin</qt>"
 
 #: config.py:144 config.py:145
 msgid "old"
-msgstr "antigua"
+msgstr "eski"
 
 #: config.py:154
 msgid "Re&name"
-msgstr "Re&nombrar"
+msgstr "Ye&niden adlandır"
 
 #: config.py:155
 msgid "<qt>Rename the current stylesheet to the name on the right</qt>"
-msgstr "<qt>Cambiar el nombre de la hoja de estilos actual al nombre de la derecha</qt>"
+msgstr "<qt>Geçerli stil sayfasını sağdaki isimle yeniden adlandır</qt>"
 
 #: config.py:161
 msgid "<qt>Name for the new or renamed stylesheet</qt>"
-msgstr "<qt>Nombre para la hoja de estilos nueva o renombrada</qt>"
+msgstr "<qt>Yeni veya yeniden adlandırılan stil sayfası için isim</qt>"
 
 #: config.py:166
 msgid "A&dd"
-msgstr "Aña&dir"
+msgstr "Ekle"
 
 #: config.py:167
 msgid "<qt>Add a new empty stylesheet with the name on the left</qt>"
-msgstr "<qt>Añadir una nueva hoja de estilos vacía con el nombre de la izquierda</qt>"
+msgstr "<qt>Soldaki isimle yeni bir boş stil sayfası ekleyin</qt>"
 
 #: config.py:172
 msgid "Re&move"
-msgstr "&Borrar"
+msgstr "Kaldır"
 
 #: config.py:173
 msgid "<qt>Remove the current stylesheet</qt>"
-msgstr "<qt>Eliminar la hoja de estilos actual</qt>"
+msgstr "<qt>Geçerli stil sayfasını kaldır</qt>"
 
 #: config.py:180
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
-msgstr "<qt>Hoja de estilos personal que se usará, si se selecciona, en todas las conversiones PDF con Prince</qt>"
+msgstr "<qt>Kişisel stil sayfası, seçilmiş ise tüm Prince PDF dönüşümlerine de, uygulanacak.</qt>"
 
 #: config.py:183
 #, python-format
@@ -113,51 +113,51 @@ msgid ""
 "Book metadata can be used in the stylesheet. Anything between %(s1)s and "
 "%(s2)s will be processed as a calibre template. For instance, %(s3)s in the "
 "stylesheet will be replaced with the book title in the conversion."
-msgstr "Los metadatos del libro pueden usarse en la hoja de estilos. Cualquier cosa entre %(s1)s y %(s2)s se procesará como una plantilla de calibre. Por ejemplo, %(s3)s en la hoja de estilos se sustituirá por el título del libro en la conversión."
+msgstr "Kitap üst verisi stil sayfasında kullanılabilir. %(s1)s ve %(s2)s arasındaki her şey bir calibre şablonu olarak işlenecektir. Mesela, stil sayfasındaki %(s3)s dönüşüm sırasında kitap başlığı ile değiştirilecektir."
 
 #: config.py:190
 msgid "&Custom CSS:"
-msgstr "&CSS personal:"
+msgstr "&Kişisel CSS:"
 
 #: config.py:198
 msgid "&Restore defaults"
-msgstr "&Restaurar valores predeterminados"
+msgstr "Va&rsayılana sıfırla"
 
 #: config.py:199
 msgid "<qt>Restore the default settings</qt>"
-msgstr "<qt>Restablecer las configuraciones predeterminadas</qt>"
+msgstr "<qt>Varsyılan ayarlara sıfırla</qt>"
 
 #: config.py:203
 msgid "<b>Warning</b>: Deletes modified stylesheets"
-msgstr "<b>Advertencia</b>: Borra las hojas de estilos modificadas"
+msgstr "<b>Uyarı</b<: Değiştirilmiş stil sayfalarını siler"
 
 #: config.py:214
 msgid "Select Prince executable"
-msgstr "Seleccionar el ejecutable de Prince"
+msgstr "Prince çalıştırılabilir dosyasını seçin"
 
 #: config.py:271
 msgid "Cannot add stylesheet"
-msgstr "No se puede añadir"
+msgstr "Stil sayfası eklenemiyor"
 
 #: config.py:271 config.py:304
 #, python-format
 msgid ""
 "A stylesheet with the name \"%s\" is already defined, use a different name."
-msgstr "Ya hay definida una hoja de estilos con el nombre «%s», use un nombre diferente."
+msgstr "\"%s\" adına sahip bir stil sayfası zaten tanımlanmış. Bir başka isim kullanın."
 
 #: config.py:294
 msgid "Cannot delete the last stylesheet"
-msgstr "No se puede borrar la última hoja de estilos"
+msgstr "Son stil sayfası silinemiyor"
 
 #: config.py:294
 msgid ""
 "The last stylesheet cannot be removed. You can rename it and/or remove its "
 "contents."
-msgstr "La última hoja de estilos no se puede borrar. Puede cambiarle el nombre o borrar su contenido."
+msgstr "Son stil sayfası kaldırılamıyor. Onu yeniden adlandırabilir ve/veya içeriğini silebilirsiniz."
 
 #: config.py:304
 msgid "Cannot rename stylesheet"
-msgstr "No se puede cambiar el nombre de la hoja de estilo"
+msgstr "Stil sayfası yeniden adlandırılamıyor"
 
 #: __init__.py:12 main.py:30 ui.py:14 ui.py:15
 msgid "Prince PDF"
@@ -165,7 +165,7 @@ msgstr "Prince PDF"
 
 #: __init__.py:13
 msgid "Converts to PDF using the Prince software (third-party)"
-msgstr "Convertir a PDF usando el programa Prince (programa de terceros)"
+msgstr "Prince yazılımını (üçüncü taraf) kullanarak PDF'ye dönüştürür"
 
 #: help.py:3
 #, python-format
@@ -189,7 +189,7 @@ msgid ""
 "\n"
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
-msgstr "\n<h3 style=\"text-align:center\">El complemento Prince PDF (v. %(version)s)</h3>\n<p style=\"text-align:center\"><i>Creado por %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">Este complemento convierte un libro a PDF usando Prince.</p>\n<p style=\"margin:0\">Prince es un programa externo que puede descargarse desde <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">Sólo algunos formatos pueden convertirse con este complemento, principalmente EPUB, AZW3 y HTMLZ. Si quiere convertir un libro en algún otro formato, conviértalo primero a uno de estos formatos.</p>\n\n<p style=\"margin:1em 0 0 0\">Antes de realizar la conversión real, se puede elegir si añadir o no el PDF resultante al registro del libro. Si no se añade el PDF, se guardará en disco usando la plantilla para guardar en disco.</p>\n\n<p style=\"margin:1em 0 0 0\">La conversión no usa ninguna otra configuración de conversión de calibre, en lugar de ello emplea un archivo CSS personal, donde se pueden usar propiedades específicas de Prince. Este archivo puede modificarse en la configuración del complemento. Además, el complemento también reconoce y aplica cualquier archivo CSS adicional que esté especificado dentro del propio libro mediante una etiqueta <span %(code)s>&lt;meta&gt;</span> con <span %(code)s>name=\"prince-style\"</span> y <span %(code)s>content=\"<i>idref</i>\"</span>, donde <span %(code)s><i>idref</i></span> es el <span %(code)s>id</span> del archivo CSS adicional en el manifiesto.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince es copyright &copy; YesLogic Pty. Ltd.</i></p> <p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Este complemento está sujeto a la licencia %(license)s.</p>\n"
+msgstr "\n<h3 style=\"text-align:center\">Prince PDF Eklentisi (s %(version)s)</h3>\n<p style=\"text-align:center\"><i>Yazarı: %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">Bu eklenti Prince kullanarak bir kitabı PDF' ye dönüştürür</p>\n<p style=\"margin:0\">Prince dış bir uygulama olup  <a href=\"http://www.princexml.com/\">www.princexml.com</a> adresinden indirilebilir.</p>\n\n<p style=\"margin:1em 0 0 0\">Bu eklentiyle başlıcı EPUB, AZW3 ve HTMLZ olmak üzere sadece bir kaç biçim dönüştürülebilir. Başka bir biçimdeki kitabı dönüştürmek isterseniz onu öncelikle bu biçimlerden birine dönüştürmelisiniz.</p>\n\n<p style=\"margin:1em 0 0 0\">Dönüştürme işlemine başlamadan önce ortaya çıkacak PDF' yi kitap kaydına ekleyip eklememeyi seçebileceksiniz. PDF eklenmezse sabit-diske-kaydet şablonu kullanılarak sabit diskinize kaydedecektir.</p>\n\n<p style=\"margin:1em 0 0 0\">Dönüştürme işleminde calibre'nin dönüştürme ayarlarından hiç biri kullanılmayacak; bunun yerine Prince' e özel ayarların işlenebileceği kişisel bir CSS dosyası kullanılacaktır. Bu, eklenti yapılandırmasında değiştirilebilir. Bunun yanında eklenti, kitapta bulunan herhangi bir ek CSS dosyasını algılayarak  <span %(code)s>name=\"prince-style\"</span> ile <span %(code)s>&lt;meta&gt;</span> etiketi ve <span %(code)s>content=\"<i>idref</i>\"</span> olarak kullanacaktır. Burada <span %(code)s><i>idref</i></span>, ek CSS dosyasının <span %(code)s>id</span> değeri olacaktır.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince &copy; YesLogic Pty. Ltd. şirketinin tescilli ürünüdür.</i></p>\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Bu eklenti %(license)s altında yayınlanmaktadır.</p>\n"
 
 #: help.py:24
 msgid ""
@@ -206,258 +206,258 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "\nEste programa es software libre. Puede redistribuirlo y/o modificarlo\nbajo los términos de la Licencia Pública General de GNU tal como está\npublicada por la Free Software Foundation, bien de la versión 3 de\ndicha Licencia o bien (según su elección) de cualquier versión posterior.\n\nEste programa se distribuye con la esperanza de que sea útil,\npero SIN NINGUNA GARANTÍA, incluso sin la garantía MERCANTIL implícita\ny sin garantizar la CONVENIENCIA PARA UN PROPÓSITO PARTICULAR.\nVéase la Licencia Pública General de GNU para más detalles.\n\nUsted debería haber recibido una copia de la Licencia Pública General junto\ncon este programa. Si no ha sido así, consulte <http://www.gnu.org/licenses/>.\n"
+msgstr "\nBu program özgür bir yazılımdır: Özgür Yazılım Vakfı tarafından yayınlanan\nGNU Genel Kamu Lisansı'nın 3. sürümü veya (arzunuza göre) daha yeni bir\nsürümü koşulları altında yeniden dağıtabilir ve/ veya\ndeğiştirebilirsiniz.\n\nBu program faydalı olması ümidiyle dağıtılmaktadır.\nBİR TEMİNATI YOKTUR; TİCARETİNİN YAPILABİLİRLİĞİNE VE ÖZEL\nBİR AMAÇ İÇİN UYGUNLUĞUNA dair bir teminat da vermez. Ayrıntılar\niçin GNU Genel Kamu Lisansı’na bakın.\n\nBu programla birlikte GNU Genel Kamu Lisansı’nın bir kopyasını edinmiş\nolmanız gerekir. Aksi halde <http://www.gnu.org/licenses/> adresine bakın.\n"
 
 #: main.py:40
 msgid "Convert to &PDF"
-msgstr "Convertir a &PDF"
+msgstr "&PDF'ye dönüştür"
 
 #: main.py:43
 msgid "<qt>Start the conversion process</qt>"
-msgstr "<qt>Comenzar el proceso de conversión</qt>"
+msgstr "<qt>Dönüştürme işlemine başla</qt>"
 
 #: main.py:46
 msgid "&View log"
-msgstr "&Ver registro"
+msgstr "Günlüğü görüntüle"
 
 #: main.py:48
 msgid "<qt>Display the log from the last Prince run</qt>"
-msgstr "<qt>Mostrar el registro de la última ejecución de Prince</qt>"
+msgstr "<qt>Prince son çalıştırıldığındaki günlük kaydını görüntüle</qt>"
 
 #: main.py:52
 msgid "Con&figure"
-msgstr "Con&figurar"
+msgstr "Yap&ılandır"
 
 #: main.py:54
 msgid "<qt>Configure this plugin</qt>"
-msgstr "<qt>Configurar este complemento</qt>"
+msgstr "<qt>Bu eklentiyi yapılandırın</qt>"
 
 #: main.py:100
 msgid "<b>No books selected</b>"
-msgstr "<b>Ningún libro seleccionado</b>"
+msgstr "<b>Hiç kitap seçilmedi</b>"
 
 #: main.py:102 main.py:108
 msgid "Select one single book"
-msgstr "Seleccione un solo libro"
+msgstr "Tek bir kitap seçin"
 
 #: main.py:106
 msgid "<b>Many books selected</b>"
-msgstr "<b>Varios libros seleccionados</b>"
+msgstr "<b>Bir çok kitap seçildi</b>"
 
 #: main.py:119
 msgid "<i>none</i>"
-msgstr "<i>ninguno</i>"
+msgstr "<i>hiçbiri</i>"
 
 #: main.py:126
 #, python-format
 msgid "Available formats: %s"
-msgstr "Formatos disponibles: %s"
+msgstr "Mevcut formatlar: %s"
 
 #: main.py:130
 msgid "Ready"
-msgstr "Listo"
+msgstr "Hazır"
 
 #: main.py:134
 msgid "No preferred format available"
-msgstr "No hay ningún formato preferido disponible"
+msgstr "Tercih edilen biçim yok"
 
 #: main.py:157
 msgid "About the Prince PDF Plugin"
-msgstr "Acerca del complemento Prince PDF"
+msgstr "Prince PDF Eklentisi Hakkında"
 
 #: main.py:189 main.py:224
 msgid "Cannot convert to PDF"
-msgstr "No se puede convertir a PDF"
+msgstr "PDF'ye dönüştürülemedi"
 
 #: main.py:189
 #, python-format
 msgid "Format not supported: %s"
-msgstr "Formato no soportado: %s"
+msgstr "Format desteklenmiyor: %s"
 
 #: main.py:202
 msgid " Check the log."
-msgstr " Compruebe el registro."
+msgstr "Günlük kaydına bakın."
 
 #: main.py:208 main.py:215
 msgid "Could not convert to PDF"
-msgstr "No se pudo convertir a PDF"
+msgstr "PDF' ye dönüştürülemiyor"
 
 #: main.py:208
 msgid "The conversion failed."
-msgstr "La conversión ha fallado."
+msgstr "Dönüştürme işlemi başarısız oldu."
 
 #: main.py:215
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
-msgstr "Error al leer o escribir el archivo PDF:\n%s"
+msgstr "PDF dosyası okunurken veya yazılırken hata oluştu:\n%s"
 
 #: main.py:224
 msgid "No supported format available"
-msgstr "No hay ningún formato soportado disponible"
+msgstr "Desteklenen hiç bir biçim bulunamadı"
 
 #: main.py:272
 msgid "Unpacking book..."
-msgstr "Desempaquetando libro..."
+msgstr "Kitap açılıyor..."
 
 #: main.py:292
 msgid "Setting metadata..."
-msgstr "Estableciendo metadatos..."
+msgstr "Üst veri ayarlanıyor..."
 
 #: main.py:309
 msgid "Existing format"
-msgstr "Formato existente"
+msgstr "Mevcut biçim"
 
 #: main.py:310
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
-msgstr "El libro seleccionado ya contiene un formato PDF. ¿Está seguro de querer sustituirlo?"
+msgstr "Seçilen kitap zaten bir PDF biçimi içeriyor. Bunu değiştirmek istiyor musunuz?"
 
 #: main.py:311
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
-msgstr "El archivo temporal se encuentra en:\n%s"
+msgstr "Geçici dosya şurada bulunamadı:\n%s"
 
 #: main.py:315
 msgid "Adding PDF..."
-msgstr "Añadiendo PDF..."
+msgstr "PDF Ekleme..."
 
 #: main.py:334
 msgid "Choose destination directory"
-msgstr "Elegir directorio de destino"
+msgstr "Hedef dizin seçin"
 
 #: main.py:346
 msgid "Could not save PDF"
-msgstr "No se pudo guardar el PDF"
+msgstr "PDF kaydedilemedi"
 
 #: main.py:346
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
-msgstr "Error al escribir el archivo PDF:\n%s"
+msgstr "PDF dosyası yazılırken hata oluştu:\n%s"
 
 #: main.py:349
 msgid "File saved"
-msgstr "Archivo guardado"
+msgstr "Dosya kaydedildi"
 
 #: main.py:349
 #, python-format
 msgid ""
 "PDF file saved in:\n"
 "%s"
-msgstr "Archivo PDF guardado en:\n%s"
+msgstr "PDF dosyası şuraya kaydedildi:\n%s"
 
 #: ui.py:15
 msgid "Run the Prince PDF Plugin"
-msgstr "Ejecutar el complemento Prince PDF"
+msgstr "Prince PDF Eklentisini Çalıştır"
 
 #: log_box.py:25
 msgid "Prince log"
-msgstr "Registro de Prince"
+msgstr "Prince günlüğü"
 
 #: log_box.py:40
 msgid "<qt>Console output from the last Prince run</qt>"
-msgstr "<qt>Salida de consola de la última ejecución de Prince</qt>"
+msgstr "<qt>Prince son çalıştırıldığındaki komut çıktısı</qt>"
 
 #: convert.py:19
 msgid "&Hide stylesheets"
-msgstr "&Ocultar estilos"
+msgstr "&Stil sayfalarını gizle"
 
 #: convert.py:20
 msgid "&Show stylesheets"
-msgstr "&Mostrar estilos"
+msgstr "Stil sayfalarını &Görüntüle"
 
 #: convert.py:45
 msgid "Convert to PDF with Prince"
-msgstr "Convertir a PDF con Prince"
+msgstr "Prince ile PDF' ye dönüştür"
 
 #: convert.py:51
 #, python-format
 msgid "<b>Title:</b> %s"
-msgstr "<b>Título:</b> %s"
+msgstr "<b>Başlık:</b> %s"
 
 #: convert.py:54
 #, python-format
 msgid "<b>Source format:</b> %s"
-msgstr "<b>Formato de origen:</b> %s"
+msgstr "<b>Kaynak biçim:</b> %s"
 
 #: convert.py:67
 msgid "&Custom stylesheet:"
-msgstr "&Hoja de estilos personal:"
+msgstr "&Kişisel stil sayfası:"
 
 #: convert.py:71
 msgid ""
 "<qt>Select one stylesheet to use. Additional stylesheets can be created in "
 "the plugin configuration</qt>"
-msgstr "<qt>Seleccione una hoja de estilos para usar. Pueden crearse hojas de estilos adicionales en la configuración del complemento</qt>"
+msgstr "<qt>Kullanmak için bir stil sayfası seçin. Ek stil sayfaları eklenti yapılandırmasında oluşturulabilir</qt>"
 
 #: convert.py:86
 msgid ""
 "<qt>This stylesheet can be modified<br/>The default can be configured</qt>"
-msgstr "<qt>Esta hoja de estilos puede modificarse<br/>La hoja predeterminada se puede configurar</qt>"
+msgstr "<qt>Bu stil sayfası yeniden düzenlenebilir<br/>Öntanımlı olan yapılandırılabilir</qt>"
 
 #: convert.py:87
 msgid "C&ustom CSS"
-msgstr "&CSS personal"
+msgstr "K&işisel CSS"
 
 #: convert.py:88
 msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
-msgstr "<qt>Hoja de estilos personal que se usará en esta conversión</qt>"
+msgstr "<qt>Bu dönüştürmede kullanılacak kişisel CSS</qt>"
 
 #: convert.py:99
 msgid "<qt>This stylesheet cannot be modified</qt>"
-msgstr "<qt>Esta hoja de estilos no puede modificarse</qt>"
+msgstr "<qt>Bu stil sayfası yeniden düzenlenemez</qt>"
 
 #: convert.py:100
 msgid "&Book CSS"
-msgstr "CSS del &libro"
+msgstr "Kitap &CSS"
 
 #: convert.py:101
 msgid "<qt>Book-specific CSS stylesheet included in the ebook file</qt>"
-msgstr "<qt>Hoja de estilos específica del libro, incluida en el archivo</qt>"
+msgstr "<qt>E-kitap dosyasında yer alan kitaba özel CSS stil sayfası</qt>"
 
 #: convert.py:110
 msgid "<qt>Show/hide the additional stylesheets used for the conversion</qt>"
-msgstr "<qt>Mostrar u ocultar las hojas de estilos adicionales usadas para la conversión</qt>"
+msgstr "<qt>Dönüştürme için kullanılan ek stil sayfalarını göster/gizle</qt>"
 
 #: convert.py:113
 msgid "Con&vert"
-msgstr "Con&vertir"
+msgstr "Dö&nüştür"
 
 #: convert.py:114
 msgid "<qt>Run the conversion with Prince</qt>"
-msgstr "<qt>Ejecutar la conversión con Prince</qt>"
+msgstr "<qt>Prince ile dönüştürmeyi yapın</qt>"
 
 #: convert.py:165
 msgid "Parsing book..."
-msgstr "Procesando libro..."
+msgstr "Kitap ayrıştırılıyor..."
 
 #: convert.py:199
 msgid "Replacing templates"
-msgstr "Sustituyendo plantillas"
+msgstr "Şablonlar değiştiriliyor"
 
 #: convert.py:201
 #, python-format
 msgid "Found: %s (%d-%d)"
-msgstr "Encontrada: %s (%d-%d)"
+msgstr "Bulunan: %s (%d-%d)"
 
 #: convert.py:202
 #, python-format
 msgid "Replace with: %s"
-msgstr "Sustituir por: %s"
+msgstr "Şununla değiştir: %s"
 
 #: convert.py:253
 msgid "Converting book..."
-msgstr "Convirtiendo libro..."
+msgstr "Kitap dönüştürülüyor..."
 
 #: convert.py:272
 msgid "Process error"
-msgstr "Error de proceso"
+msgstr "İşlem hatası"
 
 #: convert.py:272
 #, python-format
@@ -468,4 +468,4 @@ msgid ""
 " this plugin, which is usually:<ul><li>In Windows: "
 "<code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>In Linux: "
 "<code>prince</code></ul>"
-msgstr "<p>Código de error: %s<p>Asegúrese de que Prince (<a href=\"http://www.princexml.com\">www.princexml.com</a>) está instalado y de que el ejecutable de consola correcto está especificado en la configuración de este complemento, normalmente es:<ul><li>En Windows: <code><i>carpeta_de_Prince</i>\\Engine\\bin\\prince.exe</code>    <li>En Linux: <code>prince</code></ul>"
+msgstr "<p>Hata kodu: %s<p>Prince' in (<a href=\"http://www.princexml.com\">www.princexml.com</a>) kurulu olduğuna ve genellikle <ul><li>Windows' ta: <code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code> veya   <li>Linux' ta: <code>prince</code></ul> bulunan doğru komut satırı çalıştırılabilir dosyasının bu eklenti yapılandırılmasında ayarlanmış olduğundan emin olun."
