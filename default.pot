@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PrincePDF 1.4.0\n"
-"POT-Creation-Date: 2017-02-19 11:22+0100\n"
-"PO-Revision-Date: 2017-02-19 11:22+0100\n"
+"POT-Creation-Date: 2017-02-20 20:37+0100\n"
+"PO-Revision-Date: 2017-02-20 20:37+0100\n"
 "Last-Translator: Jellby <jellby@yahoo.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -259,7 +259,7 @@ msgid ""
 msgstr ""
 
 #: config.py:214
-msgid "&Custom CSS:"
+msgid "&Custom styles:"
 msgstr ""
 
 #: config.py:222

@@ -211,7 +211,7 @@ class ConfigWidget(QWidget):
         self.css_templates.setWordWrap(True)
         self.css_layout.addWidget(self.css_templates)
 
-        self.css_box = QGroupBox(_('&Custom CSS:'))
+        self.css_box = QGroupBox(_('&Custom styles:'))
         self.css_box.setLayout(self.css_layout)
         self.l.addWidget(self.css_box)
 
