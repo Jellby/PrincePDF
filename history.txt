@@ -1,3 +1,6 @@
+1.4.1 (2017-03-18)
+                   Update translations (with those complete at the time, i.e., French)
+
 1.4.0 (2017-02-19)
                    Add option for additional command-line arguments to Prince
                    Fix "About" dialog (bumped up minimum calibre version)
