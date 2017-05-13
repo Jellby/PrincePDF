@@ -1,3 +1,6 @@
+1.4.2 (2017-05-13)
+                   Update translations (with those complete at the time: Portuguese, Ukrainian, Turkish, Estonian)
+
 1.4.1 (2017-03-18)
                    Update translations (with those complete at the time, i.e., French)
 
