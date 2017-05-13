@@ -1,19 +1,18 @@
 # 
 # Translators:
-# Jellby <jellby@yahoo.com>, 2014
-# Paulo_Neto <layoutbr@lexxa.com.br>, 2014,2017
+# Maidur, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2017-02-20 20:37+0100\n"
-"PO-Revision-Date: 2017-03-27 11:41+0000\n"
-"Last-Translator: Paulo_Neto <layoutbr@lexxa.com.br>\n"
-"Language-Team: Portuguese (Brazil) (http://www.transifex.com/calibre/calibre-plugins/language/pt_BR/)\n"
+"PO-Revision-Date: 2017-03-23 04:03+0000\n"
+"Last-Translator: Maidur\n"
+"Language-Team: Estonian (http://www.transifex.com/calibre/calibre-plugins/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: et\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
@@ -21,127 +20,127 @@ msgstr ""
 
 #: log_box.py:25
 msgid "Prince log"
-msgstr "Registro do Prince"
+msgstr "Prince'i logi"
 
 #: log_box.py:40
 msgid "<qt>Console output from the last Prince run</qt>"
-msgstr "<qt>Saída do console da última execução do Prince</qt>"
+msgstr "<qt>Konsooli väljund viimasest Prince'i käitamisest</qt>"
 
 #: convert.py:19
 msgid "&Hide styles"
-msgstr "&Ocultar estilos"
+msgstr "Peida laadid"
 
 #: convert.py:20
 msgid "&Show styles"
-msgstr "&Mostrar estilos"
+msgstr "Näita laade"
 
 #: convert.py:45
 msgid "Convert to PDF with Prince"
-msgstr "Converter para PDF com o Prince"
+msgstr "Teisenda Prince'iga PDFiks"
 
 #: convert.py:51
 #, python-format
 msgid "<b>Title:</b> %s"
-msgstr "<b>Título:</b> %s"
+msgstr "<b>Pealkiri:</b> %s"
 
 #: convert.py:54
 #, python-format
 msgid "<b>Source format:</b> %s"
-msgstr "<b>Formato de origem:</b> %s"
+msgstr "<b>Lähteformaat:</b> %s"
 
 #: convert.py:57 config.py:124
 msgid "&Add PDF to the book record"
-msgstr "&Adicionar PDF para o registro do livro"
+msgstr "Lisa PDF raamatu kirjesse"
 
 #: convert.py:58 config.py:125
 msgid "<qt>Add the converted PDF to the selected book record</qt>"
-msgstr "<qt>Adicionar o PDF convertido para o registro do livro selecionado</qt>"
+msgstr "<qt>Lisa teisendatud PDG valitud raamatu kirjesse</qt>"
 
 #: convert.py:67
 msgid "&Custom style:"
-msgstr "Personaizar &estilo:"
+msgstr "&Kohandatud laad:"
 
 #: convert.py:71
 msgid ""
 "<qt>Select one style to use. Additional styles can be created in the plugin "
 "configuration</qt>"
-msgstr "<qt>Selecione um estilo para usar. Estilos adicionais podem ser criados na configuração do plugin</qt>"
+msgstr "<qt>Vali üks laad, mida kasutada. Lisalaade saab luua plugina kohandamise aknas</qt>"
 
 #: convert.py:82
 msgid "A&dditional command-line arguments:"
-msgstr "Argumentos a&dicionais da linha de comando:"
+msgstr "Käsurea lisaargumendid:"
 
 #: convert.py:87
 msgid "<qt>Specify additional command-line arguments for the conversion</qt>"
-msgstr "<qt>Especifique argumentos adicionais da linha de comando para a conversão</qt>"
+msgstr "<qt>Määratle teisendamise jaoks käsurea lisaargumendid</qt>"
 
 #: convert.py:98
 msgid ""
 "<qt>This stylesheet can be modified<br/>The default can be configured</qt>"
-msgstr "<qt>Esta folha de estilo pode ser modificada<br/>O padrão pode ser configurado</qt>"
+msgstr "<qt>Seda laadilehte saab muuta<br/>Vaikevalikut saab muuta</qt>"
 
 #: convert.py:99
 msgid "C&ustom CSS"
-msgstr "Personali&zar CSS"
+msgstr "Kohandatud CSS"
 
 #: convert.py:100
 msgid "<qt>Custom CSS stylesheet to be used for this conversion</qt>"
-msgstr "<qt>Personalizar folha de estilo CSS para ser usada nessa conversão</qt>"
+msgstr "<qt>Kohandatud CSS laadileht, mida selle teisendamise jaoks kasutada</qt>"
 
 #: convert.py:111
 msgid "<qt>This stylesheet cannot be modified</qt>"
-msgstr "<qt>Esta folha de estilo não pode ser modificada</qt>"
+msgstr "<qt>Seda laadilehte ei saa muuta</qt>"
 
 #: convert.py:112
 msgid "&Book CSS"
-msgstr "Li&vro CSS"
+msgstr "Raamatu CSS"
 
 #: convert.py:113
 msgid "<qt>Book-specific CSS stylesheet included in the ebook file</qt>"
-msgstr "<qt>Folha de estilo CSS específica do livro incluído no arquivo do e-book</qt>"
+msgstr "<qt>Raamatupõhine CSS laadileht, mis on e-raamatu faili kaasatud</qt>"
 
 #: convert.py:122
 msgid "<qt>Show/hide the additional styles used for the conversion</qt>"
-msgstr "<qt>Mostrar/ocultar estilos adicionais usados para a conversão</qt>"
+msgstr "<qt>Näita/peida teisendamisel kasutatavaid lisalaade</qt>"
 
 #: convert.py:125
 msgid "Con&vert"
-msgstr "Con&verter"
+msgstr "Teisenda"
 
 #: convert.py:126
 msgid "<qt>Run the conversion with Prince</qt>"
-msgstr "<qt>Executar a conversão com o Prince</qt>"
+msgstr "<qt>Käita Prince'iga teisendamine</qt>"
 
 #: convert.py:182
 msgid "Parsing book..."
-msgstr "Analisando livro..."
+msgstr "Raamatu analüüsimine..."
 
 #: convert.py:216
 msgid "Replacing templates"
-msgstr "Substituindo modelos"
+msgstr "Mallide asendamine"
 
 #: convert.py:218
 #, python-format
 msgid "Found: %s (%d-%d)"
-msgstr "Encontrado: %s (%d-%d)"
+msgstr "Leiti: %s (%d-%d)"
 
 #: convert.py:219
 #, python-format
 msgid "Replace with: %s"
-msgstr "Substituir por: %s"
+msgstr "Asendaja: %s"
 
 #: convert.py:273
 msgid "Converting book..."
-msgstr "Convertendo livro..."
+msgstr "Raamatu teisendamine..."
 
 #: convert.py:283
 #, python-format
 msgid "Command line: %s"
-msgstr "Linha de comando: %s"
+msgstr "Käsurida: %s"
 
 #: convert.py:296
 msgid "Process error"
-msgstr "Erro no processo"
+msgstr "Protsessi viga"
 
 #: convert.py:296
 #, python-format
@@ -152,7 +151,7 @@ msgid ""
 " this plugin, which is usually:<ul><li>In Windows: "
 "<code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>In Linux: "
 "<code>prince</code></ul>"
-msgstr "<p>Código de erro: %s<p>certifique-se que o Prince (<a href=\"http://www.princexml.com\">www.princexml.com</a>) esteja instalado e o executável correto da interface da linha de comando esteja definido nas configurações deste plugin, normalmente:<ul><li>No Windows: <code><i>Prince_folder</i>\\Engine\\bin\\prince.exe</code>    <li>No Linux: <code>prince</code></ul>"
+msgstr "<p>Veateade: %s<p>veendu, et Prince (<a href=\"http://www.princexml.com\">www.princexml.com</a>) on installitud ja selle plugina kohandamise aknas on sisestatud õige käsurealiidese käivitusfail, milleks on tavaliselt:<ul><li>Windowsis: <code><i>Prince_kaust</i>\\Engine\\bin\\prince.exe</code>    <li>Linuxis: <code>prince</code></ul>"
 
 #: ui.py:14 ui.py:15 __init__.py:12 main.py:30
 msgid "Prince PDF"
@@ -160,101 +159,101 @@ msgstr "Prince PDF"
 
 #: ui.py:15
 msgid "Run the Prince PDF Plugin"
-msgstr "Executar o Plugin Prince PDF"
+msgstr "Käita plugin Prince PDF"
 
 #: __init__.py:13
 msgid "Converts to PDF using the Prince software (third-party)"
-msgstr "Converte o PDF usando o software Prince (terceiros)"
+msgstr "Teisendab PDFiks, kasutades Prince'i tarkvara (kolmas osapool)"
 
 #: config.py:23 config.py:24 config.py:84
 msgid "default"
-msgstr "padrão"
+msgstr "vaikimisi"
 
 #: config.py:98
 msgid "&Prince executable:"
-msgstr "Executável &prince:"
+msgstr "Prince'i käivitusfail:"
 
 #: config.py:103
 msgid "<qt>Executable for the Prince program (command-line interface)</qt>"
-msgstr "<qt>Executável do programa Prince (interface de linha de comando)</qt>"
+msgstr "<qt>Prince'i programmi käivitusfail (käsurealiides)</qt>"
 
 #: config.py:107
 msgid "&Browse"
-msgstr "&Procurar"
+msgstr "Lehitse"
 
 #: config.py:108
 msgid "<qt>Search the Prince executable in your computer</qt>"
-msgstr "<qt>Busca o executável Prince em seu computador</qt>"
+msgstr "<qt>Otsi oma arvutist Prince'i käivitusfaili</qt>"
 
 #: config.py:115
 msgid "Preferred &formats:"
-msgstr "&Formatos preferidos:"
+msgstr "Eelistatud formaadid:"
 
 #: config.py:120
 msgid ""
 "<qt>Comma-separated list of preferred formats to use as source, the first "
 "that matches will be used</qt>"
-msgstr "<qt>Lista separada por vírgula dos formatos preferidos para ser usado como origem, a primeira correspondência será usada</qt>"
+msgstr "<qt>Komaeraldusega loend eelistatud formaatidest, mida allikana kasutada; kasutatakse esimest vastet</qt>"
 
 #: config.py:129
 msgid "&Show CSS in the Convert dialog"
-msgstr "Mo&strar CSS no diálogo de conversão"
+msgstr "Näita teisendamise dialoogis CSS-i"
 
 #: config.py:130
 msgid "<qt>Show by default the styles in the Convert dialog</qt>"
-msgstr "<qt>Mostrar estilos por padrão no diálogo Converter</qt>"
+msgstr "<qt>Vaikimisi näita teisendamise dialoogiaknas laade</qt>"
 
 #: config.py:140
 msgid "<qt>List of custom styles defined. Select one to edit</qt>"
-msgstr "<qt>Lista de estilos personalizados definida. Selecione um para editar</qt>"
+msgstr "<qt>Loend määratletud kohandatud laadidest. Muutmiseks vali üks</qt>"
 
 #: config.py:145 config.py:146
 msgid "old"
-msgstr "antigo"
+msgstr "vana"
 
 #: config.py:155
 msgid "Re&name"
-msgstr "Re&nomear"
+msgstr "Muuda nime"
 
 #: config.py:156
 msgid "<qt>Rename the current style to the name on the right</qt>"
-msgstr "<qt>Renomear o estilo atual para o nome à direita</qt>"
+msgstr "<qt>Pane praeguse laadi nimeks paremalpool olev nimi</qt>"
 
 #: config.py:162
 msgid "<qt>Name for the new or renamed style</qt>"
-msgstr "<qt>Nome para o estilo novo ou renomeado</qt>"
+msgstr "<qt>Uue või ümbernimetatud laadi nimi</qt>"
 
 #: config.py:167
 msgid "A&dd"
-msgstr "A&dicionar"
+msgstr "Lisa"
 
 #: config.py:168
 msgid "<qt>Add a new empty style with the name on the left</qt>"
-msgstr "<qt>Adicionar um novo estilo em branco com o nome à esquerda</qt>"
+msgstr "<qt>Lisa uus tühi laad, mil nimeks vasakul olev nimi</qt>"
 
 #: config.py:173
 msgid "Re&move"
-msgstr "Re&mover"
+msgstr "Eemalda"
 
 #: config.py:174
 msgid "<qt>Remove the current style</qt>"
-msgstr "<qt>Remover o estilo atual</qt>"
+msgstr "<qt>Eemalda praegune laad</qt>"
 
 #: config.py:181
 msgid "Addi&tional command-line arguments:"
-msgstr "Argumentos adi&cionais da linha de comando:"
+msgstr "Käsurea lisaargumendid:"
 
 #: config.py:197
 msgid ""
 "<qt>Additional command-line arguments used in conversions with this "
 "style</qt>"
-msgstr "<qt>Argumentos adicionais da linha de comando usado em conversões com este estilo</qt>"
+msgstr "<qt>Käsurea lisaargumendid, mida kasutada selle laadiga teisendamistes</qt>"
 
 #: config.py:204
 msgid ""
 "<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF "
 "conversions</qt>"
-msgstr "<qt>Folha de estilo personalizada que será aplicada, se selecionada, para todas as conversões do Prince PDF</qt>"
+msgstr "<qt>Kohandatud laadileht, mis rakendatakse, kui valitud, kõigile Prince PDF teisendamistele</qt>"
 
 #: config.py:207
 #, python-format
@@ -262,199 +261,199 @@ msgid ""
 "Book metadata can be used in the stylesheet. Anything between %(s1)s and "
 "%(s2)s will be processed as a calibre template. For instance, %(s3)s in the "
 "stylesheet will be replaced with the book title in the conversion."
-msgstr "Metadados de livro podem ser usados em uma folha de estilos. Qualquer coisa entre %(s1)s e %(s2)s será processado como um modelo do calibre. Por exemplo, %(s3)s ina folha de estilo será substituído com o título do livro na conversão."
+msgstr "Laadilehes saab kasutada raamatu metaandmeid. Kõike fraaside %(s1)s ja %(s2)s vahel olevat töödeldakse calibre mallina. Näiteks: laadilehes olev %(s3)s asendatakse teisendamisel raamatu pealkirjaga."
 
 #: config.py:214
 msgid "&Custom styles:"
-msgstr "Estilos personali&zados:"
+msgstr "Kohandatud laadid:"
 
 #: config.py:222
 msgid "&Restore defaults"
-msgstr "&Restaurar padrões"
+msgstr "Taasta vaikesätted"
 
 #: config.py:223
 msgid "<qt>Restore the default settings</qt>"
-msgstr "<qt>Restaurar os ajustes padrão</qt>"
+msgstr "<qt>Taasta vaikimisi sätted</qt>"
 
 #: config.py:227
 msgid "<b>Warning</b>: Deletes modified styles"
-msgstr "<b>Aviso</b>: Excluir estilos modificados"
+msgstr "<b>Hoiatus</b>: Kustutab muudetud laadid"
 
 #: config.py:238
 msgid "Select Prince executable"
-msgstr "Selecionar executável Prince"
+msgstr "Prince'i käivitusfaili valimine"
 
 #: config.py:300
 msgid "Cannot add style"
-msgstr "Não foi possível adicionar estilo"
+msgstr "Ei saa laadi lisada"
 
 #: config.py:300 config.py:336
 #, python-format
 msgid "A style with the name \"%s\" is already defined, use a different name."
-msgstr "Um estilo chamado \"%s\" já está definido, use um nome diferente."
+msgstr "Laad nimega \"%s\" on juba määratletud, kasuta muud nime."
 
 #: config.py:326
 msgid "Cannot delete the last style"
-msgstr "Não foi possível excluir o último estilo"
+msgstr "Ei saa kustutada viimast laadi"
 
 #: config.py:326
 msgid ""
 "The last style cannot be removed. You can rename it and/or remove its "
 "contents."
-msgstr "O último estilo não pode ser removido. Você pode renomeá-lo e/ou remover seu conteúdo."
+msgstr "Viimast laadi ei saa kustutada. Sa võid selle ümber nimetada ja/või selle sisu eemaldada."
 
 #: config.py:336
 msgid "Cannot rename style"
-msgstr "Não foi possível renomear o estilo"
+msgstr "Ei saa laadi nime muuta"
 
 #: main.py:40
 msgid "Convert to &PDF"
-msgstr "Converter para &PDF"
+msgstr "Teisenda PDF-iks"
 
 #: main.py:43
 msgid "<qt>Start the conversion process</qt>"
-msgstr "<qt>Começar o processo de conversão</qt>"
+msgstr "<qt>Käivita teisendamise protsess</qt>"
 
 #: main.py:46
 msgid "&View log"
-msgstr "&Visualizar registro"
+msgstr "Näita logi"
 
 #: main.py:48
 msgid "<qt>Display the log from the last Prince run</qt>"
-msgstr "<qt>Exibir o registro da última execução do Prince</qt>"
+msgstr "<qt>Näita logi viimasest Prince'i käitamisest</qt>"
 
 #: main.py:52
 msgid "Con&figure"
-msgstr "Con&figurar"
+msgstr "Seadista"
 
 #: main.py:54
 msgid "<qt>Configure this plugin</qt>"
-msgstr "<qt>Configurar este plugin</qt>"
+msgstr "<qt>Seadista seda pluginat</qt>"
 
 #: main.py:100
 msgid "<b>No books selected</b>"
-msgstr "<b>Nenhum livro selecionado</b>"
+msgstr "<b>Ühtki raamatut pole valitud</b>"
 
 #: main.py:102 main.py:108
 msgid "Select one single book"
-msgstr "Selecionar um único livro"
+msgstr "Vali üks raamat"
 
 #: main.py:106
 msgid "<b>Many books selected</b>"
-msgstr "<b>Muitos livros selecionados</b>"
+msgstr "<b>Valitud on mitu raamatut</b>"
 
 #: main.py:119
 msgid "<i>none</i>"
-msgstr "<i>nenhum</i>"
+msgstr "<i>pole</i>"
 
 #: main.py:126
 #, python-format
 msgid "Available formats: %s"
-msgstr "Formatos disponíveis: %s"
+msgstr "Saadavalolevad formaadid: %s"
 
 #: main.py:130
 msgid "Ready"
-msgstr "Pronto"
+msgstr "Valmis"
 
 #: main.py:134
 msgid "No preferred format available"
-msgstr "Nenhum formato preferido disponível"
+msgstr "Ühtki eelistatud formaati pole saadaval"
 
 #: main.py:157
 msgid "About the Prince PDF Plugin"
-msgstr "Sobre o Plugin Prince PDF"
+msgstr "Teave plugina Prince PDF kohta"
 
 #: main.py:189 main.py:224
 msgid "Cannot convert to PDF"
-msgstr "Não foi possível converter o PDF"
+msgstr "Ei saa PDF-iks teisendada"
 
 #: main.py:189
 #, python-format
 msgid "Format not supported: %s"
-msgstr "Formato não suportado: %s"
+msgstr "Formaati ei toetata: %s"
 
 #: main.py:198
 #, python-format
 msgid "PDF file: %s"
-msgstr "Arquivo PDF: %s"
+msgstr "PDF-fail: %s"
 
 #: main.py:202
 msgid " Check the log."
-msgstr " Verificar o registro."
+msgstr " Kontrolli logi."
 
 #: main.py:208 main.py:215
 msgid "Could not convert to PDF"
-msgstr "Não foi possível converter o PDF"
+msgstr "Ei saanud PDF-iks teisendada"
 
 #: main.py:208
 msgid "The conversion failed."
-msgstr "A conversão falhou."
+msgstr "Teisendamine ebaõnnestus."
 
 #: main.py:215
 #, python-format
 msgid ""
 "Error reading or writing the PDF file:\n"
 "%s"
-msgstr "Erro ao ler ou gravar o arquivo PDF:\n%s"
+msgstr "Viga PDF-faili lugemisel või kirjutamisel:\n%s"
 
 #: main.py:224
 msgid "No supported format available"
-msgstr "Nenhum formato suportado disponível"
+msgstr "Ühtki toetatud formaati pole saadaval"
 
 #: main.py:272
 msgid "Unpacking book..."
-msgstr "Descomprimindo livro...."
+msgstr "Raamatu lahtipakkimine..."
 
 #: main.py:292
 msgid "Setting metadata..."
-msgstr "Definindo metadados..."
+msgstr "Metaandmete sisestamine..."
 
 #: main.py:309
 msgid "Existing format"
-msgstr "Formato existente"
+msgstr "Formaat juba olemas"
 
 #: main.py:310
 msgid ""
 "The selected book already contains a PDF format. Are you sure you want to "
 "replace it?"
-msgstr "O livro selecionado já contém um formato PDF. Você tem certeza de que deseja substituí-lo?"
+msgstr "Valitud raamat juba sisaldab PDF-formaati. Kas oled kindel, et tahad selle asendada?"
 
 #: main.py:311
 #, python-format
 msgid ""
 "The temporary file can be found in:\n"
 "%s"
-msgstr "TO arquivo temporário não pode ser encontrado em:\n%s"
+msgstr "Ajutine fail on kättesaadav siit:\n%s"
 
 #: main.py:315
 msgid "Adding PDF..."
-msgstr "Adicionando PDF..."
+msgstr "PDF-i lisamine..."
 
 #: main.py:334
 msgid "Choose destination directory"
-msgstr "Escolher um diretório de destino"
+msgstr "Sihtkausta valimine"
 
 #: main.py:346
 msgid "Could not save PDF"
-msgstr "Não foi possível salvar o PDF"
+msgstr "Ei saanud PDF-i salvestada"
 
 #: main.py:346
 #, python-format
 msgid ""
 "Error writing the PDF file:\n"
 "%s"
-msgstr "Erro ao gravar o arquivo PDF:\n%s"
+msgstr "Viga PDF-faili kirjutamisel:\n%s"
 
 #: main.py:349
 msgid "File saved"
-msgstr "Arquivo salvo"
+msgstr "Fail salvestatud"
 
 #: main.py:349
 #, python-format
 msgid ""
 "PDF file saved in:\n"
 "%s"
-msgstr "Arquivo PDF salvo em:\n%s"
+msgstr "PDF-fail salvestatud kohta:\n%s"
 
 #: help.py:3
 #, python-format
@@ -478,7 +477,7 @@ msgid ""
 "\n"
 "<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince is copyrighted &copy; YesLogic Pty. Ltd.</i></p>\n"
 "<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> This plugin is released under %(license)s.</p>\n"
-msgstr "\n<h3 style=\"text-align:center\">O plugin Prince PDF (v. %(version)s)</h3>\n<p style=\"text-align:center\"><i>Criado por %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">Este plugin vai converter um livro para PDF usando o Prince.</p>\n<p style=\"margin:0\">Prince é um programa externo, você pode fazer sua transferência de <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p> <p style=\"margin:1em 0 0 0\">Apenas alguns formatos podem ser convertidos com este plugin, principalmente EPUB, AZW3 e HTMLZ. Se você deseja converter um livro em outro formato, converta-o primeiro em um desses formatos.</p>\n\n<p style=\"margin:1em 0 0 0\">Antes da conversão atual, você poderá escolher se deseja ou não adicionar o PDF resultante para o registro do livro. Se o PDF não é adicionado, ele será salvo no disco, usando o modelo de salvar para o disco.</p>\n\n<p style=\"margin:1em 0 0 0\">A conversão não vai usar qualquer outra das definições de conversão do calibre, mas em vez disso ela vai usar um arquivo CSS personalizado, onde as propriedades específicas do Prince podem ser usadas. Este arquivo pode ser modificado nas configurações do plugin. Além disso, o plugin vai reconhecer e usar qualquer arquivo CSS adicional especificado no próprio livro, como uma etiqueta <span %(code)s>&lt;meta&gt;</span> com <span %(code)s>name=\"prince-style\"</span> e <span %(code)s>content=\"<i>idref</i>\"</span>, onde <span %(code)s><i>idref</i></span> é o <span %(code)s>id</span> do arquivo CSS extra no manifesto.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> O Prince é protegido por direitos autorais &copy; YesLogic Pty. Ltd.</i></p> <p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> Este plugin é lançado sob %(license)s.</p>\n"
+msgstr "\n<h3 style=\"text-align:center\">Plugin Prince PDF (v. %(version)s)</h3>\n<p style=\"text-align:center\"><i>Autor %(author)s</i></p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\">See plugin teisendab raamatu PDF-iks, kasutades Prince'i.</p>\n<p style=\"margin:0\">Prince on väline programm, selle saab alla laadida lehelt <a href=\"http://www.princexml.com/\">www.princexml.com</a>.</p>\n\n<p style=\"margin:1em 0 0 0\">Selle pluginaga saab teisendada ainult mõnd formaati, peamiselt EPUB, AZW3 ja HTMLZ. Kui tahad teisendada muus formaadis raamatut, teisenda see esmalt üheks neist formaatidest.</p>\n\n<p style=\"margin:1em 0 0 0\">Enne tegelikku teisendamist saad valida, kas lisada tulemusena saadav PDF raamatu kirjesse. Kui PDF-i ei lisata, salvestatakse see kõvakettale, kasutades kettale salvestamise malli.</p>\n\n<p style=\"margin:1em 0 0 0\">Teisendamine ei kasuta ühtki calibre teisendamise säted, kuid kasutab hoopis kohandatud CSS-faili, kus võib kasutada Prince'iga seotud omadusi. Seda faili saab muuta plugina seadistamise aknas. Lisaks tuvastab ja kasutab plugin raamatus olevat mis tahes lisa-CSS-faili, <span %(code)s>&lt;meta&gt;</span>-sildina, milles on <span %(code)s>name=\"prince-style\"</span> ja <span %(code)s>content=\"<i>idref</i>\"</span>, kus <span %(code)s><i>idref</i></span> on lisa-CSS-faili <span %(code)s>id</span> manifestis.</p>\n\n<hr/>\n\n<p style=\"margin:1em 0 0 0\"><i><img src=\"%(dir)s/prince_icon.png\"/> Prince'i autoriõigust omab &copy; YesLogic Pty. Ltd.</i></p>\n<p style=\"margin:0\"><img src=\"%(dir)s/small_icon.png\"/> See plugin on väljalastud litsentsi %(license)s all.</p>\n"
 
 #: help.py:24
 msgid ""
@@ -495,4 +494,4 @@ msgid ""
 "\n"
 "You should have received a copy of the GNU General Public License\n"
 "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
-msgstr "\nEste programa é um software livre; você pode redistribuí-lo e/ou \nmodificá-lo dentro dos termos da Licença Pública Geral GNU como \npublicada pela Fundação do Software Livre (FSF); na versão 3 da \nLicença, ou (na sua opinião) qualquer versão ulterior.\n\nEste programa é distribuído na esperança de que possa ser útil, \nmas SEM NENHUMA GARANTIA; sem uma garantia implícita de\nADEQUAÇÃO a qualquer MERCADO ou APLICAÇÃO EM PARTICULAR.\nVeja a Licença Pública Geral GNU para maiores detalhes.\n\nVocê deve ter recebido uma cópia da Licença Pública Geral GNU\njunto com este programa, se não, veja <http://www.gnu.org/licenses/>.\n"
+msgstr "\nSee plugin on vaba tarkvara: sa võid seda levitada ja/või muuta\nlitsentsi GNU General Public License tingimustel, nagu on avaldanud\nthe Free Software Foundation, kas litsentsi versiooni 3 või\n(sinu valikul) hilisema versiooni alusel.\n\nSeda programmi levitatakse lootuses, et see on kasulik,\nkuid ILMA IGASUGUSE GARANTIITA; isegi tuleneva\nMÜÜDAVUSE või KINDLAKS EESMÄRGIKS SOBIVUSE garantiita.\nRohkema teabe saamiseks vaata litsentsi\nGNU General Public License.\n\nSa oleksid koos selle programmiga pidanud kaasa saama litsentsi GNU General Public License koopia. Kui mitte, siis vaata lehte <http://www.gnu.org/licenses/>.\n"
