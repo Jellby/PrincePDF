@@ -198,7 +198,7 @@ class ConfigWidget(QWidget):
         self.llll_.addWidget(self.args)
         self.label_args.setBuddy(self.args)
 
-        self.css = TextEditWithTooltip()
+        self.css = TextEditWithTooltip(self)
         self.css.setLineWrapMode(TextEditWithTooltip.NoWrap)
         self.css.load_text(self.CSS_list[unicode(self.css_list.currentText())],'css')
         self.css.setToolTip(_('<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF conversions</qt>'))
