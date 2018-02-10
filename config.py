@@ -8,6 +8,7 @@ try:
     from PyQt5.Qt import Qt, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QLineEdit, QPushButton, QFileDialog, QCheckBox, QComboBox, QGroupBox
 except ImportError:
     from PyQt4.Qt import Qt, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QLineEdit, QPushButton, QFileDialog, QCheckBox, QComboBox, QGroupBox
+        
 from calibre.utils.config import JSONConfig
 from calibre_plugins.prince_pdf.texteditwithtooltip import TextEditWithTooltip
 
@@ -198,9 +199,10 @@ class ConfigWidget(QWidget):
         self.llll_.addWidget(self.args)
         self.label_args.setBuddy(self.args)
 
-        self.css = TextEditWithTooltip(self)
-        self.css.setLineWrapMode(TextEditWithTooltip.NoWrap)
-        self.css.load_text(self.CSS_list[unicode(self.css_list.currentText())],'css')
+        # TextEdit box for CSS code  
+        self.css = TextEditWithTooltip(self, expected_geometry=(1,1))        
+        self.css.setLineWrapMode(TextEditWithTooltip.NoWrap)        
+        self.css.load_text(self.CSS_list[unicode(self.css_list.currentText())],'css')        
         self.css.setToolTip(_('<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF conversions</qt>'))
         self.css_layout.addWidget(self.css)
 
@@ -226,8 +228,10 @@ class ConfigWidget(QWidget):
 
         self.warning = QLabel(_('<b>Warning</b>: Deletes modified styles'))
         self.lllll.addWidget(self.warning)
-
+        
         self.adjustSize()
+        
+
 
     def select_exe(self):
         '''
