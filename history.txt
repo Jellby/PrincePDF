@@ -1,3 +1,7 @@
+1.4.3 (2018-03-11)
+                   Fix resizing of configuration dialog under Windows (contribution from Raffaele Mancuso)
+                   Update translations
+
 1.4.2 (2017-05-13)
                    Update translations (with those complete at the time: Portuguese, Ukrainian, Turkish, Estonian)
 
