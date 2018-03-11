@@ -89,10 +89,9 @@ class ConvertDialog(QDialog):
         self.label_args.setBuddy(self.args)
 
         self.css = QTabWidget()
-        self.css.setMinimumWidth(500)
         self.l.addWidget(self.css)
 
-        self.css1 = TextEditWithTooltip()
+        self.css1 = TextEditWithTooltip(self, expected_geometry=(80,20))
         self.css1.setLineWrapMode(TextEditWithTooltip.NoWrap)
         self.css1.load_text(self.replace_templates(prefs['custom_CSS_list'][prefs['default_CSS']]),'css')
         self.css1.setToolTip(_('<qt>This stylesheet can be modified<br/>The default can be configured</qt>'))
