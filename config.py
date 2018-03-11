@@ -78,8 +78,7 @@ body {
   text-align: justify;
   prince-image-resolution: 166dpi;
   hyphens: auto;
-  string-set: booktitle "@{@{title}@}@"
-  string-set: author "@{@{author}@}@"
+  string-set: booktitle "@{@{title}@}@" author "@{@{author}@}@";
 }'''}
 prefs.defaults['custom_args_list'] = {_('default'):''}
 
