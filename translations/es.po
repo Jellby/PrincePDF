@@ -1,6 +1,6 @@
 # 
 # Translators:
-# dario hereñu <magallania@gmail.com>, 2015
+# Darío Hereñú, 2015
 # Jellby <jellby@yahoo.com>, 2014,2017
 msgid ""
 msgstr ""

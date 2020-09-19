@@ -3,14 +3,15 @@
 # Ettore Atalan <atalanttore@googlemail.com>, 2014,2017
 # ILB, 2014
 # 3Stadt <matthieu@3-stadt.de>, 2017
-# Simon_Schuette <simonschuette@arcor.de>, 2014
+# pitfd, 2018
+# Simon Schütte, 2014
 # valsu <valsu@hylia.de>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2017-02-20 20:37+0100\n"
-"PO-Revision-Date: 2017-09-20 09:56+0000\n"
-"Last-Translator: 3Stadt <matthieu@3-stadt.de>\n"
+"PO-Revision-Date: 2018-07-05 09:27+0000\n"
+"Last-Translator: pitfd\n"
 "Language-Team: German (http://www.transifex.com/calibre/calibre-plugins/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -68,7 +69,7 @@ msgstr "&Benutzerdefinierter Stil:"
 msgid ""
 "<qt>Select one style to use. Additional styles can be created in the plugin "
 "configuration</qt>"
-msgstr ""
+msgstr "<qt>Wählen Sie einen Stil aus. Zusätzliche Stile können in der Plugin-Konfiguration erstellt werden.</qt>"
 
 #: convert.py:82
 msgid "A&dditional command-line arguments:"
@@ -76,7 +77,7 @@ msgstr "&Zusätzliche Befehlszeilenargumente:"
 
 #: convert.py:87
 msgid "<qt>Specify additional command-line arguments for the conversion</qt>"
-msgstr ""
+msgstr "<qt>Geben Sie zusätzliche Befehlszeilenargumente für die Konvertierung an.</qt>"
 
 #: convert.py:98
 msgid ""
@@ -105,7 +106,7 @@ msgstr "<qt>Buchspezifische CSS-Formatvorlage in der E-Book-Datei eingefügt</qt
 
 #: convert.py:122
 msgid "<qt>Show/hide the additional styles used for the conversion</qt>"
-msgstr ""
+msgstr "<qt>Ein-/Ausblenden der für die Konvertierung verwendeten zusätzlichen Formate</qt>"
 
 #: convert.py:125
 msgid "Con&vert"
@@ -205,11 +206,11 @@ msgstr "Die C&SS im Konvertieren-Dialog anzeigen"
 
 #: config.py:130
 msgid "<qt>Show by default the styles in the Convert dialog</qt>"
-msgstr ""
+msgstr "<qt>Standardmäßige Anzeige der Stile im Dialogfeld \"Konvertieren\" </qt>"
 
 #: config.py:140
 msgid "<qt>List of custom styles defined. Select one to edit</qt>"
-msgstr ""
+msgstr "<qt>Liste der benutzerdefinierten Stile. Wählen Sie einen zum Bearbeiten aus,</qt>"
 
 #: config.py:145 config.py:146
 msgid "old"
@@ -221,7 +222,7 @@ msgstr "Umbe&nennen"
 
 #: config.py:156
 msgid "<qt>Rename the current style to the name on the right</qt>"
-msgstr ""
+msgstr "<qt>Benennen Sie den aktuellen Stil in den Namen auf der rechten Seite um.</qt>"
 
 #: config.py:162
 msgid "<qt>Name for the new or renamed style</qt>"
@@ -233,7 +234,7 @@ msgstr "Hinzufü&gen"
 
 #: config.py:168
 msgid "<qt>Add a new empty style with the name on the left</qt>"
-msgstr ""
+msgstr "<qt>Fügen Sie einen neuen leeren Stil mit dem Namen auf der linken Seite hinzu.</qt>"
 
 #: config.py:173
 msgid "Re&move"
@@ -251,7 +252,7 @@ msgstr "&Zusätzliche Befehlszeilenargumente:"
 msgid ""
 "<qt>Additional command-line arguments used in conversions with this "
 "style</qt>"
-msgstr ""
+msgstr "<qt>Zusätzliche Befehlszeilenargumente, die bei Konvertierungen mit diesem Stil verwendet werden</qt>"
 
 #: config.py:204
 msgid ""
@@ -294,7 +295,7 @@ msgstr "Stil kann nicht hinzugefügt werden"
 #: config.py:300 config.py:336
 #, python-format
 msgid "A style with the name \"%s\" is already defined, use a different name."
-msgstr ""
+msgstr "Ein Stil mit dem Namen \"%s\" ist bereits definiert, verwenden Sie einen anderen Namen."
 
 #: config.py:326
 msgid "Cannot delete the last style"
@@ -304,7 +305,7 @@ msgstr "Der letzte Stil kann nicht gelöscht werden"
 msgid ""
 "The last style cannot be removed. You can rename it and/or remove its "
 "contents."
-msgstr ""
+msgstr "Der letzte Stil kann nicht entfernt werden. Sie können ihn umbenennen und/oder seinen Inhalt entfernen."
 
 #: config.py:336
 msgid "Cannot rename style"
