@@ -324,8 +324,9 @@ class PrincePDFDialog(QDialog):
         :param pdf_file: The path to the PDF file
         :param pdf_base_file: The desired file name and relative path
         '''
-        from os import rename, makedirs
+        from os import makedirs
         from os.path import basename, dirname, join, exists
+        from shutil import move
         from calibre.constants import DEBUG
         from calibre.gui2 import choose_dir
         from calibre.gui2.dialogs.message_box import MessageBox
@@ -341,7 +342,7 @@ class PrincePDFDialog(QDialog):
         except BaseException:
             if not exists(base_dir): raise
         try:
-            rename(pdf_file, save_file)
+            move(pdf_file, save_file)
         except:
             error_dialog(self.gui, _('Could not save PDF'), _("Error writing the PDF file:\n%s" % save_file), show=True)
             return

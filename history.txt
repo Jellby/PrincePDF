@@ -1,3 +1,6 @@
+1.4.4 (2020-09-19)
+                   Fix saving in different filesystem from the temporary directory
+
 1.4.3 (2018-03-11)
                    Fix resizing of configuration dialog under Windows (contribution from Raffaele Mancuso)
                    Update translations
