@@ -13,7 +13,7 @@ class PrincePDFPlugin(InterfaceActionBase):
     description             = _('Converts to PDF using the Prince software (third-party)')
     supported_platforms     = ['linux', 'windows']
     author                  = 'Jellby'
-    version                 = (1, 4, 4)
+    version                 = (1, 5, 0)
     minimum_calibre_version = (2, 72, 0)
     actual_plugin           = 'calibre_plugins.prince_pdf.ui:InterfacePlugin'
 

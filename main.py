@@ -218,8 +218,8 @@ class PrincePDFDialog(QDialog):
                     self.add_pdf(book_id, pdf_file, ('pdf' in fmts))
                 else:
                     self.save_pdf(pdf_file, pdf_base_file)
-	    if DEBUG: print('===========')
-	    return
+            if DEBUG: print('===========')
+            return
         # No matching format in the book
         return error_dialog(self.gui, _('Cannot convert to PDF'), _('No supported format available'), show=True)
 

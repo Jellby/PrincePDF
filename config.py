@@ -11,6 +11,11 @@ except ImportError:
 from calibre.utils.config import JSONConfig
 from calibre_plugins.prince_pdf.texteditwithtooltip import TextEditWithTooltip
 
+try:
+  unicode = str
+except:
+  pass
+
 load_translations()
 
 prefs = JSONConfig('plugins/prince_pdf')

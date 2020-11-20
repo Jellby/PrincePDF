@@ -11,6 +11,11 @@ except ImportError:
 from calibre_plugins.prince_pdf.config import prefs
 from calibre_plugins.prince_pdf.texteditwithtooltip import TextEditWithTooltip
 
+try:
+  unicode = str
+except:
+  pass
+
 load_translations()
 
 # This dialog is created after the input book has been unpacked
@@ -208,7 +213,7 @@ class ConvertDialog(QDialog):
             result = SafeFormat().safe_format(match.group(1), self.mi, ('EXCEPTION: '), self.mi)
             # Escape quotes, backslashes and newlines
             result = re.sub(r'''['"\\]''', r'\\\g<0>', result)
-            result = re.sub('\n', r'\A ', result)
+            result = re.sub('\n', r'\\A ', result)
             results[match.group(1)] = result
             text = text[:match.start(0)] + result + text[match.end(0):]
         if DEBUG:
@@ -238,11 +243,11 @@ class ConvertDialog(QDialog):
             if not exists(base_dir): raise
 
         # Create a temporary CSS file with the box contents
-        custom_CSS = PersistentTemporaryFile()
+        custom_CSS = PersistentTemporaryFile(mode='w+')
         custom_CSS.write(unicode(self.css1.toPlainText()))
         custom_CSS.close()
         # Create a temporary file with the list of input files
-        file_list = PersistentTemporaryFile()
+        file_list = PersistentTemporaryFile(mode='w+')
         for item in self.oeb.spine:
             file_list.write(item.href + "\n")
         file_list.close()
