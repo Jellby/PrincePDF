@@ -5,20 +5,21 @@
 # Maria Zubkova <mashazubkova@mail.ru>, 2016
 # Marta Mingolla <martamingolla@yandex.com>, 2017
 # Marta Mingolla <martamingolla@yandex.com>, 2017
+# Michele Galimberti <galimbertimichele@gmail.com>, 2021-2022
 # Nicla Maria Notarangelo <nicla_n@yahoo.it>, 2018
 # Vincenzo Reale <vinx.reale@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: calibre-plugins\n"
 "POT-Creation-Date: 2017-02-20 20:37+0100\n"
-"PO-Revision-Date: 2018-09-26 13:55+0000\n"
-"Last-Translator: Nicla Maria Notarangelo <nicla_n@yahoo.it>\n"
-"Language-Team: Italian (http://www.transifex.com/calibre/calibre-plugins/language/it/)\n"
+"PO-Revision-Date: 2014-08-17 10:09+0000\n"
+"Last-Translator: Michele Galimberti <galimbertimichele@gmail.com>, 2021-2022\n"
+"Language-Team: Italian (http://app.transifex.com/calibre/calibre-plugins/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 "X-Generator: Poedit 1.5.4\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
@@ -30,7 +31,7 @@ msgstr "Prince log"
 
 #: log_box.py:40
 msgid "<qt>Console output from the last Prince run</qt>"
-msgstr ""
+msgstr "<qt>Output della console dall'ultima esecuzione di Prince</qt>"
 
 #: convert.py:19
 msgid "&Hide styles"
@@ -74,11 +75,11 @@ msgstr "<qt>Seleziona uno stile da usare. Ulteriori stili possono essere creati 
 
 #: convert.py:82
 msgid "A&dditional command-line arguments:"
-msgstr ""
+msgstr "Argomenti a&ggiuntivi da linea di comando:"
 
 #: convert.py:87
 msgid "<qt>Specify additional command-line arguments for the conversion</qt>"
-msgstr ""
+msgstr "<qt>Specifica argomenti aggiuntivi per la conversione da linea di comando</qt>"
 
 #: convert.py:98
 msgid ""

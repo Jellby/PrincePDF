@@ -1,3 +1,6 @@
+1.6.0 (2023-04-08)
+                   Qt 6 (calibre 6) update
+
 1.5.0 (2020-11-20)
                    Python 3 update
 

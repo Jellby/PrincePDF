@@ -1,7 +1,5 @@
-from __future__ import (unicode_literals, division, absolute_import, print_function)
-
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, 2023, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
@@ -151,7 +149,7 @@ class PrincePDFDialog(QDialog):
         license = __license__
         with TemporaryDirectory('xxx') as tdir:
           for x in ('prince_icon.png', 'small_icon.png'):
-            with open(join(tdir, x),'w') as f:
+            with open(join(tdir, x),'wb') as f:
               f.write(get_resources('images/' + x))
           help_box = MessageBox(type_ = MessageBox.INFO, \
                                 title = _('About the Prince PDF Plugin'), \

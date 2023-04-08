@@ -1,7 +1,5 @@
-from __future__ import (unicode_literals, division, absolute_import, print_function)
-
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, 2023, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 from calibre.gui2.actions import InterfaceAction

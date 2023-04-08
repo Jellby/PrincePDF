@@ -1,7 +1,5 @@
-from __future__ import (unicode_literals, division, absolute_import, print_function)
-
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2023, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
@@ -29,13 +27,13 @@ class LogDialog(QDialog):
         self.setLayout(self.l)
 
         monofont = QFont('')
-        monofont.setStyleHint(QFont.TypeWriter)
+        monofont.setStyleHint(QFont.StyleHint.TypeWriter)
 
         self.box = QPlainTextEdit()
         self.box.setPlainText(log)
         self.box.setStyleSheet('* { font-family: monospace }')
         self.box.setMinimumWidth(500)
-        self.box.setLineWrapMode(QPlainTextEdit.NoWrap)
+        self.box.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
         self.box.setReadOnly(True)
         self.box.setToolTip(_('<qt>Console output from the last Prince run</qt>'))
         self.l.addWidget(self.box)

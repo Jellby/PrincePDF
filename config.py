@@ -1,7 +1,5 @@
-from __future__ import (unicode_literals, division, absolute_import, print_function)
-
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, 2023, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
@@ -11,10 +9,11 @@ except ImportError:
 from calibre.utils.config import JSONConfig
 from calibre_plugins.prince_pdf.texteditwithtooltip import TextEditWithTooltip
 
-try:
-  unicode = str
-except:
-  pass
+def unicode(x):
+  try:
+    return x.decode()
+  except AttributeError:
+    return x
 
 load_translations()
 
@@ -203,7 +202,7 @@ class ConfigWidget(QWidget):
         self.label_args.setBuddy(self.args)
 
         self.css = TextEditWithTooltip(self, expected_geometry=(80,20))
-        self.css.setLineWrapMode(TextEditWithTooltip.NoWrap)
+        self.css.setLineWrapMode(TextEditWithTooltip.LineWrapMode.NoWrap)
         self.css.load_text(self.CSS_list[unicode(self.css_list.currentText())],'css')
         self.css.setToolTip(_('<qt>Custom stylesheet that will be applied, if selected, to all Prince PDF conversions</qt>'))
         self.css_layout.addWidget(self.css)
@@ -238,7 +237,7 @@ class ConfigWidget(QWidget):
         Create a dialog to select the Prince executable
         '''
         dialog = QFileDialog()
-        dialog.setFileMode(QFileDialog.ExistingFile)
+        dialog.setFileMode(QFileDialog.FileMode.ExistingFile)
         filename = dialog.getOpenFileName(self, _('Select Prince executable'), '', '')
         if filename:
             try:

@@ -1,7 +1,5 @@
-from __future__ import (unicode_literals, division, absolute_import, print_function)
-
 __license__   = 'GPL v3'
-__copyright__ = '2013, 2014, 2017, Jellby <jellby@yahoo.com>'
+__copyright__ = '2013, 2014, 2017, 2023, Jellby <jellby@yahoo.com>'
 __docformat__ = 'restructuredtext en'
 
 try:
@@ -11,10 +9,11 @@ except ImportError:
 from calibre_plugins.prince_pdf.config import prefs
 from calibre_plugins.prince_pdf.texteditwithtooltip import TextEditWithTooltip
 
-try:
-  unicode = str
-except:
-  pass
+def unicode(x):
+  try:
+    return x.decode()
+  except AttributeError:
+    return x
 
 load_translations()
 
@@ -97,19 +96,19 @@ class ConvertDialog(QDialog):
         self.l.addWidget(self.css)
 
         self.css1 = TextEditWithTooltip(self, expected_geometry=(80,20))
-        self.css1.setLineWrapMode(TextEditWithTooltip.NoWrap)
+        self.css1.setLineWrapMode(TextEditWithTooltip.LineWrapMode.NoWrap)
         self.css1.load_text(self.replace_templates(prefs['custom_CSS_list'][prefs['default_CSS']]),'css')
         self.css1.setToolTip(_('<qt>This stylesheet can be modified<br/>The default can be configured</qt>'))
         i = self.css.addTab(self.css1, _('C&ustom CSS'))
         self.css.setTabToolTip(i, _('<qt>Custom CSS stylesheet to be used for this conversion</qt>'))
 
         monofont = QFont('')
-        monofont.setStyleHint(QFont.TypeWriter)
+        monofont.setStyleHint(QFont.StyleHint.TypeWriter)
 
         if (self.prince_css):
             self.css2 = QPlainTextEdit()
             self.css2.setStyleSheet('* { font-family: monospace }')
-            self.css2.setLineWrapMode(QPlainTextEdit.NoWrap)
+            self.css2.setLineWrapMode(QPlainTextEdit.LineWrapMode.NoWrap)
             self.css2.setPlainText(self.prince_css)
             self.css2.setReadOnly(True)
             self.css2.setToolTip(_('<qt>This stylesheet cannot be modified</qt>'))
@@ -277,8 +276,8 @@ class ConvertDialog(QDialog):
         if DEBUG: print(_('Converting book...'))
         process = QProcess(self)
         process.setWorkingDirectory(opf_dir)
-        process.setProcessChannelMode(QProcess.MergedChannels);
-        process.error.connect(self.error)
+        process.setProcessChannelMode(QProcess.ProcessChannelMode.MergedChannels);
+        process.errorOccurred.connect(self.error)
         process.finished.connect(self.end)
         self.process = process
         if DEBUG:
